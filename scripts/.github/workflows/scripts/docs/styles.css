@@ -1,0 +1,18 @@
+:root { font-family: -apple-system, system-ui, Segoe UI, Roboto, sans-serif; }
+body { margin: 0; background:#0b0b0d; color:#fff; }
+a { color:#9ad; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 18px; }
+.card { background:#141418; border:1px solid #24242c; border-radius: 14px; padding: 14px; margin: 12px 0; }
+.row { display:flex; gap:10px; flex-wrap: wrap; align-items: center; }
+h1 { margin: 0 0 6px 0; font-size: 22px; }
+.muted { color:#a7a7b3; font-size: 13px; }
+.btn { border:1px solid #2a2a35; background:#1b1b22; color:#fff; border-radius: 12px; padding: 10px 12px; cursor:pointer; }
+.btn.primary { background:#2d2df6; border-color:#2d2df6; }
+.btn:disabled { opacity:.5; cursor:not-allowed; }
+.list { display:flex; flex-direction: column; gap:10px; }
+.item { padding: 12px; border:1px solid #252532; border-radius: 12px; background:#101014; }
+.item-title { font-weight: 700; margin-bottom: 6px; }
+.badge { display:inline-block; padding:3px 8px; border-radius: 999px; background:#222233; border:1px solid #2d2d44; font-size: 12px; color:#cfcfe8; }
+hr { border: none; border-top: 1px solid #24242c; margin: 12px 0; }
+small { font-size: 12px; }
+code { background:#0f0f13; border:1px solid #24242c; padding:2px 6px; border-radius: 8px; }
