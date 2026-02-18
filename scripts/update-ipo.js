@@ -1,15 +1,19 @@
 /**
- * DART 공모정보 > 청약 달력(지분증권) (dsac008) 스크래퍼
+ * DART 공모정보 > 청약 달력(지분증권) (dsac008)
+ * ✅ 핵심: 캘린더만으로는 "공모주(IPO) vs 유상증자"가 구분되지 않음
+ *    -> 각 항목의 rcpNo로 "증권신고서(지분증권)" 원문(viewer.do)을 가져와서
+ *       유상증자/주주배정 등 키워드가 있으면 제외.
  *
- * ✅ IMPORTANT FIX
- * - dsac008은 GET 쿼리(selectYear/selectMonth)를 무시하고 "현재 달"을 주는 경우가 있음.
- * - 따라서 "쿠키 확보(GET) -> POST로 달 변경"을 기본으로 수행.
+ * 사용 예:
+ *  - IPO만:
+ *      node scripts/update-ipo.js --start 2026-03-01 --end 2026-03-31 --mode ipo --out docs/data/ipo.json
+ *  - 유상증자만 빼고(애매한 건 포함):
+ *      node scripts/update-ipo.js --start 2026-03-01 --end 2026-03-31 --mode exrights --out docs/data/ipo.json
+ *  - 전부(필터 없음):
+ *      node scripts/update-ipo.js --start 2026-03-01 --end 2026-03-31 --mode all --out docs/data/ipo.json
  *
- * 사용 예)
- *   node scripts/update-ipo.js --start 2026-03-01 --end 2026-03-31 --markets all --out docs/data/ipo.json
- *
- * markets:
- *   all (기본) / 유 / 코 / 넥 / 기 / 또는 "코,유" 같이 콤마
+ * 참고:
+ *  - DART 원문은 dsaf001에서 viewDoc(...) 파라미터를 뽑아 /report/viewer.do 로 접근 가능. (일반적으로 알려진 구조) 
  */
 
 import fs from "fs";
@@ -17,11 +21,38 @@ import path from "path";
 import iconv from "iconv-lite";
 import * as cheerio from "cheerio";
 
-const DART_URL = "https://dart.fss.or.kr/dsac008/main.do";
+const DART_CAL_URL = "https://dart.fss.or.kr/dsac008/main.do";
+const DART_DSAF_URL = "https://dart.fss.or.kr/dsaf001/main.do";
+const DART_VIEWER_BASE = "https://dart.fss.or.kr/report/viewer.do";
 
-// "코 아이씨에이치 [시작]" / "기케이뱅크[종료]" 둘 다 커버
 const EVENT_RE = /^(유|코|넥|기)\s*([^[]+?)\s*\[\s*(시작|종료)\s*\]\s*$/;
 const EVENT_RE_LOOSE = /(유|코|넥|기)\s*([^[]+?)\s*\[\s*(시작|종료)\s*\]/g;
+
+// ---- “유상증자” 판단 키워드 (있으면 rights 로 본다)
+const RIGHTS_KEYWORDS = [
+  "유상증자",
+  "주주배정",
+  "실권주",
+  "신주인수권",
+  "제3자배정",
+  "제3자 배정",
+  "일반공모(유상증자)",
+  "주주우선공모",
+];
+
+// ---- “IPO(공모주/신규상장)” 판단 키워드 (있으면 ipo 로 본다)
+const IPO_KEYWORDS = [
+  "신규상장",
+  "상장예정",
+  "상장 예정",
+  "코스닥시장 상장",
+  "유가증권시장 상장",
+  "상장심사",
+  "예비상장",
+  "대표주관회사",
+  "공모가",
+  "기관투자자 수요예측",
+];
 
 // ---------------- utils ----------------
 function sleep(ms) { return new Promise((r) => setTimeout(r, ms)); }
@@ -82,6 +113,10 @@ function marketFromShort(short) {
   if (short === "기") return "ETC";
   return "UNKNOWN";
 }
+function extractRcpNo(href) {
+  const m = String(href || "").match(/rcpNo=(\d{14})/);
+  return m ? m[1] : "";
+}
 
 // ---------------- charset decode ----------------
 function extractCharset(contentType) {
@@ -116,18 +151,13 @@ function pickBestDecodedHTML(buffer, contentType) {
   return { html: primary, picked: headerCS || "utf-8", score: primaryScore, altScore };
 }
 
-// ---------------- cookie jar ----------------
+// ---------------- cookie jar (캘린더 월 이동 안정화) ----------------
 function getSetCookieStrings(headers) {
-  // Node 20+ (undici)에는 getSetCookie()가 있음
-  if (typeof headers.getSetCookie === "function") {
-    return headers.getSetCookie();
-  }
-  // fallback: 단일 set-cookie만 오는 경우
+  if (typeof headers.getSetCookie === "function") return headers.getSetCookie();
   const sc = headers.get("set-cookie");
   return sc ? [sc] : [];
 }
 function parseCookiePair(setCookieLine) {
-  // "NAME=VALUE; Path=/; ..." 중 첫 부분만
   const first = (setCookieLine || "").split(";")[0]?.trim();
   if (!first) return null;
   const eq = first.indexOf("=");
@@ -149,35 +179,34 @@ class CookieJar {
   }
 }
 
-// ---------------- fetch month ----------------
-async function fetchMonthHTML(y, m) {
+// ---------------- fetch calendar month ----------------
+async function fetchCalendarMonthHTML(y, m) {
   const headers = {
     "User-Agent": "Mozilla/5.0 (compatible; ipo-calender-bot/1.0)",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.7,en;q=0.6",
     "Cache-Control": "no-cache",
     "Pragma": "no-cache",
-    "Referer": DART_URL,
+    "Referer": DART_CAL_URL,
   };
 
   const jar = new CookieJar();
 
-  // 1) GET으로 쿠키/세션 확보
-  const res0 = await fetch(DART_URL, { method: "GET", headers });
+  // 1) bootstrap GET
+  const res0 = await fetch(DART_CAL_URL, { method: "GET", headers });
   jar.absorbFromResponse(res0);
   const buf0 = Buffer.from(await res0.arrayBuffer());
   const ct0 = res0.headers.get("content-type") || "";
   const dec0 = pickBestDecodedHTML(buf0, ct0);
 
-  // 2) POST로 달 변경
+  // 2) month change POST
   const form = new URLSearchParams();
   form.set("selectYear", String(y));
   form.set("selectMonth", pad2(m));
-  // (사이트에 따라 '검색' 버튼과 연동된 필드가 있을 수 있어 함께 넣어둠)
   form.set("search", "검색");
 
   const cookie = jar.headerValue();
-  const res1 = await fetch(DART_URL, {
+  const res1 = await fetch(DART_CAL_URL, {
     method: "POST",
     headers: {
       ...headers,
@@ -187,8 +216,6 @@ async function fetchMonthHTML(y, m) {
     body: form.toString(),
   });
 
-  jar.absorbFromResponse(res1);
-
   const buf1 = Buffer.from(await res1.arrayBuffer());
   const ct1 = res1.headers.get("content-type") || "";
   const dec1 = pickBestDecodedHTML(buf1, ct1);
@@ -196,9 +223,7 @@ async function fetchMonthHTML(y, m) {
   return {
     html: dec1.html,
     fetch_info: {
-      bootstrap: { status: res0.status, bytes: buf0.length, decoded_charset: dec0.picked, event_score: dec0.score },
       method: "POST",
-      url: DART_URL,
       status: res1.status,
       content_type: ct1,
       bytes: buf1.length,
@@ -206,59 +231,13 @@ async function fetchMonthHTML(y, m) {
       event_score: dec1.score,
       cookie_names: [...jar.map.keys()],
       requested: { y, m },
+      bootstrap: { status: res0.status, bytes: buf0.length, decoded_charset: dec0.picked, event_score: dec0.score },
     }
   };
 }
 
-// ---------------- parse month selection sanity ----------------
-function detectSelectedYearMonth($) {
-  // 가장 정석: name="selectYear"/"selectMonth"
-  const y1 =
-    $("select[name='selectYear'] option[selected]").attr("value") ||
-    $("select[name='selectYear']").val();
-  const m1 =
-    $("select[name='selectMonth'] option[selected]").attr("value") ||
-    $("select[name='selectMonth']").val();
-
-  const y = y1 ? Number(String(y1).replace(/\D/g, "")) : null;
-  const m = m1 ? Number(String(m1).replace(/\D/g, "")) : null;
-
-  // fallback: 모든 select 훑어서 "년도/월" 후보 찾기
-  if (y && m) return { y, m };
-
-  let best = { y: null, m: null, score: 0 };
-  $("select").each((_, el) => {
-    const opts = $(el).find("option");
-    const texts = opts.toArray().map(o => normalizeText($(o).text()));
-    const hasYearLike = texts.some(t => t.includes("년"));
-    const hasMonthLike = texts.some(t => t.includes("월"));
-    const s = (hasYearLike ? 1 : 0) + (hasMonthLike ? 1 : 0);
-    if (s > best.score) {
-      // selected가 있으면 우선
-      const sel = opts.filter((i, o) => $(o).attr("selected"));
-      if (sel.length) {
-        const tx = normalizeText($(sel[0]).text());
-        const val = $(sel[0]).attr("value") || "";
-        // year/month 둘 다는 못 잡아도 null로 둠
-        if (tx.includes("년")) best.y = Number(tx.replace(/\D/g, "")) || best.y;
-        if (tx.includes("월")) best.m = Number(tx.replace(/\D/g, "")) || best.m;
-        if (val && val.length <= 4 && /^\d+$/.test(val)) {
-          // month select일 가능성
-          const n = Number(val);
-          if (n >= 1 && n <= 12) best.m = n;
-          if (n >= 2000) best.y = n;
-        }
-      }
-      best.score = s;
-    }
-  });
-
-  return { y: best.y, m: best.m };
-}
-
 // ---------------- parse day ----------------
 function inferDayFromAnchor($, aEl) {
-  // anchor 주변 부모에서 "1~31" 숫자 찾기 (가까운 영역 우선)
   let node = $(aEl);
   for (let up = 0; up < 6; up++) {
     node = node.parent();
@@ -280,19 +259,13 @@ function inferDayFromAnchor($, aEl) {
 }
 
 // ---------------- parse month events ----------------
-function parseMonth(html, y, m) {
+function parseCalendarMonth(html, y, m) {
   const $ = cheerio.load(html);
-
-  const selected = detectSelectedYearMonth($);
 
   const allATexts = $("a")
     .toArray()
     .map((el) => normalizeText($(el).text()))
     .filter(Boolean);
-
-  const eventish = allATexts
-    .filter((t) => t.includes("시작") || t.includes("종료") || t.includes("["))
-    .slice(0, 50);
 
   const matchedAnchors = $("a")
     .toArray()
@@ -321,24 +294,23 @@ function parseMonth(html, y, m) {
     });
   }
 
-  // ✅ 중복 방지(혹시 페이지가 같은 달을 반복 반환해도 피해 최소화)
+  // month 단위 중복 제거
   const dedup = new Map();
   for (const e of events) {
-    const k = `${e.date}||${e.market_short}||${e.corp_name}||${e.mark}`;
+    const k = `${e.date}||${e.market_short}||${e.corp_name}||${e.mark}||${e.href}`;
     dedup.set(k, e);
   }
 
   return {
     ok: true,
-    selected, // 서버가 실제로 표시한 년/월 (잡히면 여기로 검증 가능)
     anchors_total: allATexts.length,
-    anchors_eventish: eventish.length,
     anchors_matched: matchedAnchors.length,
     events: [...dedup.values()],
-    sample_eventish_texts: eventish,
+    sample_matched_texts: matchedAnchors.slice(0, 15).map((a) => normalizeText($(a).text())),
   };
 }
 
+// ---------------- merge to items ----------------
 function mergeEventsToItems(events) {
   const map = new Map();
 
@@ -369,34 +341,130 @@ function mergeEventsToItems(events) {
     if (it.sbd_start && !it.sbd_end) it.sbd_end = it.sbd_start;
     if (!it.sbd_start && it.sbd_end) it.sbd_start = it.sbd_end;
 
+    // 대표 href는 rcpNo 있는 걸 우선
+    const href = it.hrefs.find((h) => /rcpNo=\d{14}/.test(h)) || it.hrefs.find(Boolean) || "";
+
     items.push({
       corp_name: it.corp_name,
       market_short: it.market_short,
       market: it.market,
       sbd_start: it.sbd_start,
       sbd_end: it.sbd_end,
-      href: it.hrefs.find(Boolean) || "",
+      href,
+      href_abs: href ? new URL(href, "https://dart.fss.or.kr").toString() : "",
     });
   }
 
   items.sort((a, b) => {
-    if ((a.sbd_start || "") !== (b.sbd_start || "")) {
-      return (a.sbd_start || "").localeCompare(b.sbd_start || "");
-    }
+    if ((a.sbd_start || "") !== (b.sbd_start || "")) return (a.sbd_start || "").localeCompare(b.sbd_start || "");
     return (a.corp_name || "").localeCompare(b.corp_name || "");
   });
 
   return items;
 }
 
-function parseMarketsArg(s) {
-  const v = String(s || "all").trim();
-  if (!v || v === "all") return new Set(["유", "코", "넥", "기"]);
-  const parts = v.split(",").map(x => x.trim()).filter(Boolean);
-  const ok = new Set(["유", "코", "넥", "기"]);
-  const out = new Set();
-  for (const p of parts) if (ok.has(p)) out.add(p);
-  return out.size ? out : new Set(["유", "코", "넥", "기"]);
+// ---------------- classify (IPO vs Rights) by fetching filing text ----------------
+function includesAny(text, keywords) {
+  const t = text || "";
+  return keywords.some((k) => t.includes(k));
+}
+
+/**
+ * dsaf001(main.do?rcpNo=...) HTML에서
+ * "증권신고서(지분증권)" 항목의 javascript:viewDoc(...) 파라미터를 추출
+ */
+function extractViewerParamsFromDsaf(html) {
+  // 1) a[href^="javascript: viewDoc("] 중 텍스트에 '증권신고서(지분증권)'가 있는 걸 우선
+  const $ = cheerio.load(html);
+  const candidates = [];
+
+  $("a").each((_, el) => {
+    const href = String($(el).attr("href") || "");
+    const text = normalizeText($(el).text());
+    if (!href.includes("viewDoc(")) return;
+
+    candidates.push({ href, text });
+  });
+
+  // 우선순위: 본문 '증권신고서(지분증권)' > 그 외 viewDoc
+  const picked =
+    candidates.find((c) => c.text.includes("증권신고서(지분증권)")) ||
+    candidates.find((c) => c.text.includes("증권신고서")) ||
+    candidates[0];
+
+  if (!picked) return null;
+
+  // viewDoc('rcpNo', 'dcmNo', 'eleId', 'offset', 'length', 'dtd')
+  // 숫자/NULL/따옴표 섞이는 케이스 대응
+  const m = picked.href.match(
+    /viewDoc\(\s*'?(?<rcpNo>\d{14})'?\s*,\s*'?(?<dcmNo>\d+)'?\s*,\s*(?<eleId>null|\d+)?\s*,\s*(?<offset>null|\d+)?\s*,\s*(?<length>null|\d+)?\s*,\s*'?(?<dtd>[^'()\s]+)'?\s*\)/
+  );
+  if (!m || !m.groups) return null;
+
+  const eleId = m.groups.eleId && m.groups.eleId !== "null" ? m.groups.eleId : "0";
+  const offset = "0";
+  const length = "0";
+  const dtd = m.groups.dtd || "dart3.xsd";
+
+  return {
+    rcpNo: m.groups.rcpNo,
+    dcmNo: m.groups.dcmNo,
+    eleId,
+    offset,
+    length,
+    dtd,
+    picked_text: picked.text,
+  };
+}
+
+async function fetchTextHTML(url, headers) {
+  const res = await fetch(url, { method: "GET", headers });
+  const buf = Buffer.from(await res.arrayBuffer());
+  const ct = res.headers.get("content-type") || "";
+  const html = decodeByCharset(buf, extractCharset(ct) || "utf-8");
+  return { res, html, bytes: buf.length, content_type: ct };
+}
+
+async function classifyRcpNo(rcpNo) {
+  const headers = {
+    "User-Agent": "Mozilla/5.0 (compatible; ipo-calender-bot/1.0)",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.7,en;q=0.6",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
+    "Referer": DART_DSAF_URL,
+  };
+
+  // 1) dsaf001 (메타 페이지)
+  const dsafUrl = `${DART_DSAF_URL}?rcpNo=${rcpNo}`;
+  const dsaf = await fetchTextHTML(dsafUrl, headers);
+
+  const params = extractViewerParamsFromDsaf(dsaf.html);
+  if (!params) {
+    return { type: "unknown", reason: "viewDoc params not found", dsaf_url: dsafUrl };
+  }
+
+  // 2) viewer 원문(HTML)
+  const viewerUrl =
+    `${DART_VIEWER_BASE}?rcpNo=${params.rcpNo}` +
+    `&dcmNo=${params.dcmNo}` +
+    `&eleId=${params.eleId}` +
+    `&offset=${params.offset}` +
+    `&length=${params.length}` +
+    `&dtd=${encodeURIComponent(params.dtd)}`;
+
+  const viewer = await fetchTextHTML(viewerUrl, headers);
+  const text = normalizeText(cheerio.load(viewer.html).text());
+
+  // 3) 분류
+  const isRights = includesAny(text, RIGHTS_KEYWORDS);
+  const isIpo = includesAny(text, IPO_KEYWORDS);
+
+  if (isRights) return { type: "rights", reason: "matched rights keywords", viewer_url: viewerUrl, picked: params.picked_text };
+  if (isIpo) return { type: "ipo", reason: "matched ipo keywords", viewer_url: viewerUrl, picked: params.picked_text };
+
+  // 애매하면 unknown
+  return { type: "unknown", reason: "no decisive keywords", viewer_url: viewerUrl, picked: params.picked_text };
 }
 
 // ---------------- main ----------------
@@ -406,7 +474,7 @@ async function main() {
   const start = typeof args.start === "string" ? args.start : kstTodayISO();
   const end = typeof args.end === "string" ? args.end : addDaysISO(kstTodayISO(), 45);
   const outPath = typeof args.out === "string" ? args.out : "docs/data/ipo.json";
-  const markets = parseMarketsArg(args.markets);
+  const mode = typeof args.mode === "string" ? String(args.mode).toLowerCase() : "ipo"; // ipo | exrights | all
 
   const months = monthsBetween(start, end);
 
@@ -415,24 +483,20 @@ async function main() {
 
   for (const { y, m } of months) {
     try {
-      // 과도 요청 방지
       await sleep(900);
 
-      const { html, fetch_info } = await fetchMonthHTML(y, m);
-      const pm = parseMonth(html, y, m);
+      const { html, fetch_info } = await fetchCalendarMonthHTML(y, m);
+      const pm = parseCalendarMonth(html, y, m);
 
-      // ✅ 서버가 실제로 어떤 달을 보여줬는지 기록 (pm.selected가 잡히면 검증에 도움)
       debug.push({
         y, m,
         fetch: fetch_info,
         parse: {
           ok: pm.ok,
-          server_selected: pm.selected,
           anchors_total: pm.anchors_total,
-          anchors_eventish: pm.anchors_eventish,
           anchors_matched: pm.anchors_matched,
           events: pm.events.length,
-          sample_eventish_texts: pm.sample_eventish_texts.slice(0, 25),
+          sample_matched_texts: pm.sample_matched_texts,
         },
       });
 
@@ -446,28 +510,63 @@ async function main() {
     }
   }
 
-  // 범위 필터 + market 필터
-  const ranged = allEvents
-    .filter((e) => withinRange(e.date, start, end))
-    .filter((e) => markets.has(e.market_short));
+  // 1) 날짜 범위 필터
+  const rangedEvents = allEvents.filter((e) => withinRange(e.date, start, end));
 
-  const merged = mergeEventsToItems(ranged);
+  // 2) 아이템 병합
+  const merged = mergeEventsToItems(rangedEvents);
 
-  // href를 절대 URL로도 쓸 수 있게 하나 더 제공
-  const items = merged.map(it => ({
-    ...it,
-    href_abs: it.href ? new URL(it.href, "https://dart.fss.or.kr").toString() : ""
-  }));
+  // 3) rcpNo 기반 분류 + mode 필터
+  const classified = [];
+  const classify_debug = [];
+
+  for (const it of merged) {
+    const rcpNo = extractRcpNo(it.href);
+    if (!rcpNo) {
+      // rcpNo 없으면 애매: mode=all일 때만 살림
+      if (mode === "all") classified.push({ ...it, offer_type: "unknown", offer_reason: "no rcpNo" });
+      continue;
+    }
+
+    await sleep(400); // DART 부담 줄이기
+
+    let cls;
+    try {
+      cls = await classifyRcpNo(rcpNo);
+    } catch (e) {
+      cls = { type: "unknown", reason: `classify error: ${String(e?.message || e)}` };
+    }
+
+    classify_debug.push({ corp_name: it.corp_name, rcpNo, ...cls });
+
+    const itemOut = {
+      ...it,
+      rcpNo,
+      offer_type: cls.type,
+      offer_reason: cls.reason,
+      viewer_url: cls.viewer_url || "",
+    };
+
+    if (mode === "all") {
+      classified.push(itemOut);
+    } else if (mode === "exrights") {
+      if (cls.type !== "rights") classified.push(itemOut);
+    } else {
+      // mode === "ipo" (기본): IPO만
+      if (cls.type === "ipo") classified.push(itemOut);
+    }
+  }
 
   const payload = {
     ok: true,
-    source: "dart-dsac008(calendar POST+cookie) + markets-filter",
+    source: "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
     range: { start, end },
-    markets: [...markets].join(","),
+    mode,
     last_updated_kst: kstTodayISO(),
-    count: items.length,
-    items,
+    count: classified.length,
+    items: classified,
     _debug: debug,
+    _classify_debug: classify_debug.slice(0, 80), // 너무 길어지는 거 방지
   };
 
   const absOut = path.resolve(outPath);
@@ -476,10 +575,11 @@ async function main() {
 
   console.log("[OK] wrote:", outPath);
   console.log("[OK] months:", months.map((x) => `${x.y}-${pad2(x.m)}`).join(", "));
-  console.log("[OK] markets:", [...markets].join(","));
+  console.log("[OK] mode:", mode);
   console.log("[OK] total events:", allEvents.length);
-  console.log("[OK] ranged events:", ranged.length);
-  console.log("[OK] items:", items.length);
+  console.log("[OK] ranged events:", rangedEvents.length);
+  console.log("[OK] merged items:", merged.length);
+  console.log("[OK] output items:", classified.length);
 }
 
 main().catch((e) => {
