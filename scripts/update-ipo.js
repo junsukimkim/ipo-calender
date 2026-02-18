@@ -1,13 +1,9 @@
 /**
  * DART 공모정보 > 청약달력(지분증권) (dsac008) 스크래퍼
- * - EUC-KR 안전 디코딩 (utf-8 fallback)
+ * - 서버 응답 charset(UTF-8/EUC-KR)에 맞춰 확실히 디코딩
  * - start~end 범위의 모든 월을 순회
- * - "이벤트 링크(a)"를 기준으로 파싱 (DART 달력은 table이 아닐 수 있음)
+ * - a 태그 텍스트에서 "유/코/넥/기 + 회사명 + [시작/종료]" 패턴 추출
  * - 기본: '기'(기타법인)만 남김 (=상장 제외)
- *
- * 사용:
- *   node scripts/update-ipo.js --start 2026-02-18 --end 2026-04-04
- *   node scripts/update-ipo.js   (기본: 오늘(KST)~+45일)
  */
 
 import fs from "fs";
@@ -16,24 +12,22 @@ import iconv from "iconv-lite";
 import * as cheerio from "cheerio";
 
 const DART_URL = "https://dart.fss.or.kr/dsac008/main.do";
+const EVENT_RE = /^(유|코|넥|기)\s+(.+?)\s*\[(시작|종료)\]\s*$/;
+const EVENT_RE_LOOSE = /(유|코|넥|기)\s+(.+?)\s*\[(시작|종료)\]/g;
 
 // ---------------- utils ----------------
 function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
 }
-
 function pad2(n) {
   return String(n).padStart(2, "0");
 }
-
 function toISODate(y, m, d) {
   return `${y}-${pad2(m)}-${pad2(d)}`;
 }
-
 function normalizeText(s) {
   return (s || "").replace(/\s+/g, " ").trim();
 }
-
 function parseArgs(argv) {
   const args = {};
   for (let i = 2; i < argv.length; i++) {
@@ -46,7 +40,6 @@ function parseArgs(argv) {
   }
   return args;
 }
-
 function kstTodayISO() {
   const fmt = new Intl.DateTimeFormat("en-CA", {
     timeZone: "Asia/Seoul",
@@ -54,16 +47,14 @@ function kstTodayISO() {
     month: "2-digit",
     day: "2-digit",
   });
-  return fmt.format(new Date()); // "YYYY-MM-DD"
+  return fmt.format(new Date());
 }
-
 function addDaysISO(iso, days) {
   const [y, m, d] = iso.split("-").map(Number);
   const dt = new Date(Date.UTC(y, m - 1, d));
   dt.setUTCDate(dt.getUTCDate() + days);
   return toISODate(dt.getUTCFullYear(), dt.getUTCMonth() + 1, dt.getUTCDate());
 }
-
 function monthsBetween(startISO, endISO) {
   const [sy, sm] = startISO.split("-").map(Number);
   const [ey, em] = endISO.split("-").map(Number);
@@ -78,11 +69,9 @@ function monthsBetween(startISO, endISO) {
   }
   return out;
 }
-
 function withinRange(dateISO, startISO, endISO) {
   return dateISO >= startISO && dateISO <= endISO;
 }
-
 function marketFromShort(short) {
   if (short === "유") return "KOSPI";
   if (short === "코") return "KOSDAQ";
@@ -91,22 +80,55 @@ function marketFromShort(short) {
   return "UNKNOWN";
 }
 
-// ---------------- fetch & decode ----------------
+// ---------------- decode ----------------
+function extractCharset(contentType) {
+  const ct = (contentType || "").toLowerCase();
+  const m = ct.match(/charset\s*=\s*([a-z0-9_\-]+)/i);
+  return m ? m[1].toLowerCase() : "";
+}
+
+function decodeByCharset(buffer, charset) {
+  const cs = (charset || "").toLowerCase();
+  if (cs.includes("euc-kr") || cs.includes("ks_c_5601") || cs.includes("ksc5601")) {
+    return iconv.decode(buffer, "euc-kr");
+  }
+  // 기본은 UTF-8
+  return buffer.toString("utf-8");
+}
+
+function scoreForEvents(html) {
+  // 디코딩이 제대로 됐으면 "기/코/시작/종료" 패턴이 많이 잡힘
+  const s = html || "";
+  const matches = s.match(EVENT_RE_LOOSE);
+  return matches ? matches.length : 0;
+}
+
+function pickBestDecodedHTML(buffer, contentType) {
+  const headerCS = extractCharset(contentType);
+  const primary = decodeByCharset(buffer, headerCS || "utf-8");
+  const primaryScore = scoreForEvents(primary);
+
+  // 반대쪽도 같이 디코딩해보고 이벤트 패턴이 더 잘 잡히는 쪽 선택
+  const altCS =
+    headerCS.includes("euc") || headerCS.includes("ksc") ? "utf-8" : "euc-kr";
+  const alt = decodeByCharset(buffer, altCS);
+  const altScore = scoreForEvents(alt);
+
+  if (altScore > primaryScore) {
+    return { html: alt, picked: altCS, score: altScore, altScore: primaryScore };
+  }
+  return { html: primary, picked: headerCS || "utf-8", score: primaryScore, altScore };
+}
+
 function looksLikeCalendar(html) {
   const t = (html || "").replace(/\s+/g, "");
+  // 요일 + "청약" 같은 텍스트가 있으면 캘린더 본문일 확률 높음
   const hasWeek = ["일", "월", "화", "수", "목", "금", "토"].every((d) => t.includes(d));
-  // "청약 달력"은 페이지에 항상 있는 편이라 힌트로 사용
-  const hasTitle = t.includes("청약달력") || t.includes("청약달력(지분증권)") || t.includes("청약달력(지분증권)");
-  return hasWeek && (hasTitle || t.includes("공모정보"));
+  const hasKey = t.includes("청약") || t.includes("공모정보") || t.includes("청약달력");
+  return hasWeek && hasKey;
 }
 
-function tryDecode(buffer) {
-  const euckr = iconv.decode(buffer, "euc-kr");
-  if (looksLikeCalendar(euckr)) return euckr;
-  const utf8 = buffer.toString("utf-8");
-  return utf8;
-}
-
+// ---------------- fetch ----------------
 async function fetchMonthHTML(y, m) {
   const urlGet = `${DART_URL}?selectYear=${y}&selectMonth=${pad2(m)}`;
 
@@ -122,18 +144,21 @@ async function fetchMonthHTML(y, m) {
   // 1) GET
   const resGet = await fetch(urlGet, { method: "GET", headers });
   const bufGet = Buffer.from(await resGet.arrayBuffer());
-  let htmlGet = tryDecode(bufGet);
+  const ctGet = resGet.headers.get("content-type") || "";
+  const decGet = pickBestDecodedHTML(bufGet, ctGet);
 
   const infoGet = {
     method: "GET",
     url: urlGet,
     status: resGet.status,
-    content_type: resGet.headers.get("content-type") || "",
+    content_type: ctGet,
     bytes: bufGet.length,
+    decoded_charset: decGet.picked,
+    event_score: decGet.score,
   };
 
-  if (looksLikeCalendar(htmlGet)) {
-    return { html: htmlGet, fetch_info: infoGet };
+  if (looksLikeCalendar(decGet.html)) {
+    return { html: decGet.html, fetch_info: infoGet };
   }
 
   // 2) POST fallback
@@ -148,86 +173,76 @@ async function fetchMonthHTML(y, m) {
   });
 
   const bufPost = Buffer.from(await resPost.arrayBuffer());
-  const htmlPost = tryDecode(bufPost);
+  const ctPost = resPost.headers.get("content-type") || "";
+  const decPost = pickBestDecodedHTML(bufPost, ctPost);
 
   const infoPost = {
     method: "POST",
     url: DART_URL,
     status: resPost.status,
-    content_type: resPost.headers.get("content-type") || "",
+    content_type: ctPost,
     bytes: bufPost.length,
+    decoded_charset: decPost.picked,
+    event_score: decPost.score,
   };
 
-  // POST가 성공하면 그걸 사용
-  if (looksLikeCalendar(htmlPost)) {
-    return { html: htmlPost, fetch_info: infoPost };
-  }
-
-  // 둘 다 애매하면 GET 결과 반환 (디버깅 위해)
-  return { html: htmlGet, fetch_info: infoGet };
+  return { html: decPost.html, fetch_info: infoPost };
 }
 
-// ---------------- parse (anchor-driven) ----------------
-const EVENT_RE = /^(유|코|넥|기)\s+(.+?)\s*\[(시작|종료)\]\s*$/;
-
+// ---------------- parse ----------------
 function inferDayFromAnchor($, aEl) {
-  // a 태그 주변(부모/조상)에서 1~31 숫자를 찾아서 day로 추정
-  // 너무 위로 올라가면 연도/월 등 숫자 섞이니, "짧고(<=220) 연도(4자리) 없는" 블록에서만 채택
+  // a 주변 부모에서 day(1~31) 추정
   let node = $(aEl);
-
   for (let up = 0; up < 10; up++) {
     node = node.parent();
     if (!node || node.length === 0) break;
 
     const cloned = node.clone();
-    // 이벤트 링크 텍스트는 제거하고 day 후보만 남겨서 숫자 추출
     cloned.find("a").remove();
     const t = normalizeText(cloned.text());
 
     if (!t) continue;
-    if (t.length > 220) continue;
-    if (/\b\d{4}\b/.test(t)) continue; // 2026 같은 게 있으면 너무 상위 블록일 가능성 큼
+    if (t.length > 240) continue;
+    if (/\b\d{4}\b/.test(t)) continue; // 2026 같은 연도가 섞이면 너무 상위
     if (t.includes("년") || t.includes("월")) continue;
 
     const nums = [...t.matchAll(/\b(\d{1,2})\b/g)]
       .map((m) => Number(m[1]))
       .filter((n) => n >= 1 && n <= 31);
 
-    if (nums.length === 0) continue;
-
-    // 같은 숫자가 여러 번 있을 수 있으니 마지막 것을 선택 (대개 "02" 같은 날짜가 뒤에 붙음)
-    return nums[nums.length - 1];
+    if (nums.length) return nums[nums.length - 1];
   }
-
   return null;
 }
 
 function parseMonth(html, y, m) {
   const $ = cheerio.load(html);
 
-  const anchors = $("a")
+  const allATexts = $("a")
+    .toArray()
+    .map((el) => normalizeText($(el).text()))
+    .filter(Boolean);
+
+  const matchedAnchors = $("a")
     .toArray()
     .filter((el) => EVENT_RE.test(normalizeText($(el).text())));
 
   const events = [];
-
-  for (const a of anchors) {
+  for (const a of matchedAnchors) {
     const text = normalizeText($(a).text());
     const mm = text.match(EVENT_RE);
     if (!mm) continue;
 
     const marketShort = mm[1];
     const corpName = normalizeText(mm[2]);
-    const mark = mm[3]; // 시작/종료
+    const mark = mm[3];
     const href = $(a).attr("href") || "";
 
     const day = inferDayFromAnchor($, a);
     if (!day) continue;
 
-    const dateISO = toISODate(y, m, day);
-
     events.push({
-      date: dateISO,
+      date: toISODate(y, m, day),
       market_short: marketShort,
       corp_name: corpName,
       mark,
@@ -235,7 +250,18 @@ function parseMonth(html, y, m) {
     });
   }
 
-  return { ok: true, events, anchors: anchors.length };
+  // 디버깅용: 매칭이 0이면 a 텍스트 샘플을 남김
+  const sample = matchedAnchors.length
+    ? []
+    : allATexts.slice(0, 25);
+
+  return {
+    ok: true,
+    anchors_total: allATexts.length,
+    anchors_matched: matchedAnchors.length,
+    events,
+    sample_a_texts: sample,
+  };
 }
 
 function mergeEventsToItems(events) {
@@ -268,14 +294,13 @@ function mergeEventsToItems(events) {
     if (it.sbd_start && !it.sbd_end) it.sbd_end = it.sbd_start;
     if (!it.sbd_start && it.sbd_end) it.sbd_start = it.sbd_end;
 
-    const href = it.hrefs.find(Boolean) || "";
     items.push({
       corp_name: it.corp_name,
       market_short: it.market_short,
       market: it.market,
       sbd_start: it.sbd_start,
       sbd_end: it.sbd_end,
-      href,
+      href: it.hrefs.find(Boolean) || "",
     });
   }
 
@@ -307,14 +332,19 @@ async function main() {
       await sleep(900);
 
       const { html, fetch_info } = await fetchMonthHTML(y, m);
-
       const pm = parseMonth(html, y, m);
 
       debug.push({
         y,
         m,
         fetch: fetch_info,
-        parse: { ok: pm.ok, anchors: pm.anchors, events: pm.events.length },
+        parse: {
+          ok: pm.ok,
+          anchors_total: pm.anchors_total,
+          anchors_matched: pm.anchors_matched,
+          events: pm.events.length,
+          sample_a_texts: pm.sample_a_texts,
+        },
       });
 
       allEvents.push(...pm.events);
@@ -331,10 +361,9 @@ async function main() {
   const ranged = allEvents.filter((e) => withinRange(e.date, start, end));
   const merged = mergeEventsToItems(ranged);
 
-  // keep only '기' (기타법인)
+  // keep only '기'
   const kept = [];
   let excluded_listed = 0;
-
   for (const it of merged) {
     if (it.market_short === "기") kept.push(it);
     else excluded_listed++;
@@ -342,7 +371,7 @@ async function main() {
 
   const payload = {
     ok: true,
-    source: "dart-dsac008(calendar euc-kr) + kind-listed-filter(=keep only '기')",
+    source: "dart-dsac008(calendar charset-aware) + kind-listed-filter(=keep only '기')",
     range: { start, end },
     last_updated_kst: kstTodayISO(),
     count: kept.length,
