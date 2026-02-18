@@ -1,8 +1,8 @@
 /**
  * DART 공모정보 > 청약달력(지분증권) (dsac008) 스크래퍼
- * - 서버 응답 charset(UTF-8/EUC-KR)에 맞춰 확실히 디코딩
+ * - charset(UTF-8/EUC-KR) 헤더 기반 디코딩 + 이벤트 패턴으로 best 선택
+ * - "코아이씨에이치[시작]" 처럼 공백이 없어도 매칭되게 처리
  * - start~end 범위의 모든 월을 순회
- * - a 태그 텍스트에서 "유/코/넥/기 + 회사명 + [시작/종료]" 패턴 추출
  * - 기본: '기'(기타법인)만 남김 (=상장 제외)
  */
 
@@ -12,8 +12,13 @@ import iconv from "iconv-lite";
 import * as cheerio from "cheerio";
 
 const DART_URL = "https://dart.fss.or.kr/dsac008/main.do";
-const EVENT_RE = /^(유|코|넥|기)\s+(.+?)\s*\[(시작|종료)\]\s*$/;
-const EVENT_RE_LOOSE = /(유|코|넥|기)\s+(.+?)\s*\[(시작|종료)\]/g;
+
+/**
+ * ✅ 공백이 없어도 매칭되게 바꿈
+ * 예) "코아이씨에이치[시작]" / "기 케이뱅크 [종료]"
+ */
+const EVENT_RE = /^(유|코|넥|기)\s*([^[]+?)\s*\[\s*(시작|종료)\s*\]\s*$/;
+const EVENT_RE_LOOSE = /(유|코|넥|기)\s*([^[]+?)\s*\[\s*(시작|종료)\s*\]/g;
 
 // ---------------- utils ----------------
 function sleep(ms) {
@@ -26,7 +31,10 @@ function toISODate(y, m, d) {
   return `${y}-${pad2(m)}-${pad2(d)}`;
 }
 function normalizeText(s) {
-  return (s || "").replace(/\s+/g, " ").trim();
+  return (s || "")
+    .replace(/\u00a0/g, " ")   // NBSP 방어
+    .replace(/\s+/g, " ")
+    .trim();
 }
 function parseArgs(argv) {
   const args = {};
@@ -92,12 +100,10 @@ function decodeByCharset(buffer, charset) {
   if (cs.includes("euc-kr") || cs.includes("ks_c_5601") || cs.includes("ksc5601")) {
     return iconv.decode(buffer, "euc-kr");
   }
-  // 기본은 UTF-8
   return buffer.toString("utf-8");
 }
 
 function scoreForEvents(html) {
-  // 디코딩이 제대로 됐으면 "기/코/시작/종료" 패턴이 많이 잡힘
   const s = html || "";
   const matches = s.match(EVENT_RE_LOOSE);
   return matches ? matches.length : 0;
@@ -108,7 +114,6 @@ function pickBestDecodedHTML(buffer, contentType) {
   const primary = decodeByCharset(buffer, headerCS || "utf-8");
   const primaryScore = scoreForEvents(primary);
 
-  // 반대쪽도 같이 디코딩해보고 이벤트 패턴이 더 잘 잡히는 쪽 선택
   const altCS =
     headerCS.includes("euc") || headerCS.includes("ksc") ? "utf-8" : "euc-kr";
   const alt = decodeByCharset(buffer, altCS);
@@ -122,7 +127,6 @@ function pickBestDecodedHTML(buffer, contentType) {
 
 function looksLikeCalendar(html) {
   const t = (html || "").replace(/\s+/g, "");
-  // 요일 + "청약" 같은 텍스트가 있으면 캘린더 본문일 확률 높음
   const hasWeek = ["일", "월", "화", "수", "목", "금", "토"].every((d) => t.includes(d));
   const hasKey = t.includes("청약") || t.includes("공모정보") || t.includes("청약달력");
   return hasWeek && hasKey;
@@ -133,7 +137,7 @@ async function fetchMonthHTML(y, m) {
   const urlGet = `${DART_URL}?selectYear=${y}&selectMonth=${pad2(m)}`;
 
   const headers = {
-    "User-Agent": "Mozilla/5.0 (compatible; ipo-calender-bot/1.0; +https://github.com/)",
+    "User-Agent": "Mozilla/5.0 (compatible; ipo-calender-bot/1.0)",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.7,en;q=0.6",
     "Cache-Control": "no-cache",
@@ -141,7 +145,6 @@ async function fetchMonthHTML(y, m) {
     "Referer": DART_URL,
   };
 
-  // 1) GET
   const resGet = await fetch(urlGet, { method: "GET", headers });
   const bufGet = Buffer.from(await resGet.arrayBuffer());
   const ctGet = resGet.headers.get("content-type") || "";
@@ -161,7 +164,7 @@ async function fetchMonthHTML(y, m) {
     return { html: decGet.html, fetch_info: infoGet };
   }
 
-  // 2) POST fallback
+  // POST fallback
   const form = new URLSearchParams();
   form.set("selectYear", String(y));
   form.set("selectMonth", pad2(m));
@@ -192,6 +195,7 @@ async function fetchMonthHTML(y, m) {
 // ---------------- parse ----------------
 function inferDayFromAnchor($, aEl) {
   // a 주변 부모에서 day(1~31) 추정
+  // ✅ "마지막 숫자"가 아니라 "첫 번째 유효 숫자"로 잡도록 변경(더 안정적)
   let node = $(aEl);
   for (let up = 0; up < 10; up++) {
     node = node.parent();
@@ -202,15 +206,15 @@ function inferDayFromAnchor($, aEl) {
     const t = normalizeText(cloned.text());
 
     if (!t) continue;
-    if (t.length > 240) continue;
-    if (/\b\d{4}\b/.test(t)) continue; // 2026 같은 연도가 섞이면 너무 상위
+    if (t.length > 260) continue;
+    if (/\b\d{4}\b/.test(t)) continue;
     if (t.includes("년") || t.includes("월")) continue;
 
     const nums = [...t.matchAll(/\b(\d{1,2})\b/g)]
       .map((m) => Number(m[1]))
       .filter((n) => n >= 1 && n <= 31);
 
-    if (nums.length) return nums[nums.length - 1];
+    if (nums.length) return nums[0];
   }
   return null;
 }
@@ -223,14 +227,19 @@ function parseMonth(html, y, m) {
     .map((el) => normalizeText($(el).text()))
     .filter(Boolean);
 
+  // ✅ "시작/종료" 들어간 a 텍스트 샘플도 따로 남김 (디버깅 핵심)
+  const eventish = allATexts
+    .filter((t) => t.includes("시작") || t.includes("종료") || t.includes("["))
+    .slice(0, 30);
+
   const matchedAnchors = $("a")
     .toArray()
     .filter((el) => EVENT_RE.test(normalizeText($(el).text())));
 
   const events = [];
   for (const a of matchedAnchors) {
-    const text = normalizeText($(a).text());
-    const mm = text.match(EVENT_RE);
+    const raw = normalizeText($(a).text());
+    const mm = raw.match(EVENT_RE);
     if (!mm) continue;
 
     const marketShort = mm[1];
@@ -250,17 +259,14 @@ function parseMonth(html, y, m) {
     });
   }
 
-  // 디버깅용: 매칭이 0이면 a 텍스트 샘플을 남김
-  const sample = matchedAnchors.length
-    ? []
-    : allATexts.slice(0, 25);
-
   return {
     ok: true,
     anchors_total: allATexts.length,
+    anchors_eventish: eventish.length,
     anchors_matched: matchedAnchors.length,
     events,
-    sample_a_texts: sample,
+    sample_eventish_texts: eventish,
+    sample_matched_texts: matchedAnchors.slice(0, 10).map((a) => normalizeText($(a).text())),
   };
 }
 
@@ -341,9 +347,11 @@ async function main() {
         parse: {
           ok: pm.ok,
           anchors_total: pm.anchors_total,
+          anchors_eventish: pm.anchors_eventish,
           anchors_matched: pm.anchors_matched,
           events: pm.events.length,
-          sample_a_texts: pm.sample_a_texts,
+          sample_eventish_texts: pm.sample_eventish_texts,
+          sample_matched_texts: pm.sample_matched_texts,
         },
       });
 
