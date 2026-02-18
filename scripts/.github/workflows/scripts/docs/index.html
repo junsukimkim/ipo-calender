@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>공모주 캘린더</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>공모주 캘린더</h1>
+      <div class="muted">
+        범위: <b id="range"></b> · 데이터 갱신(KST): <b id="updated"></b> · 개수: <b id="count"></b>
+      </div>
+
+      <div class="row" style="margin-top:10px;">
+        <button id="reload" class="btn">데이터 새로고침</button>
+        <button id="dl-ics" class="btn primary">캘린더(.ics) 다운로드</button>
+        <button id="dl-rem" class="btn">미리알림용 텍스트 다운로드</button>
+        <button id="run-shortcut" class="btn">단축어로 미리알림 추가</button>
+      </div>
+
+      <div class="muted" style="margin-top:10px;">
+        ※ “단축어로 미리알림 추가”를 쓰려면 iPhone 단축어 앱에 <b>이름이 같은 단축어</b>가 1개 있어야 해요.
+      </div>
+
+      <hr />
+
+      <details>
+        <summary>단축어 만들기(딱 1번만)</summary>
+        <div class="muted" style="margin-top:8px;">
+          1) iPhone ‘단축어’ 앱 → + → 새 단축어<br/>
+          2) 이름을 <b id="shortcut-name-view"></b> 로 저장<br/>
+          3) 동작 추가(추천 흐름):<br/>
+          - “입력 받기(단축어 입력)”<br/>
+          - “텍스트 분할(줄바꿈)”<br/>
+          - “각 항목 반복” 안에서 “미리알림 추가(제목=반복 항목)”<br/>
+          이렇게 해두면, 웹앱이 텍스트를 넘길 때 줄마다 미리알림이 생성돼요.
+        </div>
+      </details>
+    </div>
+
+    <div class="card">
+      <div class="row" style="justify-content:space-between;">
+        <div><b>목록</b> <span class="badge">오늘~다음달 말</span></div>
+        <div class="muted">증권사/균등금액은 <code>docs/data/ipo_meta_manual.json</code>에서 입력</div>
+      </div>
+
+      <div id="list" class="list" style="margin-top:10px;"></div>
+      <div id="empty" class="muted" style="display:none; margin-top:10px;">표시할 공모주가 없어요.</div>
+    </div>
+
+    <div class="card">
+      <b>문제 해결</b>
+      <div class="muted" style="margin-top:8px;">
+        0개면 여기부터 확인:<br/>
+        1) repo → Actions → Update IPO data 워크플로우가 “성공”했는지<br/>
+        2) 실패면 로그 마지막 에러 메시지를 그대로 복사해서 나한테 보내기<br/>
+        3) 그래도 급하면 <code>ipo_meta_manual.json</code>에만 수동 입력하고 캘린더/미리알림로 운영도 가능
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
