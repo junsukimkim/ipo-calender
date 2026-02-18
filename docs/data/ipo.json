@@ -13,20 +13,50 @@
     {
       "y": 2026,
       "m": 2,
-      "ok": false,
-      "reason": "calendar table not found"
+      "fetch": {
+        "method": "GET",
+        "url": "https://dart.fss.or.kr/dsac008/main.do?selectYear=2026&selectMonth=02",
+        "status": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 49356
+      },
+      "parse": {
+        "ok": true,
+        "anchors": 0,
+        "events": 0
+      }
     },
     {
       "y": 2026,
       "m": 3,
-      "ok": false,
-      "reason": "calendar table not found"
+      "fetch": {
+        "method": "GET",
+        "url": "https://dart.fss.or.kr/dsac008/main.do?selectYear=2026&selectMonth=03",
+        "status": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 49356
+      },
+      "parse": {
+        "ok": true,
+        "anchors": 0,
+        "events": 0
+      }
     },
     {
       "y": 2026,
       "m": 4,
-      "ok": false,
-      "reason": "calendar table not found"
+      "fetch": {
+        "method": "GET",
+        "url": "https://dart.fss.or.kr/dsac008/main.do?selectYear=2026&selectMonth=04",
+        "status": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 49356
+      },
+      "parse": {
+        "ok": true,
+        "anchors": 0,
+        "events": 0
+      }
     }
   ]
 }
