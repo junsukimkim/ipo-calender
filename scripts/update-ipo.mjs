@@ -3,6 +3,11 @@ import path from "path";
 import iconv from "iconv-lite";
 import * as cheerio from "cheerio";
 
+/**
+ * 결과 파일/메타 파일 경로
+ * - ipo.json: 자동 생성 결과
+ * - ipo_meta_manual.json: 수동 메타(증권사/균등/메모) - 선택
+ */
 const OUT_JSON = path.join(process.cwd(), "docs", "data", "ipo.json");
 const META_JSON = path.join(process.cwd(), "docs", "data", "ipo_meta_manual.json");
 
@@ -12,11 +17,17 @@ const DART_URL = "https://dart.fss.or.kr/dsac008/main.do";
 const KIND_LIST_DL = "https://kind.krx.co.kr/corpgeneral/corpList.do?method=download";
 
 const UA = "Mozilla/5.0 (compatible; IPOCalendarBot/1.0)";
+const FETCH_TIMEOUT_MS = 25000;
+const DOC_FETCH_DELAY_MS = 400; // DART 문서 조회 간 딜레이(차단 방지)
 
 const pad2 = (n) => String(n).padStart(2, "0");
 
 function ymdUTC(d) {
   return `${d.getUTCFullYear()}-${pad2(d.getUTCMonth() + 1)}-${pad2(d.getUTCDate())}`;
+}
+
+function sleep(ms) {
+  return new Promise((r) => setTimeout(r, ms));
 }
 
 // KST "오늘"을 UTC Date로 만든다(날짜 계산 안정)
@@ -43,22 +54,34 @@ function monthPairsBetween(startUTC, endUTC) {
   while (y < ey || (y === ey && m <= em)) {
     out.push({ year: y, month: m + 1 });
     m++;
-    if (m >= 12) { m = 0; y++; }
+    if (m >= 12) {
+      m = 0;
+      y++;
+    }
   }
   return out;
 }
 
 async function fetchBuffer(url, options = {}) {
-  const res = await fetch(url, {
-    ...options,
-    headers: {
-      "user-agent": UA,
-      ...(options.headers || {})
-    }
-  });
-  if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText} for ${url}`);
-  const ab = await res.arrayBuffer();
-  return Buffer.from(ab);
+  const controller = new AbortController();
+  const t = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+
+  try {
+    const res = await fetch(url, {
+      ...options,
+      signal: controller.signal,
+      headers: {
+        "user-agent": UA,
+        ...(options.headers || {}),
+      },
+    });
+
+    if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText} for ${url}`);
+    const ab = await res.arrayBuffer();
+    return Buffer.from(ab);
+  } finally {
+    clearTimeout(t);
+  }
 }
 
 function normalizeName(s) {
@@ -101,11 +124,27 @@ function marketShortToMarket(ms) {
   return "ETC";
 }
 
-// DART 달력 텍스트에서 "코/유/기 + 회사명 + [시작]/[종료]" 패턴 파싱
+/**
+ * DART 달력 파싱
+ * - "코/유/기 + 회사명 + [시작]/[종료]" 패턴으로 sbd_start/sbd_end 만들고
+ * - 가능하면 rcpNo(공시 접수번호)도 함께 붙임(문서 확인/유상증자 구분용)
+ */
 function parseDartCalendar(html, year, month) {
   const $ = cheerio.load(html);
+
+  // (중요) 달력 안 링크 텍스트 -> rcpNo 매핑
+  // a 태그가 dsaf001/main.do?rcpNo=... 로 연결되는 경우가 많음
+  const linkMap = new Map();
+  $("a[href*='dsaf001/main.do?rcpNo=']").each((_, a) => {
+    const href = $(a).attr("href") || "";
+    const m = href.match(/rcpNo=(\d{14})/);
+    if (!m) return;
+    const key = normalizeName($(a).text());
+    if (key) linkMap.set(key, m[1]);
+  });
+
   const text = $("body").text().replace(/\u00a0/g, " ");
-  const tokens = text.split(/\s+/).map(t => t.trim()).filter(Boolean);
+  const tokens = text.split(/\s+/).map((t) => t.trim()).filter(Boolean);
 
   let curDay = null;
   const map = new Map(); // corp_name -> item
@@ -134,7 +173,6 @@ function parseDartCalendar(html, year, month) {
       while (j < tokens.length) {
         const tok = tokens[j];
         if (tok === "[시작]" || tok === "[종료]") break;
-        // 다음 날짜 구간 들어가면 중단
         if (isDayNum(tok) && tokens[j + 1] && isDay2(tokens[j + 1])) break;
         nameParts.push(tok);
         j++;
@@ -148,107 +186,14 @@ function parseDartCalendar(html, year, month) {
           market_short: ms,
           market: marketShortToMarket(ms),
           sbd_start: null,
-          sbd_end: null
+          sbd_end: null,
+          rcp_no: null,
         };
+
         const date = `${year}-${pad2(month)}-${pad2(curDay)}`;
         if (which === "[시작]") item.sbd_start = date;
         if (which === "[종료]") item.sbd_end = date;
-        map.set(name, item);
-      }
 
-      i = j;
-    }
-  }
-
-  return [...map.values()];
-}
-
-async function fetchDartMonth(year, month) {
-  const url = `${DART_URL}?selectYear=${year}&selectMonth=${pad2(month)}`;
-  const buf = await fetchBuffer(url);
-  const html = buf.toString("utf8");
-  return parseDartCalendar(html, year, month);
-}
-
-function withinRange(item, startUTC, endUTC) {
-  if (!item.sbd_start || !item.sbd_end) return false;
-  const s = new Date(item.sbd_start + "T00:00:00Z");
-  const e = new Date(item.sbd_end + "T23:59:59Z");
-  return e >= startUTC && s <= endUTC;
-}
-
-function uniqByCompanyKeepEarliest(items) {
-  const by = new Map();
-  for (const it of items) {
-    const key = it.corp_name;
-    const prev = by.get(key);
-    if (!prev) by.set(key, it);
-    else {
-      if ((it.sbd_start || "9999") < (prev.sbd_start || "9999")) by.set(key, it);
-    }
-  }
-  return [...by.values()];
-}
-
-async function main() {
-  const start = nowKST_asUTCDate();
-  const end = endOfNextMonth_KST_asUTCDate();
-
-  const months = monthPairsBetween(
-    new Date(Date.UTC(start.getUTCFullYear(), start.getUTCMonth(), 1)),
-    new Date(Date.UTC(end.getUTCFullYear(), end.getUTCMonth(), 1))
-  );
-
-  const metaMap = await loadMetaMap();
-  const listedSet = await loadListedCorpNameSet();
-
-  let all = [];
-  for (const m of months) {
-    const monthItems = await fetchDartMonth(m.year, m.month);
-    all.push(...monthItems);
-  }
-
-  // 기간 필터
-  all = all.filter(it => withinRange(it, start, end));
-
-  // 공모주(신규상장 후보) 추정: 이미 상장된 회사 제외
-  const before = all.length;
-  all = all.filter(it => !listedSet.has(it.corp_name));
-  const excluded_listed = before - all.length;
-
-  // 같은 회사 중복 정리
-  all = uniqByCompanyKeepEarliest(all);
-
-  // 메타(증권사/균등금액) 합치기
-  const items = all
-    .map(it => {
-      const meta = metaMap[it.corp_name] || {};
-      return {
-        ...it,
-        brokers: meta.brokers || "",
-        equalMin: meta.equalMin || "",
-        note: meta.note || ""
-      };
-    })
-    .sort((a, b) => (a.sbd_start || "").localeCompare(b.sbd_start || ""));
-
-  const out = {
-    ok: true,
-    source: "dart-calendar + kind-listed-filter",
-    range: { start: ymdUTC(start), end: ymdUTC(end) },
-    last_updated_kst: ymdUTC(nowKST_asUTCDate()),
-    count: items.length,
-    excluded_listed,
-    items
-  };
-
-  fs.mkdirSync(path.dirname(OUT_JSON), { recursive: true });
-  fs.writeFileSync(OUT_JSON, JSON.stringify(out, null, 2), "utf8");
-
-  console.log(`Wrote ${items.length} items. excluded_listed=${excluded_listed}`);
-}
-
-main().catch(err => {
-  console.error(err);
-  process.exit(1);
-});
+        // 링크텍스트는 보통 "코 회사명 [시작]" 같이 붙어 있는 경우가 많아서 이 형태로도 찾아봄
+        const linkKey1 = normalizeName(`${ms} ${name} ${which}`);
+        const linkKey2 = normalizeName(`${name} $
