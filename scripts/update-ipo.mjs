@@ -7,15 +7,11 @@ import { chromium } from "playwright";
 const OUT_JSON = path.join(process.cwd(), "docs", "data", "ipo.json");
 const META_JSON = path.join(process.cwd(), "docs", "data", "ipo_meta_manual.json");
 
-// DART 청약 달력(지분증권)
 const DART_URL = "https://dart.fss.or.kr/dsac008/main.do";
-// KIND 상장법인목록 다운로드(EUC-KR)
 const KIND_LIST_DL = "https://kind.krx.co.kr/corpgeneral/corpList.do?method=download";
 
 const UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36";
-
-const FETCH_TIMEOUT_MS = 25000;
 
 const pad2 = (n) => String(n).padStart(2, "0");
 
@@ -23,7 +19,6 @@ function ymdUTC(d) {
   return `${d.getUTCFullYear()}-${pad2(d.getUTCMonth() + 1)}-${pad2(d.getUTCDate())}`;
 }
 
-// KST "오늘"을 UTC Date로 만든다(날짜 계산 안정)
 function nowKST_asUTCDate() {
   const now = new Date();
   return new Date(now.getTime() + 9 * 60 * 60 * 1000);
@@ -33,14 +28,13 @@ function endOfNextMonth_KST_asUTCDate() {
   const k = nowKST_asUTCDate();
   const y = k.getUTCFullYear();
   const m = k.getUTCMonth();
-  // 다음달 말일(= 다다음달 0일)
   return new Date(Date.UTC(y, m + 2, 0, 23, 59, 59));
 }
 
 function monthPairsBetween(startUTC, endUTC) {
   const out = [];
   let y = startUTC.getUTCFullYear();
-  let m = startUTC.getUTCMonth(); // 0~11
+  let m = startUTC.getUTCMonth();
   const ey = endUTC.getUTCFullYear();
   const em = endUTC.getUTCMonth();
 
@@ -55,30 +49,22 @@ function monthPairsBetween(startUTC, endUTC) {
   return out;
 }
 
-async function fetchBuffer(url, options = {}) {
-  const controller = new AbortController();
-  const t = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
-
-  try {
-    const res = await fetch(url, {
-      ...options,
-      signal: controller.signal,
-      headers: {
-        "user-agent": UA,
-        "accept-language": "ko-KR,ko;q=0.9,en;q=0.7",
-        ...(options.headers || {}),
-      },
-    });
-    if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText} for ${url}`);
-    const ab = await res.arrayBuffer();
-    return Buffer.from(ab);
-  } finally {
-    clearTimeout(t);
-  }
-}
-
 function normalizeName(s) {
   return String(s || "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+}
+
+async function fetchBuffer(url, options = {}) {
+  const res = await fetch(url, {
+    ...options,
+    headers: {
+      "user-agent": UA,
+      "accept-language": "ko-KR,ko;q=0.9,en;q=0.7",
+      ...(options.headers || {}),
+    },
+  });
+  if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText} for ${url}`);
+  const ab = await res.arrayBuffer();
+  return Buffer.from(ab);
 }
 
 async function loadMetaMap() {
@@ -104,7 +90,6 @@ async function loadListedCorpNameSet() {
     if (name) set.add(name);
   });
 
-  // 너무 작으면(차단/오류) 실패로 간주
   if (set.size < 500) {
     throw new Error(`KIND listed set too small (${set.size}). Download may have failed.`);
   }
@@ -117,46 +102,22 @@ function marketShortToMarket(ms) {
   return "ETC";
 }
 
-// 줄 안에 유상증자/배정 키워드가 보이면 제외(가벼운 휴리스틱)
-function looksLikeRightsIssue(line) {
-  return /(유상\s*증자|주주\s*배정|제\s*3\s*자\s*배정|신주\s*인수권|신주\s*배정|구주주)/.test(line);
+// (유상증자 등) 제외용 키워드 — 필요하면 여기 더 추가 가능
+function isNonIPOText(s) {
+  const t = String(s || "");
+  return /(유상\s*증자|주주\s*배정|제\s*3\s*자\s*배정|신주\s*인수권|신주\s*배정|구주주)/.test(t);
 }
 
 /**
- * ✅ Playwright로 “실제 브라우저”에서 달력을 열고 innerText를 가져온다
- * (fetch로는 ‘잠시만 기다려주세요’ 페이지만 와서 0건이 됨)
+ * ✅ 핵심: 달력 “표(td)”에서 직접 뽑는다
+ * - td 텍스트에 [시작]/[종료]가 포함된 셀만 후보
+ * - 그 td 안에서 (1) 날짜 1~31 (2) "코/유/기 회사명 [시작/종료]"를 추출
  */
-async function getDartRenderedTextAndHtml(page, year, month) {
-  const url = `${DART_URL}?selectYear=${year}&selectMonth=${pad2(month)}`;
-  await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
-
-  // 달력 로딩을 기다림(시작/종료가 보이면 성공)
-  try {
-    await page.waitForFunction(
-      () =>
-        document.body &&
-        (document.body.innerText.includes("[시작]") || document.body.innerText.includes("[종료]")),
-      { timeout: 15000 }
-    );
-  } catch {
-    // 그래도 진행(아래 스니펫 로그로 원인 확인 가능)
-  }
-
-  // 약간의 추가 안정화
-  await page.waitForTimeout(800);
-
-  const html = await page.content();
-  const text = await page.evaluate(() => (document.body ? document.body.innerText : ""));
-  return { html, text };
-}
-
-/**
- * ✅ 렌더된 텍스트 기준 파싱: "날짜 -> 코/유/기 회사명 [시작/종료]"
- */
-function parseDartCalendarFromTextAndHtml(text, html, year, month) {
+function parseDartCalendarByTd(html, year, month) {
   const $ = cheerio.load(html);
+  const map = new Map();
 
-  // 링크텍스트 -> rcpNo 매핑(있으면)
+  // 링크 텍스트 -> rcpNo (있으면)
   const linkMap = new Map();
   $("a[href*='dsaf001/main.do?rcpNo=']").each((_, a) => {
     const href = $(a).attr("href") || "";
@@ -166,32 +127,41 @@ function parseDartCalendarFromTextAndHtml(text, html, year, month) {
     if (key) linkMap.set(key, m[1]);
   });
 
-  const lines = String(text || "")
-    .split(/\r?\n/)
-    .map((l) => normalizeName(l))
-    .filter(Boolean);
-
-  let curDay = null;
-  const map = new Map();
-
-  // 이벤트 패턴(한 줄에 여러 개 가능)
   const reEvt = /(코|유|기)\s+(.+?)\s+\[(시작|종료)\]/g;
 
-  for (const line of lines) {
-    // 날짜줄: 1~31 (한 자리/두 자리 둘 다 허용)
-    const md = line.match(/^(\d{1,2})$/);
-    if (md) {
-      const d = Number(md[1]);
-      if (d >= 1 && d <= 31) curDay = d;
-      continue;
-    }
-    if (curDay == null) continue;
+  const tds = $("td").toArray();
+  for (const td of tds) {
+    const raw = $(td).text();
+    if (!raw.includes("[시작]") && !raw.includes("[종료]")) continue;
 
-    // 유상증자류 키워드 포함 줄은 통째로 제외(달력에 같이 섞이는 케이스 대응)
-    if (looksLikeRightsIssue(line)) continue;
+    const cellText = normalizeName(raw);
+    if (!cellText) continue;
+    if (isNonIPOText(cellText)) continue;
+
+    // 날짜(1~31) 찾기: 셀 안에서 제일 먼저 나오는 1~31 숫자를 day로 사용
+    let day = null;
+    const tokens = cellText.split(/\s+/);
+    for (const tok of tokens) {
+      if (/^\d{1,2}$/.test(tok)) {
+        const d = Number(tok);
+        if (d >= 1 && d <= 31) {
+          day = d;
+          break;
+        }
+      }
+    }
+    if (!day) {
+      // 혹시 "2코 ..."처럼 붙은 케이스
+      const mDay = cellText.match(/^(\d{1,2})/);
+      if (mDay) {
+        const d = Number(mDay[1]);
+        if (d >= 1 && d <= 31) day = d;
+      }
+    }
+    if (!day) continue;
 
     let mm;
-    while ((mm = reEvt.exec(line)) !== null) {
+    while ((mm = reEvt.exec(cellText)) !== null) {
       const ms = mm[1];
       const name = normalizeName(mm[2]);
       const which = mm[3]; // 시작/종료
@@ -206,11 +176,10 @@ function parseDartCalendarFromTextAndHtml(text, html, year, month) {
         rcp_no: null,
       };
 
-      const date = `${year}-${pad2(month)}-${pad2(curDay)}`;
+      const date = `${year}-${pad2(month)}-${pad2(day)}`;
       if (which === "시작") item.sbd_start = date;
       if (which === "종료") item.sbd_end = date;
 
-      // 링크 텍스트도 보통 "기케이뱅크[시작]" 형태라서 공백 제거 키로 매칭
       const k1 = normalizeName(`${ms}${name}[${which}]`).replace(/\s+/g, "");
       const k2 = normalizeName(`${ms} ${name} [${which}]`).replace(/\s+/g, "");
       const rcpNo = linkMap.get(k1) || linkMap.get(k2) || null;
@@ -220,7 +189,7 @@ function parseDartCalendarFromTextAndHtml(text, html, year, month) {
     }
   }
 
-  // start/end 하나만 있어도 보정
+  // start/end 하나만 있으면 보정
   const out = [];
   for (const it of map.values()) {
     if (!it.sbd_start && it.sbd_end) it.sbd_start = it.sbd_end;
@@ -250,6 +219,36 @@ function uniqByCompanyKeepEarliest(items) {
   return [...by.values()];
 }
 
+async function fetchDartMonthHtml(page, year, month) {
+  const url = `${DART_URL}?selectYear=${year}&selectMonth=${pad2(month)}`;
+  await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
+
+  // 달력이 JS로 늦게 그려지는 케이스 대비: 조금 기다렸다가 HTML 뽑기
+  try {
+    await page.waitForTimeout(1500);
+    await page.waitForLoadState("networkidle", { timeout: 15000 });
+  } catch {
+    // 무시
+  }
+
+  const finalUrl = page.url();
+  const html = await page.content();
+  const hasMarker = html.includes("[시작]") || html.includes("[종료]");
+
+  console.log(`[DART] ${year}-${pad2(month)} url=${finalUrl}`);
+  console.log(`[DART] ${year}-${pad2(month)} html_has_marker=${hasMarker}`);
+
+  if (!hasMarker) {
+    // 디버그용으로 body 텍스트 앞부분을 더 길게 찍어준다
+    const bodyText = await page.evaluate(() => (document.body ? document.body.innerText : ""));
+    console.log(
+      `[DART] ${year}-${pad2(month)} text_snippet="${normalizeName(bodyText).slice(0, 400)}"`
+    );
+  }
+
+  return html;
+}
+
 async function main() {
   const start = nowKST_asUTCDate();
   const end = endOfNextMonth_KST_asUTCDate();
@@ -262,7 +261,6 @@ async function main() {
   const metaMap = await loadMetaMap();
   const listedSet = await loadListedCorpNameSet();
 
-  // ✅ Playwright 브라우저 1번만 띄워서 월별 재사용
   const browser = await chromium.launch({
     headless: true,
     args: ["--disable-blink-features=AutomationControlled"],
@@ -276,15 +274,9 @@ async function main() {
 
   let all = [];
   for (const m of months) {
-    const { html, text } = await getDartRenderedTextAndHtml(page, m.year, m.month);
-    const monthItems = parseDartCalendarFromTextAndHtml(text, html, m.year, m.month);
-
+    const html = await fetchDartMonthHtml(page, m.year, m.month);
+    const monthItems = parseDartCalendarByTd(html, m.year, m.month);
     console.log(`[DART] ${m.year}-${pad2(m.month)} parsed=${monthItems.length}`);
-    if (monthItems.length === 0) {
-      const snip = normalizeName(String(text || "").slice(0, 180));
-      console.log(`[DART] ${m.year}-${pad2(m.month)} text_snippet="${snip}"`);
-    }
-
     all.push(...monthItems);
   }
 
@@ -293,7 +285,7 @@ async function main() {
   // 기간 필터
   all = all.filter((it) => withinRange(it, start, end));
 
-  // 이미 상장된 회사 제외(공모주 후보)
+  // 상장회사 제외
   const before = all.length;
   all = all.filter((it) => !listedSet.has(it.corp_name));
   const excluded_listed = before - all.length;
@@ -316,12 +308,11 @@ async function main() {
 
   const out = {
     ok: true,
-    source: "dart-calendar (playwright) + kind-listed-filter + rights-keyword-filter",
+    source: "dart-calendar(td-parse) + kind-listed-filter",
     range: { start: ymdUTC(start), end: ymdUTC(end) },
     last_updated_kst: ymdUTC(nowKST_asUTCDate()),
     count: items.length,
     excluded_listed,
-    excluded_non_ipo: 0,
     items,
   };
 
