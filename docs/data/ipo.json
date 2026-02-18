@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "source": "dart-dsac008(calendar euc-kr) + kind-listed-filter(=keep only '기')",
+  "source": "dart-dsac008(calendar charset-aware) + kind-listed-filter(=keep only '기')",
   "range": {
     "start": "2026-02-18",
     "end": "2026-04-04"
@@ -18,12 +18,42 @@
         "url": "https://dart.fss.or.kr/dsac008/main.do?selectYear=2026&selectMonth=02",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 49356
+        "bytes": 49356,
+        "decoded_charset": "utf-8",
+        "event_score": 0
       },
       "parse": {
         "ok": true,
-        "anchors": 0,
-        "events": 0
+        "anchors_total": 79,
+        "anchors_matched": 0,
+        "events": 0,
+        "sample_a_texts": [
+          "본문 바로가기",
+          "홈으로 가기",
+          "ENGLISH",
+          "최근공시",
+          "유가증권시장",
+          "코스닥시장",
+          "코넥스시장",
+          "기타법인",
+          "전체",
+          "5%ㆍ임원보고",
+          "펀드공시",
+          "My공시",
+          "공시서류검색",
+          "공시통합검색",
+          "회사별검색",
+          "펀드공시상세검색",
+          "최근정정보고서",
+          "최근삭제보고서",
+          "고급검색",
+          "기업개황",
+          "기업개황",
+          "공모정보",
+          "공모게시판",
+          "발행공시 검색",
+          "모집ㆍ매출 실적"
+        ]
       }
     },
     {
@@ -34,12 +64,42 @@
         "url": "https://dart.fss.or.kr/dsac008/main.do?selectYear=2026&selectMonth=03",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 49356
+        "bytes": 49356,
+        "decoded_charset": "utf-8",
+        "event_score": 0
       },
       "parse": {
         "ok": true,
-        "anchors": 0,
-        "events": 0
+        "anchors_total": 79,
+        "anchors_matched": 0,
+        "events": 0,
+        "sample_a_texts": [
+          "본문 바로가기",
+          "홈으로 가기",
+          "ENGLISH",
+          "최근공시",
+          "유가증권시장",
+          "코스닥시장",
+          "코넥스시장",
+          "기타법인",
+          "전체",
+          "5%ㆍ임원보고",
+          "펀드공시",
+          "My공시",
+          "공시서류검색",
+          "공시통합검색",
+          "회사별검색",
+          "펀드공시상세검색",
+          "최근정정보고서",
+          "최근삭제보고서",
+          "고급검색",
+          "기업개황",
+          "기업개황",
+          "공모정보",
+          "공모게시판",
+          "발행공시 검색",
+          "모집ㆍ매출 실적"
+        ]
       }
     },
     {
@@ -50,12 +110,42 @@
         "url": "https://dart.fss.or.kr/dsac008/main.do?selectYear=2026&selectMonth=04",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 49356
+        "bytes": 49356,
+        "decoded_charset": "utf-8",
+        "event_score": 0
       },
       "parse": {
         "ok": true,
-        "anchors": 0,
-        "events": 0
+        "anchors_total": 79,
+        "anchors_matched": 0,
+        "events": 0,
+        "sample_a_texts": [
+          "본문 바로가기",
+          "홈으로 가기",
+          "ENGLISH",
+          "최근공시",
+          "유가증권시장",
+          "코스닥시장",
+          "코넥스시장",
+          "기타법인",
+          "전체",
+          "5%ㆍ임원보고",
+          "펀드공시",
+          "My공시",
+          "공시서류검색",
+          "공시통합검색",
+          "회사별검색",
+          "펀드공시상세검색",
+          "최근정정보고서",
+          "최근삭제보고서",
+          "고급검색",
+          "기업개황",
+          "기업개황",
+          "공모정보",
+          "공모게시판",
+          "발행공시 검색",
+          "모집ㆍ매출 실적"
+        ]
       }
     }
   ]
