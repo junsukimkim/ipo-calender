@@ -1,12 +1,32 @@
 {
   "ok": true,
-  "source": "dart-calendar(td-parse) + kind-listed-filter",
+  "source": "dart-dsac008(calendar euc-kr) + kind-listed-filter(=keep only '기')",
   "range": {
     "start": "2026-02-18",
-    "end": "2026-03-31"
+    "end": "2026-04-04"
   },
   "last_updated_kst": "2026-02-18",
   "count": 0,
   "excluded_listed": 0,
-  "items": []
+  "items": [],
+  "_debug": [
+    {
+      "y": 2026,
+      "m": 2,
+      "ok": false,
+      "reason": "calendar table not found"
+    },
+    {
+      "y": 2026,
+      "m": 3,
+      "ok": false,
+      "reason": "calendar table not found"
+    },
+    {
+      "y": 2026,
+      "m": 4,
+      "ok": false,
+      "reason": "calendar table not found"
+    }
+  ]
 }
