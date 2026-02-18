@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "source": "dart-calendar + kind-listed-filter (line-parse)",
+  "source": "dart-calendar (playwright) + kind-listed-filter + rights-keyword-filter",
   "range": {
     "start": "2026-02-18",
     "end": "2026-03-31"
