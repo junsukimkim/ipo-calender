@@ -1,136 +1,20 @@
 {
   "ok": true,
-  "source": "dart-dsac008(calendar POST+cookie) + markets-filter",
+  "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
     "start": "2026-02-19",
     "end": "2026-04-05"
   },
-  "markets": "유,코,넥,기",
+  "mode": "ipo",
   "last_updated_kst": "2026-02-19",
-  "count": 12,
-  "items": [
-    {
-      "corp_name": "케이뱅크",
-      "market_short": "기",
-      "market": "ETC",
-      "sbd_start": "2026-02-20",
-      "sbd_end": "2026-03-23",
-      "href": "/dsaf001/main.do?rcpNo=20260212001569",
-      "href_abs": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260212001569"
-    },
-    {
-      "corp_name": "비보존 제약",
-      "market_short": "코",
-      "market": "KOSDAQ",
-      "sbd_start": "2026-02-23",
-      "sbd_end": "2026-03-24",
-      "href": "/dsaf001/main.do?rcpNo=20260108000504",
-      "href_abs": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260108000504"
-    },
-    {
-      "corp_name": "액스비스",
-      "market_short": "기",
-      "market": "ETC",
-      "sbd_start": "2026-02-23",
-      "sbd_end": "2026-03-24",
-      "href": "/dsaf001/main.do?rcpNo=20260204000082",
-      "href_abs": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260204000082"
-    },
-    {
-      "corp_name": "에스팀",
-      "market_short": "기",
-      "market": "ETC",
-      "sbd_start": "2026-02-23",
-      "sbd_end": "2026-03-24",
-      "href": "/dsaf001/main.do?rcpNo=20260204000598",
-      "href_abs": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260204000598"
-    },
-    {
-      "corp_name": "대한광통신",
-      "market_short": "코",
-      "market": "KOSDAQ",
-      "sbd_start": "2026-02-25",
-      "sbd_end": "2026-03-26",
-      "href": "/dsaf001/main.do?rcpNo=20260107000442",
-      "href_abs": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260107000442"
-    },
-    {
-      "corp_name": "스탁키퍼",
-      "market_short": "기",
-      "market": "ETC",
-      "sbd_start": "2026-02-28",
-      "sbd_end": "2026-02-28",
-      "href": "/dsaf001/main.do?rcpNo=20260210000785",
-      "href_abs": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260210000785"
-    },
-    {
-      "corp_name": "아이씨에이치",
-      "market_short": "코",
-      "market": "KOSDAQ",
-      "sbd_start": "2026-03-02",
-      "sbd_end": "2026-04-03",
-      "href": "/dsaf001/main.do?rcpNo=20260129000406",
-      "href_abs": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260129000406"
-    },
-    {
-      "corp_name": "인베니아",
-      "market_short": "코",
-      "market": "KOSDAQ",
-      "sbd_start": "2026-03-03",
-      "sbd_end": "2026-04-04",
-      "href": "/dsaf001/main.do?rcpNo=20260130000604",
-      "href_abs": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260130000604"
-    },
-    {
-      "corp_name": "아미코젠",
-      "market_short": "코",
-      "market": "KOSDAQ",
-      "sbd_start": "2026-03-06",
-      "sbd_end": "2026-03-09",
-      "href": "/dsaf001/main.do?rcpNo=20260204000174",
-      "href_abs": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260204000174"
-    },
-    {
-      "corp_name": "열매컴퍼니",
-      "market_short": "기",
-      "market": "ETC",
-      "sbd_start": "2026-03-09",
-      "sbd_end": "2026-03-09",
-      "href": "/dsaf001/main.do?rcpNo=20260108000122",
-      "href_abs": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260108000122"
-    },
-    {
-      "corp_name": "데이터젠",
-      "market_short": "기",
-      "market": "ETC",
-      "sbd_start": "2026-03-11",
-      "sbd_end": "2026-03-11",
-      "href": "/dsaf001/main.do?rcpNo=20260107000209",
-      "href_abs": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260107000209"
-    },
-    {
-      "corp_name": "라온피플",
-      "market_short": "코",
-      "market": "KOSDAQ",
-      "sbd_start": "2026-03-12",
-      "sbd_end": "2026-03-13",
-      "href": "/dsaf001/main.do?rcpNo=20260210000506",
-      "href_abs": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260210000506"
-    }
-  ],
+  "count": 0,
+  "items": [],
   "_debug": [
     {
       "y": 2026,
       "m": 2,
       "fetch": {
-        "bootstrap": {
-          "status": 200,
-          "bytes": 49356,
-          "decoded_charset": "utf-8",
-          "event_score": 21
-        },
         "method": "POST",
-        "url": "https://dart.fss.or.kr/dsac008/main.do",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
         "bytes": 49356,
@@ -143,19 +27,20 @@
         "requested": {
           "y": 2026,
           "m": 2
+        },
+        "bootstrap": {
+          "status": 200,
+          "bytes": 49356,
+          "decoded_charset": "utf-8",
+          "event_score": 21
         }
       },
       "parse": {
         "ok": true,
-        "server_selected": {
-          "y": 2026,
-          "m": null
-        },
         "anchors_total": 79,
-        "anchors_eventish": 21,
         "anchors_matched": 21,
         "events": 21,
-        "sample_eventish_texts": [
+        "sample_matched_texts": [
           "코아이씨에이치 [시작]",
           "코아이씨에이치 [종료]",
           "코인베니아 [시작]",
@@ -170,13 +55,7 @@
           "코비보존 제약 [시작]",
           "기액스비스 [시작]",
           "기에스팀 [시작]",
-          "기케이뱅크 [종료]",
-          "코비보존 제약 [종료]",
-          "기액스비스 [종료]",
-          "기에스팀 [종료]",
-          "코대한광통신 [시작]",
-          "코대한광통신 [종료]",
-          "기스탁키퍼 [시작]"
+          "기케이뱅크 [종료]"
         ]
       }
     },
@@ -184,14 +63,7 @@
       "y": 2026,
       "m": 3,
       "fetch": {
-        "bootstrap": {
-          "status": 200,
-          "bytes": 49356,
-          "decoded_charset": "utf-8",
-          "event_score": 21
-        },
         "method": "POST",
-        "url": "https://dart.fss.or.kr/dsac008/main.do",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
         "bytes": 49356,
@@ -204,19 +76,20 @@
         "requested": {
           "y": 2026,
           "m": 3
+        },
+        "bootstrap": {
+          "status": 200,
+          "bytes": 49356,
+          "decoded_charset": "utf-8",
+          "event_score": 21
         }
       },
       "parse": {
         "ok": true,
-        "server_selected": {
-          "y": 2026,
-          "m": null
-        },
         "anchors_total": 79,
-        "anchors_eventish": 21,
         "anchors_matched": 21,
         "events": 21,
-        "sample_eventish_texts": [
+        "sample_matched_texts": [
           "코아이씨에이치 [시작]",
           "코아이씨에이치 [종료]",
           "코인베니아 [시작]",
@@ -231,13 +104,7 @@
           "코비보존 제약 [시작]",
           "기액스비스 [시작]",
           "기에스팀 [시작]",
-          "기케이뱅크 [종료]",
-          "코비보존 제약 [종료]",
-          "기액스비스 [종료]",
-          "기에스팀 [종료]",
-          "코대한광통신 [시작]",
-          "코대한광통신 [종료]",
-          "기스탁키퍼 [시작]"
+          "기케이뱅크 [종료]"
         ]
       }
     },
@@ -245,14 +112,7 @@
       "y": 2026,
       "m": 4,
       "fetch": {
-        "bootstrap": {
-          "status": 200,
-          "bytes": 49356,
-          "decoded_charset": "utf-8",
-          "event_score": 21
-        },
         "method": "POST",
-        "url": "https://dart.fss.or.kr/dsac008/main.do",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
         "bytes": 49356,
@@ -265,19 +125,20 @@
         "requested": {
           "y": 2026,
           "m": 4
+        },
+        "bootstrap": {
+          "status": 200,
+          "bytes": 49356,
+          "decoded_charset": "utf-8",
+          "event_score": 21
         }
       },
       "parse": {
         "ok": true,
-        "server_selected": {
-          "y": 2026,
-          "m": null
-        },
         "anchors_total": 79,
-        "anchors_eventish": 21,
         "anchors_matched": 21,
         "events": 21,
-        "sample_eventish_texts": [
+        "sample_matched_texts": [
           "코아이씨에이치 [시작]",
           "코아이씨에이치 [종료]",
           "코인베니아 [시작]",
@@ -292,15 +153,95 @@
           "코비보존 제약 [시작]",
           "기액스비스 [시작]",
           "기에스팀 [시작]",
-          "기케이뱅크 [종료]",
-          "코비보존 제약 [종료]",
-          "기액스비스 [종료]",
-          "기에스팀 [종료]",
-          "코대한광통신 [시작]",
-          "코대한광통신 [종료]",
-          "기스탁키퍼 [시작]"
+          "기케이뱅크 [종료]"
         ]
       }
+    }
+  ],
+  "_classify_debug": [
+    {
+      "corp_name": "케이뱅크",
+      "rcpNo": "20260212001569",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260212001569"
+    },
+    {
+      "corp_name": "비보존 제약",
+      "rcpNo": "20260108000504",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260108000504"
+    },
+    {
+      "corp_name": "액스비스",
+      "rcpNo": "20260204000082",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260204000082"
+    },
+    {
+      "corp_name": "에스팀",
+      "rcpNo": "20260204000598",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260204000598"
+    },
+    {
+      "corp_name": "대한광통신",
+      "rcpNo": "20260107000442",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260107000442"
+    },
+    {
+      "corp_name": "스탁키퍼",
+      "rcpNo": "20260210000785",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260210000785"
+    },
+    {
+      "corp_name": "아이씨에이치",
+      "rcpNo": "20260129000406",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260129000406"
+    },
+    {
+      "corp_name": "인베니아",
+      "rcpNo": "20260130000604",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260130000604"
+    },
+    {
+      "corp_name": "아미코젠",
+      "rcpNo": "20260204000174",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260204000174"
+    },
+    {
+      "corp_name": "열매컴퍼니",
+      "rcpNo": "20260108000122",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260108000122"
+    },
+    {
+      "corp_name": "데이터젠",
+      "rcpNo": "20260107000209",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260107000209"
+    },
+    {
+      "corp_name": "라온피플",
+      "rcpNo": "20260210000506",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260210000506"
     }
   ]
 }
