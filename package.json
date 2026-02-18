@@ -1,9 +1,10 @@
 {
-  "name": "ipo-calendar",
+  "name": "ipo-calender",
   "private": true,
   "type": "module",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.12",
-    "iconv-lite": "^0.6.3"
+    "cheerio": "^1.0.0",
+    "iconv-lite": "^0.6.3",
+    "playwright": "^1.41.2"
   }
 }
