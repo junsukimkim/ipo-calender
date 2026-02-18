@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "source": "dart-calendar (playwright) + kind-listed-filter + rights-keyword-filter",
+  "source": "dart-calendar(td-parse) + kind-listed-filter",
   "range": {
     "start": "2026-02-18",
     "end": "2026-03-31"
@@ -8,6 +8,5 @@
   "last_updated_kst": "2026-02-18",
   "count": 0,
   "excluded_listed": 0,
-  "excluded_non_ipo": 0,
   "items": []
 }
