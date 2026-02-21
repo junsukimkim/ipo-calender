@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-02-19",
-    "end": "2026-04-05"
+    "start": "2026-02-21",
+    "end": "2026-04-07"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-02-19",
+  "last_updated_kst": "2026-02-21",
   "count": 0,
   "items": [],
   "_debug": [
@@ -160,32 +160,25 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "케이뱅크",
-      "rcpNo": "20260212001569",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260212001569"
-    },
-    {
       "corp_name": "비보존 제약",
-      "rcpNo": "20260108000504",
+      "rcpNo": "20260219002668",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260108000504"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260219002668"
     },
     {
       "corp_name": "액스비스",
-      "rcpNo": "20260204000082",
+      "rcpNo": "20260219002041",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260204000082"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260219002041"
     },
     {
       "corp_name": "에스팀",
-      "rcpNo": "20260204000598",
+      "rcpNo": "20260220001649",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260204000598"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260220001649"
     },
     {
       "corp_name": "대한광통신",
@@ -242,6 +235,13 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260210000506"
+    },
+    {
+      "corp_name": "케이뱅크",
+      "rcpNo": "20260212001569",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260212001569"
     }
   ]
 }
