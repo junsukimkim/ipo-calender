@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-02-21",
-    "end": "2026-04-07"
+    "start": "2026-02-24",
+    "end": "2026-04-10"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-02-21",
+  "last_updated_kst": "2026-02-24",
   "count": 0,
   "items": [],
   "_debug": [
@@ -160,32 +160,11 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "비보존 제약",
-      "rcpNo": "20260219002668",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260219002668"
-    },
-    {
-      "corp_name": "액스비스",
-      "rcpNo": "20260219002041",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260219002041"
-    },
-    {
-      "corp_name": "에스팀",
-      "rcpNo": "20260220001649",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260220001649"
-    },
-    {
       "corp_name": "대한광통신",
-      "rcpNo": "20260107000442",
+      "rcpNo": "20260223002571",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260107000442"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260223002571"
     },
     {
       "corp_name": "스탁키퍼",
@@ -216,13 +195,6 @@
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260204000174"
     },
     {
-      "corp_name": "열매컴퍼니",
-      "rcpNo": "20260108000122",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260108000122"
-    },
-    {
       "corp_name": "데이터젠",
       "rcpNo": "20260107000209",
       "type": "unknown",
@@ -242,6 +214,34 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260212001569"
+    },
+    {
+      "corp_name": "비보존 제약",
+      "rcpNo": "20260219002668",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260219002668"
+    },
+    {
+      "corp_name": "액스비스",
+      "rcpNo": "20260219002041",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260219002041"
+    },
+    {
+      "corp_name": "에스팀",
+      "rcpNo": "20260220001649",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260220001649"
+    },
+    {
+      "corp_name": "열매컴퍼니",
+      "rcpNo": "20260108000122",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260108000122"
     }
   ]
 }
