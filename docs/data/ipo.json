@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-03-03",
-    "end": "2026-04-17"
+    "start": "2026-03-05",
+    "end": "2026-04-19"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-03-03",
+  "last_updated_kst": "2026-03-05",
   "count": 0,
   "items": [],
   "_debug": [
@@ -111,25 +111,11 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "에스에너지",
-      "rcpNo": "20260120000217",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260120000217"
-    },
-    {
-      "corp_name": "진양홀딩스",
-      "rcpNo": "20260227006460",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260227006460"
-    },
-    {
       "corp_name": "카나프테라퓨틱스",
-      "rcpNo": "20260223000875",
+      "rcpNo": "20260304001111",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260223000875"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260304001111"
     },
     {
       "corp_name": "아이엠바이오로직스",
@@ -221,6 +207,20 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260225002022"
+    },
+    {
+      "corp_name": "에스에너지",
+      "rcpNo": "20260120000217",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260120000217"
+    },
+    {
+      "corp_name": "진양홀딩스",
+      "rcpNo": "20260227006460",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260227006460"
     }
   ]
 }
