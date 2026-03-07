@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-03-05",
-    "end": "2026-04-19"
+    "start": "2026-03-07",
+    "end": "2026-04-21"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-03-05",
+  "last_updated_kst": "2026-03-07",
   "count": 0,
   "items": [],
   "_debug": [
@@ -111,13 +111,6 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "카나프테라퓨틱스",
-      "rcpNo": "20260304001111",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260304001111"
-    },
-    {
       "corp_name": "아이엠바이오로직스",
       "rcpNo": "20260226005770",
       "type": "unknown",
@@ -140,10 +133,10 @@
     },
     {
       "corp_name": "메쥬",
-      "rcpNo": "20260212001517",
+      "rcpNo": "20260305001249",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260212001517"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260305001249"
     },
     {
       "corp_name": "진양폴리우레탄",
@@ -161,10 +154,10 @@
     },
     {
       "corp_name": "엔에이치기업인수목적33호",
-      "rcpNo": "20260211001014",
+      "rcpNo": "20260306000541",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260211001014"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260306000541"
     },
     {
       "corp_name": "코스모로보틱스",
@@ -221,6 +214,13 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260227006460"
+    },
+    {
+      "corp_name": "카나프테라퓨틱스",
+      "rcpNo": "20260304001111",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260304001111"
     }
   ]
 }
