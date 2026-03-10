@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-03-07",
-    "end": "2026-04-21"
+    "start": "2026-03-10",
+    "end": "2026-04-24"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-03-07",
+  "last_updated_kst": "2026-03-10",
   "count": 0,
   "items": [],
   "_debug": [
@@ -119,17 +119,17 @@
     },
     {
       "corp_name": "티웨이항공",
-      "rcpNo": "20260130000463",
+      "rcpNo": "20260309001073",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260130000463"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260309001073"
     },
     {
       "corp_name": "한국첨단소재",
-      "rcpNo": "20260128000408",
+      "rcpNo": "20260309001553",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260128000408"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260309001553"
     },
     {
       "corp_name": "메쥬",
@@ -168,10 +168,10 @@
     },
     {
       "corp_name": "리센스메디컬",
-      "rcpNo": "20260210000540",
+      "rcpNo": "20260310002346",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260210000540"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002346"
     },
     {
       "corp_name": "신한제17호기업인수목적",
