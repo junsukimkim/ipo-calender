@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-03-10",
-    "end": "2026-04-24"
+    "start": "2026-03-12",
+    "end": "2026-04-26"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-03-10",
+  "last_updated_kst": "2026-03-12",
   "count": 0,
   "items": [],
   "_debug": [
@@ -111,27 +111,6 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "아이엠바이오로직스",
-      "rcpNo": "20260226005770",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260226005770"
-    },
-    {
-      "corp_name": "티웨이항공",
-      "rcpNo": "20260309001073",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260309001073"
-    },
-    {
-      "corp_name": "한국첨단소재",
-      "rcpNo": "20260309001553",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260309001553"
-    },
-    {
       "corp_name": "메쥬",
       "rcpNo": "20260305001249",
       "type": "unknown",
@@ -140,10 +119,10 @@
     },
     {
       "corp_name": "진양폴리우레탄",
-      "rcpNo": "20260108000090",
+      "rcpNo": "20260312000278",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260108000090"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312000278"
     },
     {
       "corp_name": "한패스",
@@ -161,10 +140,10 @@
     },
     {
       "corp_name": "코스모로보틱스",
-      "rcpNo": "20260211001077",
+      "rcpNo": "20260310002977",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260211001077"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002977"
     },
     {
       "corp_name": "리센스메디컬",
@@ -175,10 +154,10 @@
     },
     {
       "corp_name": "신한제17호기업인수목적",
-      "rcpNo": "20260213001450",
+      "rcpNo": "20260310002814",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260213001450"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002814"
     },
     {
       "corp_name": "교보20호기업인수목적",
@@ -221,6 +200,27 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260304001111"
+    },
+    {
+      "corp_name": "아이엠바이오로직스",
+      "rcpNo": "20260310002450",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002450"
+    },
+    {
+      "corp_name": "티웨이항공",
+      "rcpNo": "20260309001073",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260309001073"
+    },
+    {
+      "corp_name": "한국첨단소재",
+      "rcpNo": "20260309001553",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260309001553"
     }
   ]
 }
