@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-03-12",
-    "end": "2026-04-26"
+    "start": "2026-03-14",
+    "end": "2026-04-28"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-03-12",
+  "last_updated_kst": "2026-03-14",
   "count": 0,
   "items": [],
   "_debug": [
@@ -112,10 +112,10 @@
   "_classify_debug": [
     {
       "corp_name": "메쥬",
-      "rcpNo": "20260305001249",
+      "rcpNo": "20260313000313",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260305001249"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000313"
     },
     {
       "corp_name": "진양폴리우레탄",
@@ -126,10 +126,10 @@
     },
     {
       "corp_name": "한패스",
-      "rcpNo": "20260219002744",
+      "rcpNo": "20260313000882",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260219002744"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000882"
     },
     {
       "corp_name": "엔에이치기업인수목적33호",
