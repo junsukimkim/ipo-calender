@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-03-17",
-    "end": "2026-05-01"
+    "start": "2026-03-19",
+    "end": "2026-05-03"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-03-17",
+  "last_updated_kst": "2026-03-19",
   "count": 0,
   "items": [],
   "_debug": [
@@ -160,32 +160,18 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "엔에이치기업인수목적33호",
-      "rcpNo": "20260316000194",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000194"
-    },
-    {
-      "corp_name": "코스모로보틱스",
-      "rcpNo": "20260310002977",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002977"
-    },
-    {
       "corp_name": "리센스메디컬",
-      "rcpNo": "20260310002346",
+      "rcpNo": "20260318000036",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002346"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000036"
     },
     {
       "corp_name": "신한제17호기업인수목적",
-      "rcpNo": "20260310002814",
+      "rcpNo": "20260318000197",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002814"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000197"
     },
     {
       "corp_name": "교보20호기업인수목적",
@@ -196,10 +182,10 @@
     },
     {
       "corp_name": "인벤테라",
-      "rcpNo": "20260213001742",
+      "rcpNo": "20260319000436",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260213001742"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000436"
     },
     {
       "corp_name": "에스에너지",
@@ -263,6 +249,20 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000882"
+    },
+    {
+      "corp_name": "엔에이치기업인수목적33호",
+      "rcpNo": "20260316000194",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000194"
+    },
+    {
+      "corp_name": "코스모로보틱스",
+      "rcpNo": "20260310002977",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002977"
     },
     {
       "corp_name": "스탁키퍼",
