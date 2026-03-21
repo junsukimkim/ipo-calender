@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-03-19",
-    "end": "2026-05-03"
+    "start": "2026-03-21",
+    "end": "2026-05-05"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-03-19",
+  "last_updated_kst": "2026-03-21",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,9 +17,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 54375,
+        "bytes": 53547,
         "decoded_charset": "utf-8",
-        "event_score": 31,
+        "event_score": 29,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -30,16 +30,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 54375,
+          "bytes": 53547,
           "decoded_charset": "utf-8",
-          "event_score": 31
+          "event_score": 29
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 89,
-        "anchors_matched": 31,
-        "events": 31,
+        "anchors_total": 87,
+        "anchors_matched": 29,
+        "events": 29,
         "sample_matched_texts": [
           "코에스에너지 [시작]",
           "유진양홀딩스 [시작]",
@@ -47,10 +47,10 @@
           "유진양홀딩스 [종료]",
           "코카나프테라퓨틱스 [시작]",
           "코카나프테라퓨틱스 [종료]",
-          "기아이엠바이오로직스 [시작]",
+          "코아이엠바이오로직스 [시작]",
           "유티웨이항공 [시작]",
           "코한국첨단소재 [시작]",
-          "기아이엠바이오로직스 [종료]",
+          "코아이엠바이오로직스 [종료]",
           "유티웨이항공 [종료]",
           "코한국첨단소재 [종료]",
           "기메쥬 [시작]",
@@ -66,9 +66,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 54375,
+        "bytes": 53547,
         "decoded_charset": "utf-8",
-        "event_score": 31,
+        "event_score": 29,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -79,16 +79,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 54375,
+          "bytes": 53547,
           "decoded_charset": "utf-8",
-          "event_score": 31
+          "event_score": 29
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 89,
-        "anchors_matched": 31,
-        "events": 31,
+        "anchors_total": 87,
+        "anchors_matched": 29,
+        "events": 29,
         "sample_matched_texts": [
           "코에스에너지 [시작]",
           "유진양홀딩스 [시작]",
@@ -96,10 +96,10 @@
           "유진양홀딩스 [종료]",
           "코카나프테라퓨틱스 [시작]",
           "코카나프테라퓨틱스 [종료]",
-          "기아이엠바이오로직스 [시작]",
+          "코아이엠바이오로직스 [시작]",
           "유티웨이항공 [시작]",
           "코한국첨단소재 [시작]",
-          "기아이엠바이오로직스 [종료]",
+          "코아이엠바이오로직스 [종료]",
           "유티웨이항공 [종료]",
           "코한국첨단소재 [종료]",
           "기메쥬 [시작]",
@@ -115,9 +115,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 54375,
+        "bytes": 53547,
         "decoded_charset": "utf-8",
-        "event_score": 31,
+        "event_score": 29,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -128,16 +128,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 54375,
+          "bytes": 53547,
           "decoded_charset": "utf-8",
-          "event_score": 31
+          "event_score": 29
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 89,
-        "anchors_matched": 31,
-        "events": 31,
+        "anchors_total": 87,
+        "anchors_matched": 29,
+        "events": 29,
         "sample_matched_texts": [
           "코에스에너지 [시작]",
           "유진양홀딩스 [시작]",
@@ -145,10 +145,10 @@
           "유진양홀딩스 [종료]",
           "코카나프테라퓨틱스 [시작]",
           "코카나프테라퓨틱스 [종료]",
-          "기아이엠바이오로직스 [시작]",
+          "코아이엠바이오로직스 [시작]",
           "유티웨이항공 [시작]",
           "코한국첨단소재 [시작]",
-          "기아이엠바이오로직스 [종료]",
+          "코아이엠바이오로직스 [종료]",
           "유티웨이항공 [종료]",
           "코한국첨단소재 [종료]",
           "기메쥬 [시작]",
@@ -160,25 +160,11 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "리센스메디컬",
-      "rcpNo": "20260318000036",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000036"
-    },
-    {
-      "corp_name": "신한제17호기업인수목적",
-      "rcpNo": "20260318000197",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000197"
-    },
-    {
       "corp_name": "교보20호기업인수목적",
-      "rcpNo": "20260212001464",
+      "rcpNo": "20260319000747",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260212001464"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000747"
     },
     {
       "corp_name": "인벤테라",
@@ -258,11 +244,18 @@
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000194"
     },
     {
-      "corp_name": "코스모로보틱스",
-      "rcpNo": "20260310002977",
+      "corp_name": "리센스메디컬",
+      "rcpNo": "20260318000036",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002977"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000036"
+    },
+    {
+      "corp_name": "신한제17호기업인수목적",
+      "rcpNo": "20260318000197",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000197"
     },
     {
       "corp_name": "스탁키퍼",
