@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-03-21",
-    "end": "2026-05-05"
+    "start": "2026-03-24",
+    "end": "2026-05-08"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-03-21",
+  "last_updated_kst": "2026-03-24",
   "count": 0,
   "items": [],
   "_debug": [
@@ -160,20 +160,6 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "교보20호기업인수목적",
-      "rcpNo": "20260319000747",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000747"
-    },
-    {
-      "corp_name": "인벤테라",
-      "rcpNo": "20260319000436",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000436"
-    },
-    {
       "corp_name": "에스에너지",
       "rcpNo": "20260120000217",
       "type": "unknown",
@@ -256,6 +242,20 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000197"
+    },
+    {
+      "corp_name": "교보20호기업인수목적",
+      "rcpNo": "20260319000747",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000747"
+    },
+    {
+      "corp_name": "인벤테라",
+      "rcpNo": "20260319000436",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000436"
     },
     {
       "corp_name": "스탁키퍼",
