@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-03-24",
-    "end": "2026-05-08"
+    "start": "2026-03-26",
+    "end": "2026-05-10"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-03-24",
+  "last_updated_kst": "2026-03-26",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,7 +17,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 53547,
+        "bytes": 53567,
         "decoded_charset": "utf-8",
         "event_score": 29,
         "cookie_names": [
@@ -30,7 +30,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 53547,
+          "bytes": 53567,
           "decoded_charset": "utf-8",
           "event_score": 29
         }
@@ -53,9 +53,9 @@
           "코아이엠바이오로직스 [종료]",
           "유티웨이항공 [종료]",
           "코한국첨단소재 [종료]",
-          "기메쥬 [시작]",
+          "코메쥬 [시작]",
           "유진양폴리우레탄 [시작]",
-          "기한패스 [시작]"
+          "코한패스 [시작]"
         ]
       }
     },
@@ -66,7 +66,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 53547,
+        "bytes": 53567,
         "decoded_charset": "utf-8",
         "event_score": 29,
         "cookie_names": [
@@ -79,7 +79,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 53547,
+          "bytes": 53567,
           "decoded_charset": "utf-8",
           "event_score": 29
         }
@@ -102,9 +102,9 @@
           "코아이엠바이오로직스 [종료]",
           "유티웨이항공 [종료]",
           "코한국첨단소재 [종료]",
-          "기메쥬 [시작]",
+          "코메쥬 [시작]",
           "유진양폴리우레탄 [시작]",
-          "기한패스 [시작]"
+          "코한패스 [시작]"
         ]
       }
     },
@@ -115,7 +115,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 53547,
+        "bytes": 53567,
         "decoded_charset": "utf-8",
         "event_score": 29,
         "cookie_names": [
@@ -128,7 +128,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 53547,
+          "bytes": 53567,
           "decoded_charset": "utf-8",
           "event_score": 29
         }
@@ -151,9 +151,9 @@
           "코아이엠바이오로직스 [종료]",
           "유티웨이항공 [종료]",
           "코한국첨단소재 [종료]",
-          "기메쥬 [시작]",
+          "코메쥬 [시작]",
           "유진양폴리우레탄 [시작]",
-          "기한패스 [시작]"
+          "코한패스 [시작]"
         ]
       }
     }
