@@ -2,63 +2,14 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-03-31",
-    "end": "2026-05-15"
+    "start": "2026-04-02",
+    "end": "2026-05-17"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-03-31",
+  "last_updated_kst": "2026-04-02",
   "count": 0,
   "items": [],
   "_debug": [
-    {
-      "y": 2026,
-      "m": 3,
-      "fetch": {
-        "method": "POST",
-        "status": 200,
-        "content_type": "text/html; charset=UTF-8",
-        "bytes": 53539,
-        "decoded_charset": "utf-8",
-        "event_score": 29,
-        "cookie_names": [
-          "WMONID",
-          "JSESSIONID"
-        ],
-        "requested": {
-          "y": 2026,
-          "m": 3
-        },
-        "bootstrap": {
-          "status": 200,
-          "bytes": 53539,
-          "decoded_charset": "utf-8",
-          "event_score": 29
-        }
-      },
-      "parse": {
-        "ok": true,
-        "anchors_total": 87,
-        "anchors_matched": 29,
-        "events": 29,
-        "sample_matched_texts": [
-          "코에스에너지 [시작]",
-          "유진양홀딩스 [시작]",
-          "코에스에너지 [종료]",
-          "유진양홀딩스 [종료]",
-          "코카나프테라퓨틱스 [시작]",
-          "코카나프테라퓨틱스 [종료]",
-          "코아이엠바이오로직스 [시작]",
-          "유티웨이항공 [시작]",
-          "코한국첨단소재 [시작]",
-          "코아이엠바이오로직스 [종료]",
-          "유티웨이항공 [종료]",
-          "코한국첨단소재 [종료]",
-          "코메쥬 [시작]",
-          "유진양폴리우레탄 [시작]",
-          "코한패스 [시작]"
-        ]
-      }
-    },
     {
       "y": 2026,
       "m": 4,
@@ -66,9 +17,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 53539,
+        "bytes": 49222,
         "decoded_charset": "utf-8",
-        "event_score": 29,
+        "event_score": 19,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -79,32 +30,32 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 53539,
+          "bytes": 49222,
           "decoded_charset": "utf-8",
-          "event_score": 29
+          "event_score": 19
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 87,
-        "anchors_matched": 29,
-        "events": 29,
+        "anchors_total": 77,
+        "anchors_matched": 19,
+        "events": 19,
         "sample_matched_texts": [
-          "코에스에너지 [시작]",
-          "유진양홀딩스 [시작]",
-          "코에스에너지 [종료]",
-          "유진양홀딩스 [종료]",
-          "코카나프테라퓨틱스 [시작]",
-          "코카나프테라퓨틱스 [종료]",
-          "코아이엠바이오로직스 [시작]",
-          "유티웨이항공 [시작]",
-          "코한국첨단소재 [시작]",
-          "코아이엠바이오로직스 [종료]",
-          "유티웨이항공 [종료]",
-          "코한국첨단소재 [종료]",
-          "코메쥬 [시작]",
-          "유진양폴리우레탄 [시작]",
-          "코한패스 [시작]"
+          "코레이저옵텍 [시작]",
+          "코캠시스 [시작]",
+          "코레이저옵텍 [종료]",
+          "코캠시스 [종료]",
+          "기키움히어로제2호기업인수목적 [시작]",
+          "기키움히어로제2호기업인수목적 [종료]",
+          "기스탁키퍼 [시작]",
+          "기신한제18호기업인수목적 [시작]",
+          "기채비 [시작]",
+          "기신한제18호기업인수목적 [종료]",
+          "기채비 [종료]",
+          "코루닛 [시작]",
+          "코에이텀 [시작]",
+          "코루닛 [종료]",
+          "코에이텀 [종료]"
         ]
       }
     },
@@ -115,9 +66,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 53539,
+        "bytes": 49222,
         "decoded_charset": "utf-8",
-        "event_score": 29,
+        "event_score": 19,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -128,141 +79,106 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 53539,
+          "bytes": 49222,
           "decoded_charset": "utf-8",
-          "event_score": 29
+          "event_score": 19
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 87,
-        "anchors_matched": 29,
-        "events": 29,
+        "anchors_total": 77,
+        "anchors_matched": 19,
+        "events": 19,
         "sample_matched_texts": [
-          "코에스에너지 [시작]",
-          "유진양홀딩스 [시작]",
-          "코에스에너지 [종료]",
-          "유진양홀딩스 [종료]",
-          "코카나프테라퓨틱스 [시작]",
-          "코카나프테라퓨틱스 [종료]",
-          "코아이엠바이오로직스 [시작]",
-          "유티웨이항공 [시작]",
-          "코한국첨단소재 [시작]",
-          "코아이엠바이오로직스 [종료]",
-          "유티웨이항공 [종료]",
-          "코한국첨단소재 [종료]",
-          "코메쥬 [시작]",
-          "유진양폴리우레탄 [시작]",
-          "코한패스 [시작]"
+          "코레이저옵텍 [시작]",
+          "코캠시스 [시작]",
+          "코레이저옵텍 [종료]",
+          "코캠시스 [종료]",
+          "기키움히어로제2호기업인수목적 [시작]",
+          "기키움히어로제2호기업인수목적 [종료]",
+          "기스탁키퍼 [시작]",
+          "기신한제18호기업인수목적 [시작]",
+          "기채비 [시작]",
+          "기신한제18호기업인수목적 [종료]",
+          "기채비 [종료]",
+          "코루닛 [시작]",
+          "코에이텀 [시작]",
+          "코루닛 [종료]",
+          "코에이텀 [종료]"
         ]
       }
     }
   ],
   "_classify_debug": [
     {
-      "corp_name": "에스에너지",
-      "rcpNo": "20260120000217",
+      "corp_name": "레이저옵텍",
+      "rcpNo": "20260320000841",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260120000217"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000841"
     },
     {
-      "corp_name": "진양홀딩스",
-      "rcpNo": "20260227006460",
+      "corp_name": "캠시스",
+      "rcpNo": "20260320001044",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260227006460"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320001044"
     },
     {
-      "corp_name": "카나프테라퓨틱스",
-      "rcpNo": "20260304001111",
+      "corp_name": "키움히어로제2호기업인수목적",
+      "rcpNo": "20260318001252",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260304001111"
-    },
-    {
-      "corp_name": "아이엠바이오로직스",
-      "rcpNo": "20260310002450",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002450"
-    },
-    {
-      "corp_name": "티웨이항공",
-      "rcpNo": "20260309001073",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260309001073"
-    },
-    {
-      "corp_name": "한국첨단소재",
-      "rcpNo": "20260309001553",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260309001553"
-    },
-    {
-      "corp_name": "메쥬",
-      "rcpNo": "20260313000313",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000313"
-    },
-    {
-      "corp_name": "진양폴리우레탄",
-      "rcpNo": "20260312000278",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312000278"
-    },
-    {
-      "corp_name": "한패스",
-      "rcpNo": "20260313000882",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000882"
-    },
-    {
-      "corp_name": "엔에이치스팩33호",
-      "rcpNo": "20260316000194",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000194"
-    },
-    {
-      "corp_name": "리센스메디컬",
-      "rcpNo": "20260318000036",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000036"
-    },
-    {
-      "corp_name": "신한제17호기업인수목적",
-      "rcpNo": "20260318000197",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000197"
-    },
-    {
-      "corp_name": "교보20호기업인수목적",
-      "rcpNo": "20260319000747",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000747"
-    },
-    {
-      "corp_name": "인벤테라",
-      "rcpNo": "20260319000436",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000436"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001252"
     },
     {
       "corp_name": "스탁키퍼",
-      "rcpNo": "20260225002022",
+      "rcpNo": "20260326001272",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260225002022"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260326001272"
+    },
+    {
+      "corp_name": "신한제18호기업인수목적",
+      "rcpNo": "20260331004566",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331004566"
+    },
+    {
+      "corp_name": "채비",
+      "rcpNo": "20260325001442",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260325001442"
+    },
+    {
+      "corp_name": "루닛",
+      "rcpNo": "20260324000772",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260324000772"
+    },
+    {
+      "corp_name": "에이텀",
+      "rcpNo": "20260320001357",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320001357"
+    },
+    {
+      "corp_name": "투게더아트",
+      "rcpNo": "20260327001646",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260327001646"
+    },
+    {
+      "corp_name": "코스모로보틱스",
+      "rcpNo": "20260327001479",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260327001479"
     }
   ]
 }
