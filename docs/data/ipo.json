@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-04-07",
-    "end": "2026-05-22"
+    "start": "2026-04-09",
+    "end": "2026-05-24"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-04-07",
+  "last_updated_kst": "2026-04-09",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,9 +17,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 49222,
+        "bytes": 50038,
         "decoded_charset": "utf-8",
-        "event_score": 19,
+        "event_score": 21,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -30,16 +30,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 49222,
+          "bytes": 50038,
           "decoded_charset": "utf-8",
-          "event_score": 19
+          "event_score": 21
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 77,
-        "anchors_matched": 19,
-        "events": 19,
+        "anchors_total": 79,
+        "anchors_matched": 21,
+        "events": 21,
         "sample_matched_texts": [
           "코레이저옵텍 [시작]",
           "코캠시스 [시작]",
@@ -50,12 +50,12 @@
           "기스탁키퍼 [시작]",
           "기신한제18호기업인수목적 [시작]",
           "기채비 [시작]",
+          "유금호건설 [시작]",
+          "유금호건설 [종료]",
           "기신한제18호기업인수목적 [종료]",
           "기채비 [종료]",
           "코루닛 [시작]",
-          "코에이텀 [시작]",
-          "코루닛 [종료]",
-          "코에이텀 [종료]"
+          "코에이텀 [시작]"
         ]
       }
     },
@@ -66,9 +66,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 49222,
+        "bytes": 50038,
         "decoded_charset": "utf-8",
-        "event_score": 19,
+        "event_score": 21,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -79,16 +79,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 49222,
+          "bytes": 50038,
           "decoded_charset": "utf-8",
-          "event_score": 19
+          "event_score": 21
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 77,
-        "anchors_matched": 19,
-        "events": 19,
+        "anchors_total": 79,
+        "anchors_matched": 21,
+        "events": 21,
         "sample_matched_texts": [
           "코레이저옵텍 [시작]",
           "코캠시스 [시작]",
@@ -99,31 +99,17 @@
           "기스탁키퍼 [시작]",
           "기신한제18호기업인수목적 [시작]",
           "기채비 [시작]",
+          "유금호건설 [시작]",
+          "유금호건설 [종료]",
           "기신한제18호기업인수목적 [종료]",
           "기채비 [종료]",
           "코루닛 [시작]",
-          "코에이텀 [시작]",
-          "코루닛 [종료]",
-          "코에이텀 [종료]"
+          "코에이텀 [시작]"
         ]
       }
     }
   ],
   "_classify_debug": [
-    {
-      "corp_name": "레이저옵텍",
-      "rcpNo": "20260406002062",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260406002062"
-    },
-    {
-      "corp_name": "캠시스",
-      "rcpNo": "20260406001873",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260406001873"
-    },
     {
       "corp_name": "키움히어로제2호기업인수목적",
       "rcpNo": "20260318001252",
@@ -153,11 +139,18 @@
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260325001442"
     },
     {
-      "corp_name": "루닛",
-      "rcpNo": "20260324000772",
+      "corp_name": "금호건설",
+      "rcpNo": "20260408002360",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260324000772"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260408002360"
+    },
+    {
+      "corp_name": "루닛",
+      "rcpNo": "20260407002597",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260407002597"
     },
     {
       "corp_name": "에이텀",
@@ -179,6 +172,20 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260327001479"
+    },
+    {
+      "corp_name": "레이저옵텍",
+      "rcpNo": "20260406002062",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260406002062"
+    },
+    {
+      "corp_name": "캠시스",
+      "rcpNo": "20260406001873",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260406001873"
     }
   ]
 }
