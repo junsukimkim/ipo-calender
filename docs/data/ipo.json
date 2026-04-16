@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-04-14",
-    "end": "2026-05-29"
+    "start": "2026-04-16",
+    "end": "2026-05-31"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-04-14",
+  "last_updated_kst": "2026-04-16",
   "count": 0,
   "items": [],
   "_debug": [
@@ -111,18 +111,11 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "키움히어로제2호기업인수목적",
-      "rcpNo": "20260413001535",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260413001535"
-    },
-    {
       "corp_name": "스탁키퍼",
-      "rcpNo": "20260326001272",
+      "rcpNo": "20260414002068",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260326001272"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414002068"
     },
     {
       "corp_name": "신한제18호기업인수목적",
@@ -186,6 +179,13 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260406001873"
+    },
+    {
+      "corp_name": "키움히어로제2호기업인수목적",
+      "rcpNo": "20260413001535",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260413001535"
     }
   ]
 }
