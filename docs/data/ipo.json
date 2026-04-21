@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-04-18",
-    "end": "2026-06-02"
+    "start": "2026-04-21",
+    "end": "2026-06-05"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-04-18",
+  "last_updated_kst": "2026-04-21",
   "count": 0,
   "items": [],
   "_debug": [
@@ -160,39 +160,25 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "신한제18호기업인수목적",
-      "rcpNo": "20260417000082",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260417000082"
-    },
-    {
-      "corp_name": "채비",
-      "rcpNo": "20260417000495",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260417000495"
-    },
-    {
       "corp_name": "금호건설",
-      "rcpNo": "20260408002360",
+      "rcpNo": "20260420000038",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260408002360"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260420000038"
     },
     {
       "corp_name": "루닛",
-      "rcpNo": "20260407002597",
+      "rcpNo": "20260420000278",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260407002597"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260420000278"
     },
     {
       "corp_name": "에이텀",
-      "rcpNo": "20260320001357",
+      "rcpNo": "20260420000236",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320001357"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260420000236"
     },
     {
       "corp_name": "코스모로보틱스",
@@ -228,6 +214,20 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414002068"
+    },
+    {
+      "corp_name": "신한제18호기업인수목적",
+      "rcpNo": "20260417000082",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260417000082"
+    },
+    {
+      "corp_name": "채비",
+      "rcpNo": "20260417000495",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260417000495"
     }
   ]
 }
