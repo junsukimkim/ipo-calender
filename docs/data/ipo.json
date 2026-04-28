@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-04-25",
-    "end": "2026-06-09"
+    "start": "2026-04-28",
+    "end": "2026-06-12"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-04-25",
+  "last_updated_kst": "2026-04-28",
   "count": 0,
   "items": [],
   "_debug": [
@@ -160,13 +160,6 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "코스모로보틱스",
-      "rcpNo": "20260424000527",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260424000527"
-    },
-    {
       "corp_name": "레이저옵텍",
       "rcpNo": "20260406002062",
       "type": "unknown",
@@ -228,6 +221,13 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260420000236"
+    },
+    {
+      "corp_name": "코스모로보틱스",
+      "rcpNo": "20260424000527",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260424000527"
     }
   ]
 }
