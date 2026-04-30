@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-04-28",
-    "end": "2026-06-12"
+    "start": "2026-04-30",
+    "end": "2026-06-14"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-04-28",
+  "last_updated_kst": "2026-04-30",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,7 +17,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 49089,
+        "bytes": 49061,
         "decoded_charset": "utf-8",
         "event_score": 19,
         "cookie_names": [
@@ -30,7 +30,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 49089,
+          "bytes": 49061,
           "decoded_charset": "utf-8",
           "event_score": 19
         }
@@ -48,12 +48,12 @@
           "코키움히어로제2호스팩 [시작]",
           "코키움히어로제2호스팩 [종료]",
           "기스탁키퍼 [시작]",
-          "기신한제18호기업인수목적 [시작]",
-          "기채비 [시작]",
+          "코신한제18호스팩 [시작]",
+          "코채비 [시작]",
           "유금호건설 [시작]",
           "유금호건설 [종료]",
-          "기신한제18호기업인수목적 [종료]",
-          "기채비 [종료]",
+          "코신한제18호스팩 [종료]",
+          "코채비 [종료]",
           "코루닛 [시작]",
           "코에이텀 [시작]"
         ]
@@ -66,7 +66,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 49089,
+        "bytes": 49061,
         "decoded_charset": "utf-8",
         "event_score": 19,
         "cookie_names": [
@@ -79,7 +79,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 49089,
+          "bytes": 49061,
           "decoded_charset": "utf-8",
           "event_score": 19
         }
@@ -97,12 +97,12 @@
           "코키움히어로제2호스팩 [시작]",
           "코키움히어로제2호스팩 [종료]",
           "기스탁키퍼 [시작]",
-          "기신한제18호기업인수목적 [시작]",
-          "기채비 [시작]",
+          "코신한제18호스팩 [시작]",
+          "코채비 [시작]",
           "유금호건설 [시작]",
           "유금호건설 [종료]",
-          "기신한제18호기업인수목적 [종료]",
-          "기채비 [종료]",
+          "코신한제18호스팩 [종료]",
+          "코채비 [종료]",
           "코루닛 [시작]",
           "코에이텀 [시작]"
         ]
@@ -115,7 +115,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 49089,
+        "bytes": 49061,
         "decoded_charset": "utf-8",
         "event_score": 19,
         "cookie_names": [
@@ -128,7 +128,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 49089,
+          "bytes": 49061,
           "decoded_charset": "utf-8",
           "event_score": 19
         }
@@ -146,12 +146,12 @@
           "코키움히어로제2호스팩 [시작]",
           "코키움히어로제2호스팩 [종료]",
           "기스탁키퍼 [시작]",
-          "기신한제18호기업인수목적 [시작]",
-          "기채비 [시작]",
+          "코신한제18호스팩 [시작]",
+          "코채비 [시작]",
           "유금호건설 [시작]",
           "유금호건설 [종료]",
-          "기신한제18호기업인수목적 [종료]",
-          "기채비 [종료]",
+          "코신한제18호스팩 [종료]",
+          "코채비 [종료]",
           "코루닛 [시작]",
           "코에이텀 [시작]"
         ]
@@ -188,7 +188,7 @@
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414002068"
     },
     {
-      "corp_name": "신한제18호기업인수목적",
+      "corp_name": "신한제18호스팩",
       "rcpNo": "20260417000082",
       "type": "unknown",
       "reason": "viewDoc params not found",
