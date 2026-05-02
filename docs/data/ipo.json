@@ -2,63 +2,14 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-04-30",
-    "end": "2026-06-14"
+    "start": "2026-05-02",
+    "end": "2026-06-16"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-04-30",
+  "last_updated_kst": "2026-05-02",
   "count": 0,
   "items": [],
   "_debug": [
-    {
-      "y": 2026,
-      "m": 4,
-      "fetch": {
-        "method": "POST",
-        "status": 200,
-        "content_type": "text/html; charset=UTF-8",
-        "bytes": 49061,
-        "decoded_charset": "utf-8",
-        "event_score": 19,
-        "cookie_names": [
-          "WMONID",
-          "JSESSIONID"
-        ],
-        "requested": {
-          "y": 2026,
-          "m": 4
-        },
-        "bootstrap": {
-          "status": 200,
-          "bytes": 49061,
-          "decoded_charset": "utf-8",
-          "event_score": 19
-        }
-      },
-      "parse": {
-        "ok": true,
-        "anchors_total": 77,
-        "anchors_matched": 19,
-        "events": 19,
-        "sample_matched_texts": [
-          "코레이저옵텍 [시작]",
-          "코캠시스 [시작]",
-          "코레이저옵텍 [종료]",
-          "코캠시스 [종료]",
-          "코키움히어로제2호스팩 [시작]",
-          "코키움히어로제2호스팩 [종료]",
-          "기스탁키퍼 [시작]",
-          "코신한제18호스팩 [시작]",
-          "코채비 [시작]",
-          "유금호건설 [시작]",
-          "유금호건설 [종료]",
-          "코신한제18호스팩 [종료]",
-          "코채비 [종료]",
-          "코루닛 [시작]",
-          "코에이텀 [시작]"
-        ]
-      }
-    },
     {
       "y": 2026,
       "m": 5,
@@ -66,9 +17,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 49061,
+        "bytes": 49038,
         "decoded_charset": "utf-8",
-        "event_score": 19,
+        "event_score": 17,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -79,32 +30,32 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 49061,
+          "bytes": 49038,
           "decoded_charset": "utf-8",
-          "event_score": 19
+          "event_score": 17
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 77,
-        "anchors_matched": 19,
-        "events": 19,
+        "anchors_total": 75,
+        "anchors_matched": 17,
+        "events": 17,
         "sample_matched_texts": [
-          "코레이저옵텍 [시작]",
-          "코캠시스 [시작]",
-          "코레이저옵텍 [종료]",
-          "코캠시스 [종료]",
-          "코키움히어로제2호스팩 [시작]",
-          "코키움히어로제2호스팩 [종료]",
-          "기스탁키퍼 [시작]",
-          "코신한제18호스팩 [시작]",
-          "코채비 [시작]",
-          "유금호건설 [시작]",
-          "유금호건설 [종료]",
-          "코신한제18호스팩 [종료]",
-          "코채비 [종료]",
-          "코루닛 [시작]",
-          "코에이텀 [시작]"
+          "기폴레드 [시작]",
+          "기폴레드 [종료]",
+          "기마키나락스 [시작]",
+          "기마키나락스 [종료]",
+          "코이뮨온시아 [시작]",
+          "기투게더아트 [시작]",
+          "유SKC [시작]",
+          "기데이터젠 [시작]",
+          "코이뮨온시아 [종료]",
+          "유SKC [종료]",
+          "기투게더아트 [종료]",
+          "기대신밸런스제20호기업인수목적 [시작]",
+          "기대신밸런스제20호기업인수목적 [종료]",
+          "기피스피스스튜디오 [시작]",
+          "기데이터젠 [종료]"
         ]
       }
     },
@@ -115,9 +66,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 49061,
+        "bytes": 49038,
         "decoded_charset": "utf-8",
-        "event_score": 19,
+        "event_score": 17,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -128,106 +79,99 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 49061,
+          "bytes": 49038,
           "decoded_charset": "utf-8",
-          "event_score": 19
+          "event_score": 17
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 77,
-        "anchors_matched": 19,
-        "events": 19,
+        "anchors_total": 75,
+        "anchors_matched": 17,
+        "events": 17,
         "sample_matched_texts": [
-          "코레이저옵텍 [시작]",
-          "코캠시스 [시작]",
-          "코레이저옵텍 [종료]",
-          "코캠시스 [종료]",
-          "코키움히어로제2호스팩 [시작]",
-          "코키움히어로제2호스팩 [종료]",
-          "기스탁키퍼 [시작]",
-          "코신한제18호스팩 [시작]",
-          "코채비 [시작]",
-          "유금호건설 [시작]",
-          "유금호건설 [종료]",
-          "코신한제18호스팩 [종료]",
-          "코채비 [종료]",
-          "코루닛 [시작]",
-          "코에이텀 [시작]"
+          "기폴레드 [시작]",
+          "기폴레드 [종료]",
+          "기마키나락스 [시작]",
+          "기마키나락스 [종료]",
+          "코이뮨온시아 [시작]",
+          "기투게더아트 [시작]",
+          "유SKC [시작]",
+          "기데이터젠 [시작]",
+          "코이뮨온시아 [종료]",
+          "유SKC [종료]",
+          "기투게더아트 [종료]",
+          "기대신밸런스제20호기업인수목적 [시작]",
+          "기대신밸런스제20호기업인수목적 [종료]",
+          "기피스피스스튜디오 [시작]",
+          "기데이터젠 [종료]"
         ]
       }
     }
   ],
   "_classify_debug": [
     {
-      "corp_name": "레이저옵텍",
-      "rcpNo": "20260406002062",
+      "corp_name": "폴레드",
+      "rcpNo": "20260430000407",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260406002062"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260430000407"
     },
     {
-      "corp_name": "캠시스",
-      "rcpNo": "20260406001873",
+      "corp_name": "마키나락스",
+      "rcpNo": "20260410003321",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260406001873"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260410003321"
     },
     {
-      "corp_name": "키움히어로제2호스팩",
-      "rcpNo": "20260413001535",
+      "corp_name": "이뮨온시아",
+      "rcpNo": "20260402003241",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260413001535"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260402003241"
     },
     {
-      "corp_name": "스탁키퍼",
-      "rcpNo": "20260414002068",
+      "corp_name": "투게더아트",
+      "rcpNo": "20260417000703",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414002068"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260417000703"
     },
     {
-      "corp_name": "신한제18호스팩",
-      "rcpNo": "20260417000082",
+      "corp_name": "SKC",
+      "rcpNo": "20260427000469",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260417000082"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260427000469"
     },
     {
-      "corp_name": "채비",
-      "rcpNo": "20260417000495",
+      "corp_name": "데이터젠",
+      "rcpNo": "20260420000157",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260417000495"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260420000157"
     },
     {
-      "corp_name": "금호건설",
-      "rcpNo": "20260420000038",
+      "corp_name": "대신밸런스제20호기업인수목적",
+      "rcpNo": "20260422000639",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260420000038"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260422000639"
     },
     {
-      "corp_name": "루닛",
-      "rcpNo": "20260420000278",
+      "corp_name": "피스피스스튜디오",
+      "rcpNo": "20260424000811",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260420000278"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260424000811"
     },
     {
-      "corp_name": "에이텀",
-      "rcpNo": "20260420000236",
+      "corp_name": "져스텍",
+      "rcpNo": "20260416000318",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260420000236"
-    },
-    {
-      "corp_name": "코스모로보틱스",
-      "rcpNo": "20260424000527",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260424000527"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260416000318"
     }
   ]
 }
