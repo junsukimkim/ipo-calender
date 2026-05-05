@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-05-02",
-    "end": "2026-06-16"
+    "start": "2026-05-05",
+    "end": "2026-06-19"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-05-02",
+  "last_updated_kst": "2026-05-05",
   "count": 0,
   "items": [],
   "_debug": [
@@ -111,18 +111,11 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "폴레드",
-      "rcpNo": "20260430000407",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260430000407"
-    },
-    {
       "corp_name": "마키나락스",
-      "rcpNo": "20260410003321",
+      "rcpNo": "20260504000342",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260410003321"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260504000342"
     },
     {
       "corp_name": "이뮨온시아",
@@ -172,6 +165,13 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260416000318"
+    },
+    {
+      "corp_name": "폴레드",
+      "rcpNo": "20260430000407",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260430000407"
     }
   ]
 }
