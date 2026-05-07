@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-05-05",
-    "end": "2026-06-19"
+    "start": "2026-05-07",
+    "end": "2026-06-21"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-05-05",
+  "last_updated_kst": "2026-05-07",
   "count": 0,
   "items": [],
   "_debug": [
@@ -140,10 +140,10 @@
     },
     {
       "corp_name": "데이터젠",
-      "rcpNo": "20260420000157",
+      "rcpNo": "20260506000437",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260420000157"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260506000437"
     },
     {
       "corp_name": "대신밸런스제20호기업인수목적",
