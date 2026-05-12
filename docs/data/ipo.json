@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-05-09",
-    "end": "2026-06-23"
+    "start": "2026-05-12",
+    "end": "2026-06-26"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-05-09",
+  "last_updated_kst": "2026-05-12",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,9 +17,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 49038,
+        "bytes": 48546,
         "decoded_charset": "utf-8",
-        "event_score": 17,
+        "event_score": 16,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -30,16 +30,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 49038,
+          "bytes": 48546,
           "decoded_charset": "utf-8",
-          "event_score": 17
+          "event_score": 16
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 75,
-        "anchors_matched": 17,
-        "events": 17,
+        "anchors_total": 74,
+        "anchors_matched": 16,
+        "events": 16,
         "sample_matched_texts": [
           "기폴레드 [시작]",
           "기폴레드 [종료]",
@@ -66,9 +66,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 49038,
+        "bytes": 48546,
         "decoded_charset": "utf-8",
-        "event_score": 17,
+        "event_score": 16,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -79,16 +79,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 49038,
+          "bytes": 48546,
           "decoded_charset": "utf-8",
-          "event_score": 17
+          "event_score": 16
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 75,
-        "anchors_matched": 17,
-        "events": 17,
+        "anchors_total": 74,
+        "anchors_matched": 16,
+        "events": 16,
         "sample_matched_texts": [
           "기폴레드 [시작]",
           "기폴레드 [종료]",
@@ -111,18 +111,11 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "마키나락스",
-      "rcpNo": "20260508000911",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260508000911"
-    },
-    {
       "corp_name": "이뮨온시아",
-      "rcpNo": "20260402003241",
+      "rcpNo": "20260511000575",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260402003241"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260511000575"
     },
     {
       "corp_name": "투게더아트",
@@ -133,10 +126,10 @@
     },
     {
       "corp_name": "SKC",
-      "rcpNo": "20260427000469",
+      "rcpNo": "20260512000208",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260427000469"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260512000208"
     },
     {
       "corp_name": "데이터젠",
@@ -160,18 +153,18 @@
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260424000811"
     },
     {
-      "corp_name": "져스텍",
-      "rcpNo": "20260416000318",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260416000318"
-    },
-    {
       "corp_name": "폴레드",
       "rcpNo": "20260430000407",
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260430000407"
+    },
+    {
+      "corp_name": "마키나락스",
+      "rcpNo": "20260508000911",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260508000911"
     }
   ]
 }
