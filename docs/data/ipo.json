@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-05-12",
-    "end": "2026-06-26"
+    "start": "2026-05-14",
+    "end": "2026-06-28"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-05-12",
+  "last_updated_kst": "2026-05-14",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,7 +17,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 48546,
+        "bytes": 48556,
         "decoded_charset": "utf-8",
         "event_score": 16,
         "cookie_names": [
@@ -30,7 +30,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 48546,
+          "bytes": 48556,
           "decoded_charset": "utf-8",
           "event_score": 16
         }
@@ -41,8 +41,8 @@
         "anchors_matched": 16,
         "events": 16,
         "sample_matched_texts": [
-          "기폴레드 [시작]",
-          "기폴레드 [종료]",
+          "코폴레드 [시작]",
+          "코폴레드 [종료]",
           "기마키나락스 [시작]",
           "기마키나락스 [종료]",
           "코이뮨온시아 [시작]",
@@ -66,7 +66,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 48546,
+        "bytes": 48556,
         "decoded_charset": "utf-8",
         "event_score": 16,
         "cookie_names": [
@@ -79,7 +79,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 48546,
+          "bytes": 48556,
           "decoded_charset": "utf-8",
           "event_score": 16
         }
@@ -90,8 +90,8 @@
         "anchors_matched": 16,
         "events": 16,
         "sample_matched_texts": [
-          "기폴레드 [시작]",
-          "기폴레드 [종료]",
+          "코폴레드 [시작]",
+          "코폴레드 [종료]",
           "기마키나락스 [시작]",
           "기마키나락스 [종료]",
           "코이뮨온시아 [시작]",
@@ -110,20 +110,6 @@
     }
   ],
   "_classify_debug": [
-    {
-      "corp_name": "이뮨온시아",
-      "rcpNo": "20260511000575",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260511000575"
-    },
-    {
-      "corp_name": "투게더아트",
-      "rcpNo": "20260417000703",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260417000703"
-    },
     {
       "corp_name": "SKC",
       "rcpNo": "20260512000208",
@@ -165,6 +151,20 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260508000911"
+    },
+    {
+      "corp_name": "이뮨온시아",
+      "rcpNo": "20260511000575",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260511000575"
+    },
+    {
+      "corp_name": "투게더아트",
+      "rcpNo": "20260512000391",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260512000391"
     }
   ]
 }
