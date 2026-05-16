@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-05-14",
-    "end": "2026-06-28"
+    "start": "2026-05-16",
+    "end": "2026-06-30"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-05-14",
+  "last_updated_kst": "2026-05-16",
   "count": 0,
   "items": [],
   "_debug": [
@@ -111,20 +111,6 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "SKC",
-      "rcpNo": "20260512000208",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260512000208"
-    },
-    {
-      "corp_name": "데이터젠",
-      "rcpNo": "20260506000437",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260506000437"
-    },
-    {
       "corp_name": "대신밸런스제20호기업인수목적",
       "rcpNo": "20260422000639",
       "type": "unknown",
@@ -133,10 +119,10 @@
     },
     {
       "corp_name": "피스피스스튜디오",
-      "rcpNo": "20260424000811",
+      "rcpNo": "20260515002959",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260424000811"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002959"
     },
     {
       "corp_name": "폴레드",
@@ -165,6 +151,20 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260512000391"
+    },
+    {
+      "corp_name": "SKC",
+      "rcpNo": "20260512000208",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260512000208"
+    },
+    {
+      "corp_name": "데이터젠",
+      "rcpNo": "20260506000437",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260506000437"
     }
   ]
 }
