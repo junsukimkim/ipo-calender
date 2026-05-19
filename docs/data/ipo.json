@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-05-16",
-    "end": "2026-06-30"
+    "start": "2026-05-19",
+    "end": "2026-07-03"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-05-16",
+  "last_updated_kst": "2026-05-19",
   "count": 0,
   "items": [],
   "_debug": [
@@ -76,6 +76,55 @@
         "requested": {
           "y": 2026,
           "m": 6
+        },
+        "bootstrap": {
+          "status": 200,
+          "bytes": 48556,
+          "decoded_charset": "utf-8",
+          "event_score": 16
+        }
+      },
+      "parse": {
+        "ok": true,
+        "anchors_total": 74,
+        "anchors_matched": 16,
+        "events": 16,
+        "sample_matched_texts": [
+          "코폴레드 [시작]",
+          "코폴레드 [종료]",
+          "기마키나락스 [시작]",
+          "기마키나락스 [종료]",
+          "코이뮨온시아 [시작]",
+          "기투게더아트 [시작]",
+          "유SKC [시작]",
+          "기데이터젠 [시작]",
+          "코이뮨온시아 [종료]",
+          "유SKC [종료]",
+          "기투게더아트 [종료]",
+          "기대신밸런스제20호기업인수목적 [시작]",
+          "기대신밸런스제20호기업인수목적 [종료]",
+          "기피스피스스튜디오 [시작]",
+          "기데이터젠 [종료]"
+        ]
+      }
+    },
+    {
+      "y": 2026,
+      "m": 7,
+      "fetch": {
+        "method": "POST",
+        "status": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 48556,
+        "decoded_charset": "utf-8",
+        "event_score": 16,
+        "cookie_names": [
+          "WMONID",
+          "JSESSIONID"
+        ],
+        "requested": {
+          "y": 2026,
+          "m": 7
         },
         "bootstrap": {
           "status": 200,
