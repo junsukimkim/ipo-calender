@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-05-19",
-    "end": "2026-07-03"
+    "start": "2026-05-21",
+    "end": "2026-07-05"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-05-19",
+  "last_updated_kst": "2026-05-21",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,7 +17,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 48556,
+        "bytes": 48566,
         "decoded_charset": "utf-8",
         "event_score": 16,
         "cookie_names": [
@@ -30,7 +30,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 48556,
+          "bytes": 48566,
           "decoded_charset": "utf-8",
           "event_score": 16
         }
@@ -43,8 +43,8 @@
         "sample_matched_texts": [
           "코폴레드 [시작]",
           "코폴레드 [종료]",
-          "기마키나락스 [시작]",
-          "기마키나락스 [종료]",
+          "코마키나락스 [시작]",
+          "코마키나락스 [종료]",
           "코이뮨온시아 [시작]",
           "기투게더아트 [시작]",
           "유SKC [시작]",
@@ -66,7 +66,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 48556,
+        "bytes": 48566,
         "decoded_charset": "utf-8",
         "event_score": 16,
         "cookie_names": [
@@ -79,7 +79,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 48556,
+          "bytes": 48566,
           "decoded_charset": "utf-8",
           "event_score": 16
         }
@@ -92,8 +92,8 @@
         "sample_matched_texts": [
           "코폴레드 [시작]",
           "코폴레드 [종료]",
-          "기마키나락스 [시작]",
-          "기마키나락스 [종료]",
+          "코마키나락스 [시작]",
+          "코마키나락스 [종료]",
           "코이뮨온시아 [시작]",
           "기투게더아트 [시작]",
           "유SKC [시작]",
@@ -115,7 +115,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 48556,
+        "bytes": 48566,
         "decoded_charset": "utf-8",
         "event_score": 16,
         "cookie_names": [
@@ -128,7 +128,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 48556,
+          "bytes": 48566,
           "decoded_charset": "utf-8",
           "event_score": 16
         }
@@ -141,8 +141,8 @@
         "sample_matched_texts": [
           "코폴레드 [시작]",
           "코폴레드 [종료]",
-          "기마키나락스 [시작]",
-          "기마키나락스 [종료]",
+          "코마키나락스 [시작]",
+          "코마키나락스 [종료]",
           "코이뮨온시아 [시작]",
           "기투게더아트 [시작]",
           "유SKC [시작]",
