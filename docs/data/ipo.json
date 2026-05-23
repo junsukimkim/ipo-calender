@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-05-21",
-    "end": "2026-07-05"
+    "start": "2026-05-23",
+    "end": "2026-07-07"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-05-21",
+  "last_updated_kst": "2026-05-23",
   "count": 0,
   "items": [],
   "_debug": [
@@ -160,18 +160,11 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "대신밸런스제20호기업인수목적",
-      "rcpNo": "20260422000639",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260422000639"
-    },
-    {
       "corp_name": "피스피스스튜디오",
-      "rcpNo": "20260515002959",
+      "rcpNo": "20260522000571",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002959"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260522000571"
     },
     {
       "corp_name": "폴레드",
@@ -214,6 +207,13 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260506000437"
+    },
+    {
+      "corp_name": "대신밸런스제20호기업인수목적",
+      "rcpNo": "20260521000525",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260521000525"
     }
   ]
 }
