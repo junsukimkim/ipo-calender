@@ -2,63 +2,14 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-05-30",
-    "end": "2026-07-14"
+    "start": "2026-06-02",
+    "end": "2026-07-17"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-05-30",
+  "last_updated_kst": "2026-06-02",
   "count": 0,
   "items": [],
   "_debug": [
-    {
-      "y": 2026,
-      "m": 5,
-      "fetch": {
-        "method": "POST",
-        "status": 200,
-        "content_type": "text/html; charset=UTF-8",
-        "bytes": 48566,
-        "decoded_charset": "utf-8",
-        "event_score": 16,
-        "cookie_names": [
-          "WMONID",
-          "JSESSIONID"
-        ],
-        "requested": {
-          "y": 2026,
-          "m": 5
-        },
-        "bootstrap": {
-          "status": 200,
-          "bytes": 48566,
-          "decoded_charset": "utf-8",
-          "event_score": 16
-        }
-      },
-      "parse": {
-        "ok": true,
-        "anchors_total": 74,
-        "anchors_matched": 16,
-        "events": 16,
-        "sample_matched_texts": [
-          "코폴레드 [시작]",
-          "코폴레드 [종료]",
-          "코마키나락스 [시작]",
-          "코마키나락스 [종료]",
-          "코이뮨온시아 [시작]",
-          "기투게더아트 [시작]",
-          "유SKC [시작]",
-          "기데이터젠 [시작]",
-          "코이뮨온시아 [종료]",
-          "유SKC [종료]",
-          "기투게더아트 [종료]",
-          "기대신밸런스제20호기업인수목적 [시작]",
-          "기대신밸런스제20호기업인수목적 [종료]",
-          "기피스피스스튜디오 [시작]",
-          "기데이터젠 [종료]"
-        ]
-      }
-    },
     {
       "y": 2026,
       "m": 6,
@@ -66,9 +17,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 48566,
+        "bytes": 50674,
         "decoded_charset": "utf-8",
-        "event_score": 16,
+        "event_score": 23,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -79,32 +30,32 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 48566,
+          "bytes": 50674,
           "decoded_charset": "utf-8",
-          "event_score": 16
+          "event_score": 23
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 74,
-        "anchors_matched": 16,
-        "events": 16,
+        "anchors_total": 81,
+        "anchors_matched": 23,
+        "events": 23,
         "sample_matched_texts": [
-          "코폴레드 [시작]",
-          "코폴레드 [종료]",
-          "코마키나락스 [시작]",
-          "코마키나락스 [종료]",
-          "코이뮨온시아 [시작]",
-          "기투게더아트 [시작]",
-          "유SKC [시작]",
-          "기데이터젠 [시작]",
-          "코이뮨온시아 [종료]",
-          "유SKC [종료]",
-          "기투게더아트 [종료]",
-          "기대신밸런스제20호기업인수목적 [시작]",
-          "기대신밸런스제20호기업인수목적 [종료]",
-          "기피스피스스튜디오 [시작]",
-          "기데이터젠 [종료]"
+          "코이노스페이스 [시작]",
+          "코이노스페이스 [종료]",
+          "기메리츠제2호기업인수목적 [시작]",
+          "기메리츠제2호기업인수목적 [종료]",
+          "기스탁키퍼 [종료]",
+          "코RF머트리얼즈 [시작]",
+          "기빅웨이브로보틱스 [시작]",
+          "기스트라드비젼 [시작]",
+          "기져스텍 [시작]",
+          "코RF머트리얼즈 [종료]",
+          "기빅웨이브로보틱스 [종료]",
+          "기스트라드비젼 [종료]",
+          "기져스텍 [종료]",
+          "코피엠티 [시작]",
+          "코뉴인텍 [시작]"
         ]
       }
     },
@@ -115,9 +66,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 48566,
+        "bytes": 50674,
         "decoded_charset": "utf-8",
-        "event_score": 16,
+        "event_score": 23,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -128,92 +79,120 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 48566,
+          "bytes": 50674,
           "decoded_charset": "utf-8",
-          "event_score": 16
+          "event_score": 23
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 74,
-        "anchors_matched": 16,
-        "events": 16,
+        "anchors_total": 81,
+        "anchors_matched": 23,
+        "events": 23,
         "sample_matched_texts": [
-          "코폴레드 [시작]",
-          "코폴레드 [종료]",
-          "코마키나락스 [시작]",
-          "코마키나락스 [종료]",
-          "코이뮨온시아 [시작]",
-          "기투게더아트 [시작]",
-          "유SKC [시작]",
-          "기데이터젠 [시작]",
-          "코이뮨온시아 [종료]",
-          "유SKC [종료]",
-          "기투게더아트 [종료]",
-          "기대신밸런스제20호기업인수목적 [시작]",
-          "기대신밸런스제20호기업인수목적 [종료]",
-          "기피스피스스튜디오 [시작]",
-          "기데이터젠 [종료]"
+          "코이노스페이스 [시작]",
+          "코이노스페이스 [종료]",
+          "기메리츠제2호기업인수목적 [시작]",
+          "기메리츠제2호기업인수목적 [종료]",
+          "기스탁키퍼 [종료]",
+          "코RF머트리얼즈 [시작]",
+          "기빅웨이브로보틱스 [시작]",
+          "기스트라드비젼 [시작]",
+          "기져스텍 [시작]",
+          "코RF머트리얼즈 [종료]",
+          "기빅웨이브로보틱스 [종료]",
+          "기스트라드비젼 [종료]",
+          "기져스텍 [종료]",
+          "코피엠티 [시작]",
+          "코뉴인텍 [시작]"
         ]
       }
     }
   ],
   "_classify_debug": [
     {
-      "corp_name": "폴레드",
-      "rcpNo": "20260430000407",
+      "corp_name": "이노스페이스",
+      "rcpNo": "20260601001401",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260430000407"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260601001401"
     },
     {
-      "corp_name": "마키나락스",
-      "rcpNo": "20260508000911",
+      "corp_name": "메리츠제2호기업인수목적",
+      "rcpNo": "20260518000391",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260508000911"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260518000391"
     },
     {
-      "corp_name": "이뮨온시아",
-      "rcpNo": "20260511000575",
+      "corp_name": "RF머트리얼즈",
+      "rcpNo": "20260527000550",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260511000575"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260527000550"
     },
     {
-      "corp_name": "투게더아트",
-      "rcpNo": "20260512000391",
+      "corp_name": "빅웨이브로보틱스",
+      "rcpNo": "20260522000660",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260512000391"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260522000660"
     },
     {
-      "corp_name": "SKC",
-      "rcpNo": "20260512000208",
+      "corp_name": "스트라드비젼",
+      "rcpNo": "20260519000246",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260512000208"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260519000246"
     },
     {
-      "corp_name": "데이터젠",
-      "rcpNo": "20260506000437",
+      "corp_name": "져스텍",
+      "rcpNo": "20260518000304",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260506000437"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260518000304"
     },
     {
-      "corp_name": "대신밸런스제20호기업인수목적",
-      "rcpNo": "20260521000525",
+      "corp_name": "피엠티",
+      "rcpNo": "20260518000245",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260521000525"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260518000245"
     },
     {
-      "corp_name": "피스피스스튜디오",
-      "rcpNo": "20260522000571",
+      "corp_name": "뉴인텍",
+      "rcpNo": "20260520000229",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260522000571"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260520000229"
+    },
+    {
+      "corp_name": "한국제16호기업인수목적",
+      "rcpNo": "20260526000479",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260526000479"
+    },
+    {
+      "corp_name": "매드업",
+      "rcpNo": "20260522000649",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260522000649"
+    },
+    {
+      "corp_name": "레몬헬스케어",
+      "rcpNo": "20260527000403",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260527000403"
+    },
+    {
+      "corp_name": "스탁키퍼",
+      "rcpNo": "20260414002068",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414002068"
     }
   ]
 }
