@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-06-04",
-    "end": "2026-07-19"
+    "start": "2026-06-06",
+    "end": "2026-07-21"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-06-04",
+  "last_updated_kst": "2026-06-06",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,9 +17,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 50674,
+        "bytes": 51158,
         "decoded_charset": "utf-8",
-        "event_score": 23,
+        "event_score": 24,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -30,16 +30,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 50674,
+          "bytes": 51158,
           "decoded_charset": "utf-8",
-          "event_score": 23
+          "event_score": 24
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 81,
-        "anchors_matched": 23,
-        "events": 23,
+        "anchors_total": 82,
+        "anchors_matched": 24,
+        "events": 24,
         "sample_matched_texts": [
           "코이노스페이스 [시작]",
           "코이노스페이스 [종료]",
@@ -66,9 +66,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 50674,
+        "bytes": 51158,
         "decoded_charset": "utf-8",
-        "event_score": 23,
+        "event_score": 24,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -79,16 +79,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 50674,
+          "bytes": 51158,
           "decoded_charset": "utf-8",
-          "event_score": 23
+          "event_score": 24
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 81,
-        "anchors_matched": 23,
-        "events": 23,
+        "anchors_total": 82,
+        "anchors_matched": 24,
+        "events": 24,
         "sample_matched_texts": [
           "코이노스페이스 [시작]",
           "코이노스페이스 [종료]",
@@ -110,13 +110,6 @@
     }
   ],
   "_classify_debug": [
-    {
-      "corp_name": "이노스페이스",
-      "rcpNo": "20260601001401",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260601001401"
-    },
     {
       "corp_name": "메리츠제2호기업인수목적",
       "rcpNo": "20260518000391",
@@ -186,6 +179,20 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260527000403"
+    },
+    {
+      "corp_name": "데이터젠",
+      "rcpNo": "20260605000175",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260605000175"
+    },
+    {
+      "corp_name": "이노스페이스",
+      "rcpNo": "20260601001401",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260601001401"
     },
     {
       "corp_name": "스탁키퍼",
