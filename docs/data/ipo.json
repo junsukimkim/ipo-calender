@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-06-06",
-    "end": "2026-07-21"
+    "start": "2026-06-09",
+    "end": "2026-07-24"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-06-06",
+  "last_updated_kst": "2026-06-09",
   "count": 0,
   "items": [],
   "_debug": [
@@ -112,10 +112,10 @@
   "_classify_debug": [
     {
       "corp_name": "메리츠제2호기업인수목적",
-      "rcpNo": "20260518000391",
+      "rcpNo": "20260608000229",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260518000391"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260608000229"
     },
     {
       "corp_name": "RF머트리얼즈",
@@ -133,10 +133,10 @@
     },
     {
       "corp_name": "스트라드비젼",
-      "rcpNo": "20260519000246",
+      "rcpNo": "20260608000300",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260519000246"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260608000300"
     },
     {
       "corp_name": "져스텍",
