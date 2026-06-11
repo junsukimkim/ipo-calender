@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-06-09",
-    "end": "2026-07-24"
+    "start": "2026-06-11",
+    "end": "2026-07-26"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-06-09",
+  "last_updated_kst": "2026-06-11",
   "count": 0,
   "items": [],
   "_debug": [
@@ -111,13 +111,6 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "메리츠제2호기업인수목적",
-      "rcpNo": "20260608000229",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260608000229"
-    },
-    {
       "corp_name": "RF머트리얼즈",
       "rcpNo": "20260527000550",
       "type": "unknown",
@@ -193,6 +186,13 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260601001401"
+    },
+    {
+      "corp_name": "메리츠제2호기업인수목적",
+      "rcpNo": "20260608000229",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260608000229"
     },
     {
       "corp_name": "스탁키퍼",
