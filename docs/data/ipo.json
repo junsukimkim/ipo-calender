@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-06-11",
-    "end": "2026-07-26"
+    "start": "2026-06-13",
+    "end": "2026-07-28"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-06-11",
+  "last_updated_kst": "2026-06-13",
   "count": 0,
   "items": [],
   "_debug": [
@@ -126,10 +126,10 @@
     },
     {
       "corp_name": "스트라드비젼",
-      "rcpNo": "20260608000300",
+      "rcpNo": "20260611000588",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260608000300"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260611000588"
     },
     {
       "corp_name": "져스텍",
@@ -154,10 +154,10 @@
     },
     {
       "corp_name": "한국제16호기업인수목적",
-      "rcpNo": "20260526000479",
+      "rcpNo": "20260611000236",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260526000479"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260611000236"
     },
     {
       "corp_name": "매드업",
@@ -168,10 +168,10 @@
     },
     {
       "corp_name": "레몬헬스케어",
-      "rcpNo": "20260527000403",
+      "rcpNo": "20260612000375",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260527000403"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260612000375"
     },
     {
       "corp_name": "데이터젠",
