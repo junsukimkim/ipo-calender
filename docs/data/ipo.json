@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-06-18",
-    "end": "2026-08-02"
+    "start": "2026-06-20",
+    "end": "2026-08-04"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-06-18",
+  "last_updated_kst": "2026-06-20",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,7 +17,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 51158,
+        "bytes": 51120,
         "decoded_charset": "utf-8",
         "event_score": 24,
         "cookie_names": [
@@ -30,7 +30,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 51158,
+          "bytes": 51120,
           "decoded_charset": "utf-8",
           "event_score": 24
         }
@@ -43,8 +43,8 @@
         "sample_matched_texts": [
           "코이노스페이스 [시작]",
           "코이노스페이스 [종료]",
-          "기메리츠제2호기업인수목적 [시작]",
-          "기메리츠제2호기업인수목적 [종료]",
+          "코메리츠제2호스팩 [시작]",
+          "코메리츠제2호스팩 [종료]",
           "기스탁키퍼 [종료]",
           "코RF머트리얼즈 [시작]",
           "기빅웨이브로보틱스 [시작]",
@@ -66,7 +66,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 51158,
+        "bytes": 51120,
         "decoded_charset": "utf-8",
         "event_score": 24,
         "cookie_names": [
@@ -79,7 +79,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 51158,
+          "bytes": 51120,
           "decoded_charset": "utf-8",
           "event_score": 24
         }
@@ -92,8 +92,8 @@
         "sample_matched_texts": [
           "코이노스페이스 [시작]",
           "코이노스페이스 [종료]",
-          "기메리츠제2호기업인수목적 [시작]",
-          "기메리츠제2호기업인수목적 [종료]",
+          "코메리츠제2호스팩 [시작]",
+          "코메리츠제2호스팩 [종료]",
           "기스탁키퍼 [종료]",
           "코RF머트리얼즈 [시작]",
           "기빅웨이브로보틱스 [시작]",
@@ -115,7 +115,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 51158,
+        "bytes": 51120,
         "decoded_charset": "utf-8",
         "event_score": 24,
         "cookie_names": [
@@ -128,7 +128,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 51158,
+          "bytes": 51120,
           "decoded_charset": "utf-8",
           "event_score": 24
         }
@@ -141,8 +141,8 @@
         "sample_matched_texts": [
           "코이노스페이스 [시작]",
           "코이노스페이스 [종료]",
-          "기메리츠제2호기업인수목적 [시작]",
-          "기메리츠제2호기업인수목적 [종료]",
+          "코메리츠제2호스팩 [시작]",
+          "코메리츠제2호스팩 [종료]",
           "기스탁키퍼 [종료]",
           "코RF머트리얼즈 [시작]",
           "기빅웨이브로보틱스 [시작]",
@@ -159,6 +159,62 @@
     }
   ],
   "_classify_debug": [
+    {
+      "corp_name": "뉴인텍",
+      "rcpNo": "20260618000118",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260618000118"
+    },
+    {
+      "corp_name": "한국제16호기업인수목적",
+      "rcpNo": "20260619000190",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260619000190"
+    },
+    {
+      "corp_name": "매드업",
+      "rcpNo": "20260522000649",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260522000649"
+    },
+    {
+      "corp_name": "레몬헬스케어",
+      "rcpNo": "20260612000375",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260612000375"
+    },
+    {
+      "corp_name": "데이터젠",
+      "rcpNo": "20260605000175",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260605000175"
+    },
+    {
+      "corp_name": "이노스페이스",
+      "rcpNo": "20260601001401",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260601001401"
+    },
+    {
+      "corp_name": "메리츠제2호스팩",
+      "rcpNo": "20260608000229",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260608000229"
+    },
+    {
+      "corp_name": "스탁키퍼",
+      "rcpNo": "20260414002068",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414002068"
+    },
     {
       "corp_name": "RF머트리얼즈",
       "rcpNo": "20260616000058",
@@ -193,62 +249,6 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260617000224"
-    },
-    {
-      "corp_name": "뉴인텍",
-      "rcpNo": "20260618000118",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260618000118"
-    },
-    {
-      "corp_name": "한국제16호기업인수목적",
-      "rcpNo": "20260611000236",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260611000236"
-    },
-    {
-      "corp_name": "매드업",
-      "rcpNo": "20260522000649",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260522000649"
-    },
-    {
-      "corp_name": "레몬헬스케어",
-      "rcpNo": "20260612000375",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260612000375"
-    },
-    {
-      "corp_name": "데이터젠",
-      "rcpNo": "20260605000175",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260605000175"
-    },
-    {
-      "corp_name": "이노스페이스",
-      "rcpNo": "20260601001401",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260601001401"
-    },
-    {
-      "corp_name": "메리츠제2호기업인수목적",
-      "rcpNo": "20260608000229",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260608000229"
-    },
-    {
-      "corp_name": "스탁키퍼",
-      "rcpNo": "20260414002068",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414002068"
     }
   ]
 }
