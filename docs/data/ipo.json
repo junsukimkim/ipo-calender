@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-06-20",
-    "end": "2026-08-04"
+    "start": "2026-06-23",
+    "end": "2026-08-07"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-06-20",
+  "last_updated_kst": "2026-06-23",
   "count": 0,
   "items": [],
   "_debug": [
@@ -160,25 +160,11 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "뉴인텍",
-      "rcpNo": "20260618000118",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260618000118"
-    },
-    {
-      "corp_name": "한국제16호기업인수목적",
-      "rcpNo": "20260619000190",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260619000190"
-    },
-    {
       "corp_name": "매드업",
-      "rcpNo": "20260522000649",
+      "rcpNo": "20260622000382",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260522000649"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260622000382"
     },
     {
       "corp_name": "레몬헬스케어",
@@ -249,6 +235,20 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260617000224"
+    },
+    {
+      "corp_name": "뉴인텍",
+      "rcpNo": "20260618000118",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260618000118"
+    },
+    {
+      "corp_name": "한국제16호기업인수목적",
+      "rcpNo": "20260619000190",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260619000190"
     }
   ]
 }
