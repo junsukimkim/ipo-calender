@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-06-23",
-    "end": "2026-08-07"
+    "start": "2026-06-25",
+    "end": "2026-08-09"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-06-23",
+  "last_updated_kst": "2026-06-25",
   "count": 0,
   "items": [],
   "_debug": [
@@ -160,25 +160,11 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "매드업",
-      "rcpNo": "20260622000382",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260622000382"
-    },
-    {
-      "corp_name": "레몬헬스케어",
-      "rcpNo": "20260612000375",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260612000375"
-    },
-    {
       "corp_name": "데이터젠",
-      "rcpNo": "20260605000175",
+      "rcpNo": "20260624000508",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260605000175"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260624000508"
     },
     {
       "corp_name": "이노스페이스",
@@ -249,6 +235,20 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260619000190"
+    },
+    {
+      "corp_name": "매드업",
+      "rcpNo": "20260622000382",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260622000382"
+    },
+    {
+      "corp_name": "레몬헬스케어",
+      "rcpNo": "20260623000235",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260623000235"
     }
   ]
 }
