@@ -2,63 +2,14 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-06-30",
-    "end": "2026-08-14"
+    "start": "2026-07-02",
+    "end": "2026-08-16"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-06-30",
+  "last_updated_kst": "2026-07-02",
   "count": 0,
   "items": [],
   "_debug": [
-    {
-      "y": 2026,
-      "m": 6,
-      "fetch": {
-        "method": "POST",
-        "status": 200,
-        "content_type": "text/html; charset=UTF-8",
-        "bytes": 51102,
-        "decoded_charset": "utf-8",
-        "event_score": 24,
-        "cookie_names": [
-          "WMONID",
-          "JSESSIONID"
-        ],
-        "requested": {
-          "y": 2026,
-          "m": 6
-        },
-        "bootstrap": {
-          "status": 200,
-          "bytes": 51102,
-          "decoded_charset": "utf-8",
-          "event_score": 24
-        }
-      },
-      "parse": {
-        "ok": true,
-        "anchors_total": 82,
-        "anchors_matched": 24,
-        "events": 24,
-        "sample_matched_texts": [
-          "코이노스페이스 [시작]",
-          "코이노스페이스 [종료]",
-          "코메리츠제2호스팩 [시작]",
-          "코메리츠제2호스팩 [종료]",
-          "기스탁키퍼 [종료]",
-          "코RF머트리얼즈 [시작]",
-          "기빅웨이브로보틱스 [시작]",
-          "코스트라드비젼 [시작]",
-          "코져스텍 [시작]",
-          "코RF머트리얼즈 [종료]",
-          "기빅웨이브로보틱스 [종료]",
-          "코스트라드비젼 [종료]",
-          "코져스텍 [종료]",
-          "코피엠티 [시작]",
-          "코뉴인텍 [시작]"
-        ]
-      }
-    },
     {
       "y": 2026,
       "m": 7,
@@ -66,9 +17,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 51102,
+        "bytes": 53770,
         "decoded_charset": "utf-8",
-        "event_score": 24,
+        "event_score": 29,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -79,32 +30,32 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 51102,
+          "bytes": 53770,
           "decoded_charset": "utf-8",
-          "event_score": 24
+          "event_score": 29
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 82,
-        "anchors_matched": 24,
-        "events": 24,
+        "anchors_total": 87,
+        "anchors_matched": 29,
+        "events": 29,
         "sample_matched_texts": [
-          "코이노스페이스 [시작]",
-          "코이노스페이스 [종료]",
-          "코메리츠제2호스팩 [시작]",
-          "코메리츠제2호스팩 [종료]",
-          "기스탁키퍼 [종료]",
-          "코RF머트리얼즈 [시작]",
-          "기빅웨이브로보틱스 [시작]",
-          "코스트라드비젼 [시작]",
-          "코져스텍 [시작]",
-          "코RF머트리얼즈 [종료]",
-          "기빅웨이브로보틱스 [종료]",
-          "코스트라드비젼 [종료]",
-          "코져스텍 [종료]",
-          "코피엠티 [시작]",
-          "코뉴인텍 [시작]"
+          "기레메디 [시작]",
+          "기레메디 [종료]",
+          "코티엘비 [시작]",
+          "코티엘비 [종료]",
+          "코형지I&C [시작]",
+          "기데이터젠 [종료]",
+          "코형지I&C [종료]",
+          "기에이치엘지노믹스 [시작]",
+          "유한솔테크닉스 [시작]",
+          "유SK하이닉스 [시작]",
+          "유SK하이닉스 [종료]",
+          "기에이치엘지노믹스 [종료]",
+          "유한솔테크닉스 [종료]",
+          "코대동기어 [시작]",
+          "코대동기어 [종료]"
         ]
       }
     },
@@ -115,9 +66,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 51102,
+        "bytes": 53770,
         "decoded_charset": "utf-8",
-        "event_score": 24,
+        "event_score": 29,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -128,113 +79,134 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 51102,
+          "bytes": 53770,
           "decoded_charset": "utf-8",
-          "event_score": 24
+          "event_score": 29
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 82,
-        "anchors_matched": 24,
-        "events": 24,
+        "anchors_total": 87,
+        "anchors_matched": 29,
+        "events": 29,
         "sample_matched_texts": [
-          "코이노스페이스 [시작]",
-          "코이노스페이스 [종료]",
-          "코메리츠제2호스팩 [시작]",
-          "코메리츠제2호스팩 [종료]",
-          "기스탁키퍼 [종료]",
-          "코RF머트리얼즈 [시작]",
-          "기빅웨이브로보틱스 [시작]",
-          "코스트라드비젼 [시작]",
-          "코져스텍 [시작]",
-          "코RF머트리얼즈 [종료]",
-          "기빅웨이브로보틱스 [종료]",
-          "코스트라드비젼 [종료]",
-          "코져스텍 [종료]",
-          "코피엠티 [시작]",
-          "코뉴인텍 [시작]"
+          "기레메디 [시작]",
+          "기레메디 [종료]",
+          "코티엘비 [시작]",
+          "코티엘비 [종료]",
+          "코형지I&C [시작]",
+          "기데이터젠 [종료]",
+          "코형지I&C [종료]",
+          "기에이치엘지노믹스 [시작]",
+          "유한솔테크닉스 [시작]",
+          "유SK하이닉스 [시작]",
+          "유SK하이닉스 [종료]",
+          "기에이치엘지노믹스 [종료]",
+          "유한솔테크닉스 [종료]",
+          "코대동기어 [시작]",
+          "코대동기어 [종료]"
         ]
       }
     }
   ],
   "_classify_debug": [
     {
-      "corp_name": "이노스페이스",
-      "rcpNo": "20260601001401",
+      "corp_name": "티엘비",
+      "rcpNo": "20260702000143",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260601001401"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260702000143"
     },
     {
-      "corp_name": "메리츠제2호스팩",
-      "rcpNo": "20260608000229",
+      "corp_name": "형지I&C",
+      "rcpNo": "20260602000115",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260608000229"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260602000115"
     },
     {
-      "corp_name": "RF머트리얼즈",
-      "rcpNo": "20260616000058",
+      "corp_name": "에이치엘지노믹스",
+      "rcpNo": "20260616000156",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260616000058"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260616000156"
     },
     {
-      "corp_name": "빅웨이브로보틱스",
-      "rcpNo": "20260522000660",
+      "corp_name": "한솔테크닉스",
+      "rcpNo": "20260617000421",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260522000660"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260617000421"
     },
     {
-      "corp_name": "스트라드비젼",
-      "rcpNo": "20260617000168",
+      "corp_name": "SK하이닉스",
+      "rcpNo": "20260630001095",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260617000168"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260630001095"
     },
     {
-      "corp_name": "져스텍",
-      "rcpNo": "20260616000249",
+      "corp_name": "대동기어",
+      "rcpNo": "20260610000501",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260616000249"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260610000501"
     },
     {
-      "corp_name": "피엠티",
-      "rcpNo": "20260617000224",
+      "corp_name": "상지건설",
+      "rcpNo": "20260605000572",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260617000224"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260605000572"
     },
     {
-      "corp_name": "뉴인텍",
-      "rcpNo": "20260618000118",
+      "corp_name": "한화솔루션",
+      "rcpNo": "20260612000354",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260618000118"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260612000354"
     },
     {
-      "corp_name": "한국제16호스팩",
-      "rcpNo": "20260619000190",
+      "corp_name": "뉴로메카",
+      "rcpNo": "20260618000115",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260619000190"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260618000115"
     },
     {
-      "corp_name": "매드업",
-      "rcpNo": "20260622000382",
+      "corp_name": "케이앤에스아이앤씨",
+      "rcpNo": "20260615000244",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260622000382"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260615000244"
     },
     {
-      "corp_name": "레몬헬스케어",
-      "rcpNo": "20260623000235",
+      "corp_name": "LB세미콘",
+      "rcpNo": "20260617000266",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260623000235"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260617000266"
+    },
+    {
+      "corp_name": "에이전트AI",
+      "rcpNo": "20260521000420",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260521000420"
+    },
+    {
+      "corp_name": "인제니아테라퓨틱스",
+      "rcpNo": "20260701000594",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260701000594"
+    },
+    {
+      "corp_name": "레메디",
+      "rcpNo": "20260626000241",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260626000241"
     },
     {
       "corp_name": "데이터젠",
@@ -242,13 +214,6 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260624000508"
-    },
-    {
-      "corp_name": "스탁키퍼",
-      "rcpNo": "20260414002068",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414002068"
     }
   ]
 }
