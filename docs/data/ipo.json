@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-07-04",
-    "end": "2026-08-18"
+    "start": "2026-07-07",
+    "end": "2026-08-21"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-07-04",
+  "last_updated_kst": "2026-07-07",
   "count": 0,
   "items": [],
   "_debug": [
@@ -111,13 +111,6 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "티엘비",
-      "rcpNo": "20260702000143",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260702000143"
-    },
-    {
       "corp_name": "형지I&C",
       "rcpNo": "20260602000115",
       "type": "unknown",
@@ -126,10 +119,10 @@
     },
     {
       "corp_name": "에이치엘지노믹스",
-      "rcpNo": "20260702000548",
+      "rcpNo": "20260706000283",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260702000548"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260706000283"
     },
     {
       "corp_name": "한솔테크닉스",
@@ -140,10 +133,10 @@
     },
     {
       "corp_name": "SK하이닉스",
-      "rcpNo": "20260630001095",
+      "rcpNo": "20260706000444",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260630001095"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260706000444"
     },
     {
       "corp_name": "대동기어",
@@ -200,6 +193,13 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260626000241"
+    },
+    {
+      "corp_name": "티엘비",
+      "rcpNo": "20260702000143",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260702000143"
     },
     {
       "corp_name": "데이터젠",
