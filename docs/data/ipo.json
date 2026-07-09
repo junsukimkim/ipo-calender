@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-07-07",
-    "end": "2026-08-21"
+    "start": "2026-07-09",
+    "end": "2026-08-23"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-07-07",
+  "last_updated_kst": "2026-07-09",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,9 +17,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 52958,
+        "bytes": 52096,
         "decoded_charset": "utf-8",
-        "event_score": 27,
+        "event_score": 25,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -30,16 +30,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 52958,
+          "bytes": 52096,
           "decoded_charset": "utf-8",
-          "event_score": 27
+          "event_score": 25
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 85,
-        "anchors_matched": 27,
-        "events": 27,
+        "anchors_total": 83,
+        "anchors_matched": 25,
+        "events": 25,
         "sample_matched_texts": [
           "기레메디 [시작]",
           "기레메디 [종료]",
@@ -66,9 +66,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 52958,
+        "bytes": 52096,
         "decoded_charset": "utf-8",
-        "event_score": 27,
+        "event_score": 25,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -79,16 +79,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 52958,
+          "bytes": 52096,
           "decoded_charset": "utf-8",
-          "event_score": 27
+          "event_score": 25
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 85,
-        "anchors_matched": 27,
-        "events": 27,
+        "anchors_total": 83,
+        "anchors_matched": 25,
+        "events": 25,
         "sample_matched_texts": [
           "기레메디 [시작]",
           "기레메디 [종료]",
@@ -112,10 +112,10 @@
   "_classify_debug": [
     {
       "corp_name": "형지I&C",
-      "rcpNo": "20260602000115",
+      "rcpNo": "20260707000146",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260602000115"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260707000146"
     },
     {
       "corp_name": "에이치엘지노믹스",
@@ -158,13 +158,6 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260618000115"
-    },
-    {
-      "corp_name": "케이앤에스아이앤씨",
-      "rcpNo": "20260615000244",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260615000244"
     },
     {
       "corp_name": "LB세미콘",
