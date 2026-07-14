@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-07-11",
-    "end": "2026-08-25"
+    "start": "2026-07-14",
+    "end": "2026-08-28"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-07-11",
+  "last_updated_kst": "2026-07-14",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,7 +17,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 52096,
+        "bytes": 52106,
         "decoded_charset": "utf-8",
         "event_score": 25,
         "cookie_names": [
@@ -30,7 +30,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 52096,
+          "bytes": 52106,
           "decoded_charset": "utf-8",
           "event_score": 25
         }
@@ -41,8 +41,8 @@
         "anchors_matched": 25,
         "events": 25,
         "sample_matched_texts": [
-          "기레메디 [시작]",
-          "기레메디 [종료]",
+          "코레메디 [시작]",
+          "코레메디 [종료]",
           "코티엘비 [시작]",
           "코티엘비 [종료]",
           "코형지I&C [시작]",
@@ -66,7 +66,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 52096,
+        "bytes": 52106,
         "decoded_charset": "utf-8",
         "event_score": 25,
         "cookie_names": [
@@ -79,7 +79,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 52096,
+          "bytes": 52106,
           "decoded_charset": "utf-8",
           "event_score": 25
         }
@@ -90,8 +90,8 @@
         "anchors_matched": 25,
         "events": 25,
         "sample_matched_texts": [
-          "기레메디 [시작]",
-          "기레메디 [종료]",
+          "코레메디 [시작]",
+          "코레메디 [종료]",
           "코티엘비 [시작]",
           "코티엘비 [종료]",
           "코형지I&C [시작]",
@@ -110,20 +110,6 @@
     }
   ],
   "_classify_debug": [
-    {
-      "corp_name": "에이치엘지노믹스",
-      "rcpNo": "20260710000294",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000294"
-    },
-    {
-      "corp_name": "한솔테크닉스",
-      "rcpNo": "20260709000487",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260709000487"
-    },
     {
       "corp_name": "SK하이닉스",
       "rcpNo": "20260710000010",
@@ -200,6 +186,20 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260624000508"
+    },
+    {
+      "corp_name": "에이치엘지노믹스",
+      "rcpNo": "20260710000294",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000294"
+    },
+    {
+      "corp_name": "한솔테크닉스",
+      "rcpNo": "20260709000487",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260709000487"
     }
   ]
 }
