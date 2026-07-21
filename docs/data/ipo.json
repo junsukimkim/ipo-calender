@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-07-18",
-    "end": "2026-09-01"
+    "start": "2026-07-21",
+    "end": "2026-09-04"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-07-18",
+  "last_updated_kst": "2026-07-21",
   "count": 0,
   "items": [],
   "_debug": [
@@ -160,18 +160,11 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "대동기어",
-      "rcpNo": "20260715000436",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260715000436"
-    },
-    {
       "corp_name": "한화솔루션",
-      "rcpNo": "20260612000354",
+      "rcpNo": "20260720000125",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260612000354"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260720000125"
     },
     {
       "corp_name": "뉴로메카",
@@ -242,6 +235,13 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000010"
+    },
+    {
+      "corp_name": "대동기어",
+      "rcpNo": "20260715000436",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260715000436"
     }
   ]
 }
