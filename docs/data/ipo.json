@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-07-21",
-    "end": "2026-09-04"
+    "start": "2026-07-23",
+    "end": "2026-09-06"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-07-21",
+  "last_updated_kst": "2026-07-23",
   "count": 0,
   "items": [],
   "_debug": [
@@ -160,13 +160,6 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "한화솔루션",
-      "rcpNo": "20260720000125",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260720000125"
-    },
-    {
       "corp_name": "뉴로메카",
       "rcpNo": "20260618000115",
       "type": "unknown",
@@ -182,10 +175,10 @@
     },
     {
       "corp_name": "인제니아테라퓨틱스",
-      "rcpNo": "20260701000594",
+      "rcpNo": "20260721001229",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260701000594"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260721001229"
     },
     {
       "corp_name": "레메디",
@@ -242,6 +235,13 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260715000436"
+    },
+    {
+      "corp_name": "한화솔루션",
+      "rcpNo": "20260720000125",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260720000125"
     }
   ]
 }
