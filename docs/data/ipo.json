@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-07-23",
-    "end": "2026-09-06"
+    "start": "2026-07-25",
+    "end": "2026-09-08"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-07-23",
+  "last_updated_kst": "2026-07-25",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,7 +17,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 51298,
+        "bytes": 51308,
         "decoded_charset": "utf-8",
         "event_score": 23,
         "cookie_names": [
@@ -30,7 +30,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 51298,
+          "bytes": 51308,
           "decoded_charset": "utf-8",
           "event_score": 23
         }
@@ -48,11 +48,11 @@
           "코형지I&C [시작]",
           "기데이터젠 [종료]",
           "코형지I&C [종료]",
-          "기에이치엘지노믹스 [시작]",
+          "코에이치엘지노믹스 [시작]",
           "유한솔테크닉스 [시작]",
           "유SK하이닉스 [시작]",
           "유SK하이닉스 [종료]",
-          "기에이치엘지노믹스 [종료]",
+          "코에이치엘지노믹스 [종료]",
           "유한솔테크닉스 [종료]",
           "코대동기어 [시작]",
           "코대동기어 [종료]"
@@ -66,7 +66,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 51298,
+        "bytes": 51308,
         "decoded_charset": "utf-8",
         "event_score": 23,
         "cookie_names": [
@@ -79,7 +79,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 51298,
+          "bytes": 51308,
           "decoded_charset": "utf-8",
           "event_score": 23
         }
@@ -97,11 +97,11 @@
           "코형지I&C [시작]",
           "기데이터젠 [종료]",
           "코형지I&C [종료]",
-          "기에이치엘지노믹스 [시작]",
+          "코에이치엘지노믹스 [시작]",
           "유한솔테크닉스 [시작]",
           "유SK하이닉스 [시작]",
           "유SK하이닉스 [종료]",
-          "기에이치엘지노믹스 [종료]",
+          "코에이치엘지노믹스 [종료]",
           "유한솔테크닉스 [종료]",
           "코대동기어 [시작]",
           "코대동기어 [종료]"
@@ -115,7 +115,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 51298,
+        "bytes": 51308,
         "decoded_charset": "utf-8",
         "event_score": 23,
         "cookie_names": [
@@ -128,7 +128,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 51298,
+          "bytes": 51308,
           "decoded_charset": "utf-8",
           "event_score": 23
         }
@@ -146,11 +146,11 @@
           "코형지I&C [시작]",
           "기데이터젠 [종료]",
           "코형지I&C [종료]",
-          "기에이치엘지노믹스 [시작]",
+          "코에이치엘지노믹스 [시작]",
           "유한솔테크닉스 [시작]",
           "유SK하이닉스 [시작]",
           "유SK하이닉스 [종료]",
-          "기에이치엘지노믹스 [종료]",
+          "코에이치엘지노믹스 [종료]",
           "유한솔테크닉스 [종료]",
           "코대동기어 [시작]",
           "코대동기어 [종료]"
@@ -161,10 +161,10 @@
   "_classify_debug": [
     {
       "corp_name": "뉴로메카",
-      "rcpNo": "20260618000115",
+      "rcpNo": "20260723000351",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260618000115"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260723000351"
     },
     {
       "corp_name": "에이전트AI",
