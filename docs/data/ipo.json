@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-07-25",
-    "end": "2026-09-08"
+    "start": "2026-07-28",
+    "end": "2026-09-11"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-07-25",
+  "last_updated_kst": "2026-07-28",
   "count": 0,
   "items": [],
   "_debug": [
@@ -160,13 +160,6 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "뉴로메카",
-      "rcpNo": "20260723000351",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260723000351"
-    },
-    {
       "corp_name": "에이전트AI",
       "rcpNo": "20260521000420",
       "type": "unknown",
@@ -202,13 +195,6 @@
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260707000146"
     },
     {
-      "corp_name": "데이터젠",
-      "rcpNo": "20260624000508",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260624000508"
-    },
-    {
       "corp_name": "에이치엘지노믹스",
       "rcpNo": "20260710000294",
       "type": "unknown",
@@ -242,6 +228,20 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260720000125"
+    },
+    {
+      "corp_name": "뉴로메카",
+      "rcpNo": "20260723000351",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260723000351"
+    },
+    {
+      "corp_name": "데이터젠",
+      "rcpNo": "20260624000508",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260624000508"
     }
   ]
 }
