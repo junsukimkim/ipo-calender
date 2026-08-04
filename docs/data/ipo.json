@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-08-01",
-    "end": "2026-09-15"
+    "start": "2026-08-04",
+    "end": "2026-09-18"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-08-01",
+  "last_updated_kst": "2026-08-04",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,9 +17,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 55948,
+        "bytes": 55098,
         "decoded_charset": "utf-8",
-        "event_score": 34,
+        "event_score": 32,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -30,16 +30,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 55948,
+          "bytes": 55098,
           "decoded_charset": "utf-8",
-          "event_score": 34
+          "event_score": 32
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 92,
-        "anchors_matched": 34,
-        "events": 34,
+        "anchors_total": 90,
+        "anchors_matched": 32,
+        "events": 32,
         "sample_matched_texts": [
           "코LB세미콘 [시작]",
           "코경남제약 [시작]",
@@ -66,9 +66,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 55948,
+        "bytes": 55098,
         "decoded_charset": "utf-8",
-        "event_score": 34,
+        "event_score": 32,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -79,16 +79,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 55948,
+          "bytes": 55098,
           "decoded_charset": "utf-8",
-          "event_score": 34
+          "event_score": 32
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 92,
-        "anchors_matched": 34,
-        "events": 34,
+        "anchors_total": 90,
+        "anchors_matched": 32,
+        "events": 32,
         "sample_matched_texts": [
           "코LB세미콘 [시작]",
           "코경남제약 [시작]",
@@ -111,53 +111,18 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "LB세미콘",
-      "rcpNo": "20260730000399",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260730000399"
-    },
-    {
-      "corp_name": "경남제약",
-      "rcpNo": "20260521000770",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260521000770"
-    },
-    {
-      "corp_name": "딜리셔스",
-      "rcpNo": "20260731000443",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000443"
-    },
-    {
-      "corp_name": "아모텍",
-      "rcpNo": "20260730000407",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260730000407"
-    },
-    {
-      "corp_name": "하이퍼코퍼레이션",
-      "rcpNo": "20260513000874",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260513000874"
-    },
-    {
       "corp_name": "케이앤에스아이앤씨",
-      "rcpNo": "20260708000575",
+      "rcpNo": "20260803000165",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260708000575"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000165"
     },
     {
       "corp_name": "페니트리움바이오",
-      "rcpNo": "20260626000404",
+      "rcpNo": "20260803000442",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260626000404"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000442"
     },
     {
       "corp_name": "썸에이지",
@@ -195,13 +160,6 @@
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260716000552"
     },
     {
-      "corp_name": "빅웨이브로보틱스",
-      "rcpNo": "20260721001344",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260721001344"
-    },
-    {
       "corp_name": "센서뷰",
       "rcpNo": "20260706000313",
       "type": "unknown",
@@ -228,6 +186,41 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260729000518"
+    },
+    {
+      "corp_name": "LB세미콘",
+      "rcpNo": "20260730000399",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260730000399"
+    },
+    {
+      "corp_name": "경남제약",
+      "rcpNo": "20260521000770",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260521000770"
+    },
+    {
+      "corp_name": "딜리셔스",
+      "rcpNo": "20260731000443",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000443"
+    },
+    {
+      "corp_name": "아모텍",
+      "rcpNo": "20260730000407",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260730000407"
+    },
+    {
+      "corp_name": "하이퍼코퍼레이션",
+      "rcpNo": "20260513000874",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260513000874"
     }
   ]
 }
