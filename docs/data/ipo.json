@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-08-08",
-    "end": "2026-09-22"
+    "start": "2026-08-11",
+    "end": "2026-09-25"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-08-08",
+  "last_updated_kst": "2026-08-11",
   "count": 0,
   "items": [],
   "_debug": [
@@ -112,24 +112,24 @@
   "_classify_debug": [
     {
       "corp_name": "기도산업",
-      "rcpNo": "20260714000315",
+      "rcpNo": "20260810000682",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260714000315"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000682"
     },
     {
       "corp_name": "니어스랩",
-      "rcpNo": "20260721000296",
+      "rcpNo": "20260811000060",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260721000296"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000060"
     },
     {
       "corp_name": "해치텍",
-      "rcpNo": "20260716000552",
+      "rcpNo": "20260810000663",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260716000552"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000663"
     },
     {
       "corp_name": "센서뷰",
