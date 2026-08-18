@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-08-15",
-    "end": "2026-09-29"
+    "start": "2026-08-18",
+    "end": "2026-10-02"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-08-15",
+  "last_updated_kst": "2026-08-18",
   "count": 0,
   "items": [],
   "_debug": [
@@ -76,6 +76,55 @@
         "requested": {
           "y": 2026,
           "m": 9
+        },
+        "bootstrap": {
+          "status": 200,
+          "bytes": 52510,
+          "decoded_charset": "utf-8",
+          "event_score": 26
+        }
+      },
+      "parse": {
+        "ok": true,
+        "anchors_total": 84,
+        "anchors_matched": 26,
+        "events": 26,
+        "sample_matched_texts": [
+          "코LB세미콘 [시작]",
+          "코경남제약 [시작]",
+          "코딜리셔스 [시작]",
+          "코아모텍 [시작]",
+          "코하이퍼코퍼레이션 [시작]",
+          "코LB세미콘 [종료]",
+          "코경남제약 [종료]",
+          "코딜리셔스 [종료]",
+          "코아모텍 [종료]",
+          "코케이앤에스아이앤씨 [시작]",
+          "코하이퍼코퍼레이션 [종료]",
+          "코케이앤에스아이앤씨 [종료]",
+          "코페니트리움바이오 [시작]",
+          "코페니트리움바이오 [종료]",
+          "기기도산업 [시작]"
+        ]
+      }
+    },
+    {
+      "y": 2026,
+      "m": 10,
+      "fetch": {
+        "method": "POST",
+        "status": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 52510,
+        "decoded_charset": "utf-8",
+        "event_score": 26,
+        "cookie_names": [
+          "WMONID",
+          "JSESSIONID"
+        ],
+        "requested": {
+          "y": 2026,
+          "m": 10
         },
         "bootstrap": {
           "status": 200,
