@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-08-18",
-    "end": "2026-10-02"
+    "start": "2026-08-20",
+    "end": "2026-10-04"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-08-18",
+  "last_updated_kst": "2026-08-20",
   "count": 0,
   "items": [],
   "_debug": [
