@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-08-22",
-    "end": "2026-10-06"
+    "start": "2026-08-25",
+    "end": "2026-10-09"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-08-22",
+  "last_updated_kst": "2026-08-25",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,7 +17,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 52520,
+        "bytes": 52540,
         "decoded_charset": "utf-8",
         "event_score": 26,
         "cookie_names": [
@@ -30,7 +30,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 52520,
+          "bytes": 52540,
           "decoded_charset": "utf-8",
           "event_score": 26
         }
@@ -66,7 +66,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 52520,
+        "bytes": 52540,
         "decoded_charset": "utf-8",
         "event_score": 26,
         "cookie_names": [
@@ -79,7 +79,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 52520,
+          "bytes": 52540,
           "decoded_charset": "utf-8",
           "event_score": 26
         }
@@ -115,7 +115,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 52520,
+        "bytes": 52540,
         "decoded_charset": "utf-8",
         "event_score": 26,
         "cookie_names": [
@@ -128,7 +128,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 52520,
+          "bytes": 52540,
           "decoded_charset": "utf-8",
           "event_score": 26
         }
