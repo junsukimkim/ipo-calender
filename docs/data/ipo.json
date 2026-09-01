@@ -2,63 +2,14 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-08-29",
-    "end": "2026-10-13"
+    "start": "2026-09-01",
+    "end": "2026-10-16"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-08-29",
+  "last_updated_kst": "2026-09-01",
   "count": 0,
   "items": [],
   "_debug": [
-    {
-      "y": 2026,
-      "m": 8,
-      "fetch": {
-        "method": "POST",
-        "status": 200,
-        "content_type": "text/html; charset=UTF-8",
-        "bytes": 51680,
-        "decoded_charset": "utf-8",
-        "event_score": 24,
-        "cookie_names": [
-          "WMONID",
-          "JSESSIONID"
-        ],
-        "requested": {
-          "y": 2026,
-          "m": 8
-        },
-        "bootstrap": {
-          "status": 200,
-          "bytes": 51680,
-          "decoded_charset": "utf-8",
-          "event_score": 24
-        }
-      },
-      "parse": {
-        "ok": true,
-        "anchors_total": 82,
-        "anchors_matched": 24,
-        "events": 24,
-        "sample_matched_texts": [
-          "코LB세미콘 [시작]",
-          "코경남제약 [시작]",
-          "코딜리셔스 [시작]",
-          "코아모텍 [시작]",
-          "코LB세미콘 [종료]",
-          "코경남제약 [종료]",
-          "코딜리셔스 [종료]",
-          "코아모텍 [종료]",
-          "코케이앤에스아이앤씨 [시작]",
-          "코케이앤에스아이앤씨 [종료]",
-          "코페니트리움바이오 [시작]",
-          "코페니트리움바이오 [종료]",
-          "코기도산업 [시작]",
-          "코기도산업 [종료]",
-          "코니어스랩 [시작]"
-        ]
-      }
-    },
     {
       "y": 2026,
       "m": 9,
@@ -66,9 +17,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 51680,
+        "bytes": 58945,
         "decoded_charset": "utf-8",
-        "event_score": 24,
+        "event_score": 42,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -79,32 +30,32 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 51680,
+          "bytes": 58945,
           "decoded_charset": "utf-8",
-          "event_score": 24
+          "event_score": 42
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 82,
-        "anchors_matched": 24,
-        "events": 24,
+        "anchors_total": 100,
+        "anchors_matched": 42,
+        "events": 42,
         "sample_matched_texts": [
-          "코LB세미콘 [시작]",
-          "코경남제약 [시작]",
-          "코딜리셔스 [시작]",
-          "코아모텍 [시작]",
-          "코LB세미콘 [종료]",
-          "코경남제약 [종료]",
-          "코딜리셔스 [종료]",
-          "코아모텍 [종료]",
-          "코케이앤에스아이앤씨 [시작]",
-          "코케이앤에스아이앤씨 [종료]",
-          "코페니트리움바이오 [시작]",
-          "코페니트리움바이오 [종료]",
-          "코기도산업 [시작]",
-          "코기도산업 [종료]",
-          "코니어스랩 [시작]"
+          "기엔에이치기업인수목적34호 [시작]",
+          "코판타지오 [시작]",
+          "기엔에이치기업인수목적34호 [종료]",
+          "코판타지오 [종료]",
+          "코SG [시작]",
+          "유계양전기 [시작]",
+          "코퓨쳐켐 [시작]",
+          "코SG [종료]",
+          "유계양전기 [종료]",
+          "코퓨쳐켐 [종료]",
+          "기스탁키퍼 [시작]",
+          "코상지건설 [시작]",
+          "코엔젠바이오 [시작]",
+          "코HLB제약 [시작]",
+          "기네오사피엔스 [시작]"
         ]
       }
     },
@@ -115,9 +66,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 51680,
+        "bytes": 58945,
         "decoded_charset": "utf-8",
-        "event_score": 24,
+        "event_score": 42,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -128,120 +79,183 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 51680,
+          "bytes": 58945,
           "decoded_charset": "utf-8",
-          "event_score": 24
+          "event_score": 42
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 82,
-        "anchors_matched": 24,
-        "events": 24,
+        "anchors_total": 100,
+        "anchors_matched": 42,
+        "events": 42,
         "sample_matched_texts": [
-          "코LB세미콘 [시작]",
-          "코경남제약 [시작]",
-          "코딜리셔스 [시작]",
-          "코아모텍 [시작]",
-          "코LB세미콘 [종료]",
-          "코경남제약 [종료]",
-          "코딜리셔스 [종료]",
-          "코아모텍 [종료]",
-          "코케이앤에스아이앤씨 [시작]",
-          "코케이앤에스아이앤씨 [종료]",
-          "코페니트리움바이오 [시작]",
-          "코페니트리움바이오 [종료]",
-          "코기도산업 [시작]",
-          "코기도산업 [종료]",
-          "코니어스랩 [시작]"
+          "기엔에이치기업인수목적34호 [시작]",
+          "코판타지오 [시작]",
+          "기엔에이치기업인수목적34호 [종료]",
+          "코판타지오 [종료]",
+          "코SG [시작]",
+          "유계양전기 [시작]",
+          "코퓨쳐켐 [시작]",
+          "코SG [종료]",
+          "유계양전기 [종료]",
+          "코퓨쳐켐 [종료]",
+          "기스탁키퍼 [시작]",
+          "코상지건설 [시작]",
+          "코엔젠바이오 [시작]",
+          "코HLB제약 [시작]",
+          "기네오사피엔스 [시작]"
         ]
       }
     }
   ],
   "_classify_debug": [
     {
-      "corp_name": "LB세미콘",
-      "rcpNo": "20260730000399",
+      "corp_name": "엔에이치기업인수목적34호",
+      "rcpNo": "20260828000881",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260730000399"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260828000881"
     },
     {
-      "corp_name": "경남제약",
-      "rcpNo": "20260521000770",
+      "corp_name": "판타지오",
+      "rcpNo": "20260812000852",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260521000770"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000852"
     },
     {
-      "corp_name": "딜리셔스",
-      "rcpNo": "20260731000443",
+      "corp_name": "SG",
+      "rcpNo": "20260814004252",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000443"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004252"
     },
     {
-      "corp_name": "아모텍",
-      "rcpNo": "20260730000407",
+      "corp_name": "계양전기",
+      "rcpNo": "20260814004100",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260730000407"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004100"
     },
     {
-      "corp_name": "케이앤에스아이앤씨",
-      "rcpNo": "20260803000165",
+      "corp_name": "퓨쳐켐",
+      "rcpNo": "20260814003174",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000165"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003174"
     },
     {
-      "corp_name": "페니트리움바이오",
-      "rcpNo": "20260803000442",
+      "corp_name": "스탁키퍼",
+      "rcpNo": "20260814003572",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000442"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003572"
     },
     {
-      "corp_name": "기도산업",
-      "rcpNo": "20260810000682",
+      "corp_name": "상지건설",
+      "rcpNo": "20260724000555",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000682"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260724000555"
     },
     {
-      "corp_name": "니어스랩",
-      "rcpNo": "20260811000060",
+      "corp_name": "엔젠바이오",
+      "rcpNo": "20260820000428",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000060"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000428"
     },
     {
-      "corp_name": "해치텍",
-      "rcpNo": "20260810000663",
+      "corp_name": "HLB제약",
+      "rcpNo": "20260831001215",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000663"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831001215"
     },
     {
-      "corp_name": "센서뷰",
-      "rcpNo": "20260811000461",
+      "corp_name": "네오사피엔스",
+      "rcpNo": "20260814003426",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000461"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003426"
     },
     {
-      "corp_name": "클로봇",
-      "rcpNo": "20260811000565",
+      "corp_name": "케이비제34호기업인수목적",
+      "rcpNo": "20260824000116",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000565"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824000116"
     },
     {
-      "corp_name": "스카이랩스",
-      "rcpNo": "20260825000417",
+      "corp_name": "한국제17호기업인수목적",
+      "rcpNo": "20260828000997",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260825000417"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260828000997"
+    },
+    {
+      "corp_name": "한울반도체",
+      "rcpNo": "20260716000830",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260716000830"
+    },
+    {
+      "corp_name": "와이즈플래닛컴퍼니",
+      "rcpNo": "20260818000130",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000130"
+    },
+    {
+      "corp_name": "빅웨이브로보틱스",
+      "rcpNo": "20260821000538",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000538"
+    },
+    {
+      "corp_name": "엣지파운드리",
+      "rcpNo": "20260827000991",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000991"
+    },
+    {
+      "corp_name": "글로벌테크놀로지",
+      "rcpNo": "20260819000337",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000337"
+    },
+    {
+      "corp_name": "덕산넵코어스",
+      "rcpNo": "20260827000823",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000823"
+    },
+    {
+      "corp_name": "툴젠",
+      "rcpNo": "20260820000306",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000306"
+    },
+    {
+      "corp_name": "브릴스",
+      "rcpNo": "20260825000476",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260825000476"
+    },
+    {
+      "corp_name": "엘리스그룹",
+      "rcpNo": "20260821000670",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000670"
     }
   ]
 }
