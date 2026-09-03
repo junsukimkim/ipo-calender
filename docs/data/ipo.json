@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-09-01",
-    "end": "2026-10-16"
+    "start": "2026-09-03",
+    "end": "2026-10-18"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-09-01",
+  "last_updated_kst": "2026-09-03",
   "count": 0,
   "items": [],
   "_debug": [
@@ -111,46 +111,32 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "엔에이치기업인수목적34호",
-      "rcpNo": "20260828000881",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260828000881"
-    },
-    {
-      "corp_name": "판타지오",
-      "rcpNo": "20260812000852",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000852"
-    },
-    {
       "corp_name": "SG",
-      "rcpNo": "20260814004252",
+      "rcpNo": "20260901000272",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004252"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260901000272"
     },
     {
       "corp_name": "계양전기",
-      "rcpNo": "20260814004100",
+      "rcpNo": "20260901000179",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004100"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260901000179"
     },
     {
       "corp_name": "퓨쳐켐",
-      "rcpNo": "20260814003174",
+      "rcpNo": "20260901000133",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003174"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260901000133"
     },
     {
       "corp_name": "스탁키퍼",
-      "rcpNo": "20260814003572",
+      "rcpNo": "20260902000022",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003572"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260902000022"
     },
     {
       "corp_name": "상지건설",
@@ -175,10 +161,10 @@
     },
     {
       "corp_name": "네오사피엔스",
-      "rcpNo": "20260814003426",
+      "rcpNo": "20260902000207",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003426"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260902000207"
     },
     {
       "corp_name": "케이비제34호기업인수목적",
@@ -256,6 +242,20 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000670"
+    },
+    {
+      "corp_name": "엔에이치기업인수목적34호",
+      "rcpNo": "20260828000881",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260828000881"
+    },
+    {
+      "corp_name": "판타지오",
+      "rcpNo": "20260812000852",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000852"
     }
   ]
 }
