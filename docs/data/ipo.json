@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-09-03",
-    "end": "2026-10-18"
+    "start": "2026-09-05",
+    "end": "2026-10-20"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-09-03",
+  "last_updated_kst": "2026-09-05",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,9 +17,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 58945,
+        "bytes": 57222,
         "decoded_charset": "utf-8",
-        "event_score": 42,
+        "event_score": 38,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -30,16 +30,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 58945,
+          "bytes": 57222,
           "decoded_charset": "utf-8",
-          "event_score": 42
+          "event_score": 38
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 100,
-        "anchors_matched": 42,
-        "events": 42,
+        "anchors_total": 96,
+        "anchors_matched": 38,
+        "events": 38,
         "sample_matched_texts": [
           "기엔에이치기업인수목적34호 [시작]",
           "코판타지오 [시작]",
@@ -52,10 +52,10 @@
           "유계양전기 [종료]",
           "코퓨쳐켐 [종료]",
           "기스탁키퍼 [시작]",
-          "코상지건설 [시작]",
           "코엔젠바이오 [시작]",
           "코HLB제약 [시작]",
-          "기네오사피엔스 [시작]"
+          "기네오사피엔스 [시작]",
+          "코엔젠바이오 [종료]"
         ]
       }
     },
@@ -66,9 +66,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 58945,
+        "bytes": 57222,
         "decoded_charset": "utf-8",
-        "event_score": 42,
+        "event_score": 38,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -79,16 +79,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 58945,
+          "bytes": 57222,
           "decoded_charset": "utf-8",
-          "event_score": 42
+          "event_score": 38
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 100,
-        "anchors_matched": 42,
-        "events": 42,
+        "anchors_total": 96,
+        "anchors_matched": 38,
+        "events": 38,
         "sample_matched_texts": [
           "기엔에이치기업인수목적34호 [시작]",
           "코판타지오 [시작]",
@@ -101,49 +101,21 @@
           "유계양전기 [종료]",
           "코퓨쳐켐 [종료]",
           "기스탁키퍼 [시작]",
-          "코상지건설 [시작]",
           "코엔젠바이오 [시작]",
           "코HLB제약 [시작]",
-          "기네오사피엔스 [시작]"
+          "기네오사피엔스 [시작]",
+          "코엔젠바이오 [종료]"
         ]
       }
     }
   ],
   "_classify_debug": [
     {
-      "corp_name": "SG",
-      "rcpNo": "20260901000272",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260901000272"
-    },
-    {
-      "corp_name": "계양전기",
-      "rcpNo": "20260901000179",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260901000179"
-    },
-    {
-      "corp_name": "퓨쳐켐",
-      "rcpNo": "20260901000133",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260901000133"
-    },
-    {
       "corp_name": "스탁키퍼",
       "rcpNo": "20260902000022",
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260902000022"
-    },
-    {
-      "corp_name": "상지건설",
-      "rcpNo": "20260724000555",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260724000555"
     },
     {
       "corp_name": "엔젠바이오",
@@ -189,17 +161,17 @@
     },
     {
       "corp_name": "와이즈플래닛컴퍼니",
-      "rcpNo": "20260818000130",
+      "rcpNo": "20260903000071",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000130"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260903000071"
     },
     {
       "corp_name": "빅웨이브로보틱스",
-      "rcpNo": "20260821000538",
+      "rcpNo": "20260903000077",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000538"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260903000077"
     },
     {
       "corp_name": "엣지파운드리",
@@ -237,13 +209,6 @@
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260825000476"
     },
     {
-      "corp_name": "엘리스그룹",
-      "rcpNo": "20260821000670",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000670"
-    },
-    {
       "corp_name": "엔에이치기업인수목적34호",
       "rcpNo": "20260828000881",
       "type": "unknown",
@@ -256,6 +221,27 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000852"
+    },
+    {
+      "corp_name": "SG",
+      "rcpNo": "20260901000272",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260901000272"
+    },
+    {
+      "corp_name": "계양전기",
+      "rcpNo": "20260901000179",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260901000179"
+    },
+    {
+      "corp_name": "퓨쳐켐",
+      "rcpNo": "20260901000133",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260901000133"
     }
   ]
 }
