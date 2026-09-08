@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-09-05",
-    "end": "2026-10-20"
+    "start": "2026-09-08",
+    "end": "2026-10-23"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-09-05",
+  "last_updated_kst": "2026-09-08",
   "count": 0,
   "items": [],
   "_debug": [
@@ -119,10 +119,10 @@
     },
     {
       "corp_name": "엔젠바이오",
-      "rcpNo": "20260820000428",
+      "rcpNo": "20260907000218",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000428"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000218"
     },
     {
       "corp_name": "HLB제약",
@@ -133,10 +133,10 @@
     },
     {
       "corp_name": "네오사피엔스",
-      "rcpNo": "20260902000207",
+      "rcpNo": "20260907000079",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260902000207"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000079"
     },
     {
       "corp_name": "케이비제34호기업인수목적",
