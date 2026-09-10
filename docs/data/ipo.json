@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-09-08",
-    "end": "2026-10-23"
+    "start": "2026-09-10",
+    "end": "2026-10-25"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-09-08",
+  "last_updated_kst": "2026-09-10",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,7 +17,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 57222,
+        "bytes": 57184,
         "decoded_charset": "utf-8",
         "event_score": 38,
         "cookie_names": [
@@ -30,7 +30,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 57222,
+          "bytes": 57184,
           "decoded_charset": "utf-8",
           "event_score": 38
         }
@@ -41,9 +41,9 @@
         "anchors_matched": 38,
         "events": 38,
         "sample_matched_texts": [
-          "기엔에이치기업인수목적34호 [시작]",
+          "코엔에이치스팩34호 [시작]",
           "코판타지오 [시작]",
-          "기엔에이치기업인수목적34호 [종료]",
+          "코엔에이치스팩34호 [종료]",
           "코판타지오 [종료]",
           "코SG [시작]",
           "유계양전기 [시작]",
@@ -66,7 +66,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 57222,
+        "bytes": 57184,
         "decoded_charset": "utf-8",
         "event_score": 38,
         "cookie_names": [
@@ -79,7 +79,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 57222,
+          "bytes": 57184,
           "decoded_charset": "utf-8",
           "event_score": 38
         }
@@ -90,9 +90,9 @@
         "anchors_matched": 38,
         "events": 38,
         "sample_matched_texts": [
-          "기엔에이치기업인수목적34호 [시작]",
+          "코엔에이치스팩34호 [시작]",
           "코판타지오 [시작]",
-          "기엔에이치기업인수목적34호 [종료]",
+          "코엔에이치스팩34호 [종료]",
           "코판타지오 [종료]",
           "코SG [시작]",
           "유계양전기 [시작]",
@@ -111,46 +111,32 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "스탁키퍼",
-      "rcpNo": "20260902000022",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260902000022"
-    },
-    {
-      "corp_name": "엔젠바이오",
-      "rcpNo": "20260907000218",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000218"
-    },
-    {
       "corp_name": "HLB제약",
-      "rcpNo": "20260831001215",
+      "rcpNo": "20260908000201",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831001215"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000201"
     },
     {
       "corp_name": "네오사피엔스",
-      "rcpNo": "20260907000079",
+      "rcpNo": "20260909000307",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000079"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000307"
     },
     {
       "corp_name": "케이비제34호기업인수목적",
-      "rcpNo": "20260824000116",
+      "rcpNo": "20260908000181",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824000116"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000181"
     },
     {
       "corp_name": "한국제17호기업인수목적",
-      "rcpNo": "20260828000997",
+      "rcpNo": "20260909000276",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260828000997"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000276"
     },
     {
       "corp_name": "한울반도체",
@@ -182,10 +168,10 @@
     },
     {
       "corp_name": "글로벌테크놀로지",
-      "rcpNo": "20260819000337",
+      "rcpNo": "20260908000396",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000337"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000396"
     },
     {
       "corp_name": "덕산넵코어스",
@@ -209,7 +195,7 @@
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260825000476"
     },
     {
-      "corp_name": "엔에이치기업인수목적34호",
+      "corp_name": "엔에이치스팩34호",
       "rcpNo": "20260828000881",
       "type": "unknown",
       "reason": "viewDoc params not found",
@@ -242,6 +228,20 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260901000133"
+    },
+    {
+      "corp_name": "스탁키퍼",
+      "rcpNo": "20260902000022",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260902000022"
+    },
+    {
+      "corp_name": "엔젠바이오",
+      "rcpNo": "20260907000218",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000218"
     }
   ]
 }
