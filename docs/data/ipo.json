@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-09-10",
-    "end": "2026-10-25"
+    "start": "2026-09-12",
+    "end": "2026-10-27"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-09-10",
+  "last_updated_kst": "2026-09-12",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,9 +17,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 57184,
+        "bytes": 56360,
         "decoded_charset": "utf-8",
-        "event_score": 38,
+        "event_score": 36,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -30,16 +30,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 57184,
+          "bytes": 56360,
           "decoded_charset": "utf-8",
-          "event_score": 38
+          "event_score": 36
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 96,
-        "anchors_matched": 38,
-        "events": 38,
+        "anchors_total": 94,
+        "anchors_matched": 36,
+        "events": 36,
         "sample_matched_texts": [
           "코엔에이치스팩34호 [시작]",
           "코판타지오 [시작]",
@@ -66,9 +66,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 57184,
+        "bytes": 56360,
         "decoded_charset": "utf-8",
-        "event_score": 38,
+        "event_score": 36,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -79,16 +79,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 57184,
+          "bytes": 56360,
           "decoded_charset": "utf-8",
-          "event_score": 38
+          "event_score": 36
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 96,
-        "anchors_matched": 38,
-        "events": 38,
+        "anchors_total": 94,
+        "anchors_matched": 36,
+        "events": 36,
         "sample_matched_texts": [
           "코엔에이치스팩34호 [시작]",
           "코판타지오 [시작]",
@@ -111,46 +111,11 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "HLB제약",
-      "rcpNo": "20260908000201",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000201"
-    },
-    {
-      "corp_name": "네오사피엔스",
-      "rcpNo": "20260909000307",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000307"
-    },
-    {
-      "corp_name": "케이비제34호기업인수목적",
-      "rcpNo": "20260908000181",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000181"
-    },
-    {
-      "corp_name": "한국제17호기업인수목적",
-      "rcpNo": "20260909000276",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000276"
-    },
-    {
-      "corp_name": "한울반도체",
-      "rcpNo": "20260716000830",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260716000830"
-    },
-    {
       "corp_name": "와이즈플래닛컴퍼니",
-      "rcpNo": "20260903000071",
+      "rcpNo": "20260911000209",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260903000071"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000209"
     },
     {
       "corp_name": "빅웨이브로보틱스",
@@ -242,6 +207,34 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000218"
+    },
+    {
+      "corp_name": "HLB제약",
+      "rcpNo": "20260908000201",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000201"
+    },
+    {
+      "corp_name": "네오사피엔스",
+      "rcpNo": "20260909000307",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000307"
+    },
+    {
+      "corp_name": "케이비제34호기업인수목적",
+      "rcpNo": "20260908000181",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000181"
+    },
+    {
+      "corp_name": "한국제17호기업인수목적",
+      "rcpNo": "20260909000276",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000276"
     }
   ]
 }
