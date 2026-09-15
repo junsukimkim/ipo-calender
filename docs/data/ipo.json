@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-09-12",
-    "end": "2026-10-27"
+    "start": "2026-09-15",
+    "end": "2026-10-30"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-09-12",
+  "last_updated_kst": "2026-09-15",
   "count": 0,
   "items": [],
   "_debug": [
@@ -111,18 +111,11 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "와이즈플래닛컴퍼니",
-      "rcpNo": "20260911000209",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000209"
-    },
-    {
       "corp_name": "빅웨이브로보틱스",
-      "rcpNo": "20260903000077",
+      "rcpNo": "20260914000379",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260903000077"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000379"
     },
     {
       "corp_name": "엣지파운드리",
@@ -140,17 +133,17 @@
     },
     {
       "corp_name": "덕산넵코어스",
-      "rcpNo": "20260827000823",
+      "rcpNo": "20260915000085",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000823"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000085"
     },
     {
       "corp_name": "툴젠",
-      "rcpNo": "20260820000306",
+      "rcpNo": "20260914000188",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000306"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000188"
     },
     {
       "corp_name": "브릴스",
@@ -235,6 +228,13 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000276"
+    },
+    {
+      "corp_name": "와이즈플래닛컴퍼니",
+      "rcpNo": "20260911000209",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000209"
     }
   ]
 }
