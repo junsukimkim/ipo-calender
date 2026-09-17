@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-09-15",
-    "end": "2026-10-30"
+    "start": "2026-09-17",
+    "end": "2026-11-01"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-09-15",
+  "last_updated_kst": "2026-09-17",
   "count": 0,
   "items": [],
   "_debug": [
@@ -107,50 +107,64 @@
           "코엔젠바이오 [종료]"
         ]
       }
+    },
+    {
+      "y": 2026,
+      "m": 11,
+      "fetch": {
+        "method": "POST",
+        "status": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 56360,
+        "decoded_charset": "utf-8",
+        "event_score": 36,
+        "cookie_names": [
+          "WMONID",
+          "JSESSIONID"
+        ],
+        "requested": {
+          "y": 2026,
+          "m": 11
+        },
+        "bootstrap": {
+          "status": 200,
+          "bytes": 56360,
+          "decoded_charset": "utf-8",
+          "event_score": 36
+        }
+      },
+      "parse": {
+        "ok": true,
+        "anchors_total": 94,
+        "anchors_matched": 36,
+        "events": 36,
+        "sample_matched_texts": [
+          "코엔에이치스팩34호 [시작]",
+          "코판타지오 [시작]",
+          "코엔에이치스팩34호 [종료]",
+          "코판타지오 [종료]",
+          "코SG [시작]",
+          "유계양전기 [시작]",
+          "코퓨쳐켐 [시작]",
+          "코SG [종료]",
+          "유계양전기 [종료]",
+          "코퓨쳐켐 [종료]",
+          "기스탁키퍼 [시작]",
+          "코엔젠바이오 [시작]",
+          "코HLB제약 [시작]",
+          "기네오사피엔스 [시작]",
+          "코엔젠바이오 [종료]"
+        ]
+      }
     }
   ],
   "_classify_debug": [
     {
-      "corp_name": "빅웨이브로보틱스",
-      "rcpNo": "20260914000379",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000379"
-    },
-    {
-      "corp_name": "엣지파운드리",
-      "rcpNo": "20260827000991",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000991"
-    },
-    {
-      "corp_name": "글로벌테크놀로지",
-      "rcpNo": "20260908000396",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000396"
-    },
-    {
-      "corp_name": "덕산넵코어스",
-      "rcpNo": "20260915000085",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000085"
-    },
-    {
-      "corp_name": "툴젠",
-      "rcpNo": "20260914000188",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000188"
-    },
-    {
       "corp_name": "브릴스",
-      "rcpNo": "20260825000476",
+      "rcpNo": "20260916000234",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260825000476"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000234"
     },
     {
       "corp_name": "엔에이치스팩34호",
@@ -235,6 +249,41 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000209"
+    },
+    {
+      "corp_name": "빅웨이브로보틱스",
+      "rcpNo": "20260914000379",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000379"
+    },
+    {
+      "corp_name": "엣지파운드리",
+      "rcpNo": "20260827000991",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000991"
+    },
+    {
+      "corp_name": "글로벌테크놀로지",
+      "rcpNo": "20260915000237",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000237"
+    },
+    {
+      "corp_name": "덕산넵코어스",
+      "rcpNo": "20260915000085",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000085"
+    },
+    {
+      "corp_name": "툴젠",
+      "rcpNo": "20260914000188",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000188"
     }
   ]
 }
