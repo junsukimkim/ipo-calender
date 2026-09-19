@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-09-17",
-    "end": "2026-11-01"
+    "start": "2026-09-19",
+    "end": "2026-11-03"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-09-17",
+  "last_updated_kst": "2026-09-19",
   "count": 0,
   "items": [],
   "_debug": [
@@ -160,13 +160,6 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "브릴스",
-      "rcpNo": "20260916000234",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000234"
-    },
-    {
       "corp_name": "엔에이치스팩34호",
       "rcpNo": "20260828000881",
       "type": "unknown",
@@ -284,6 +277,13 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000188"
+    },
+    {
+      "corp_name": "브릴스",
+      "rcpNo": "20260916000234",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000234"
     }
   ]
 }
