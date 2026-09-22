@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-09-19",
-    "end": "2026-11-03"
+    "start": "2026-09-22",
+    "end": "2026-11-06"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-09-19",
+  "last_updated_kst": "2026-09-22",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,7 +17,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 56360,
+        "bytes": 56266,
         "decoded_charset": "utf-8",
         "event_score": 36,
         "cookie_names": [
@@ -30,7 +30,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 56360,
+          "bytes": 56266,
           "decoded_charset": "utf-8",
           "event_score": 36
         }
@@ -54,8 +54,8 @@
           "기스탁키퍼 [시작]",
           "코엔젠바이오 [시작]",
           "코HLB제약 [시작]",
-          "기네오사피엔스 [시작]",
-          "코엔젠바이오 [종료]"
+          "코KB제34호스팩 [시작]",
+          "코네오사피엔스 [시작]"
         ]
       }
     },
@@ -66,7 +66,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 56360,
+        "bytes": 56266,
         "decoded_charset": "utf-8",
         "event_score": 36,
         "cookie_names": [
@@ -79,7 +79,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 56360,
+          "bytes": 56266,
           "decoded_charset": "utf-8",
           "event_score": 36
         }
@@ -103,8 +103,8 @@
           "기스탁키퍼 [시작]",
           "코엔젠바이오 [시작]",
           "코HLB제약 [시작]",
-          "기네오사피엔스 [시작]",
-          "코엔젠바이오 [종료]"
+          "코KB제34호스팩 [시작]",
+          "코네오사피엔스 [시작]"
         ]
       }
     },
@@ -115,7 +115,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 56360,
+        "bytes": 56266,
         "decoded_charset": "utf-8",
         "event_score": 36,
         "cookie_names": [
@@ -128,7 +128,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 56360,
+          "bytes": 56266,
           "decoded_charset": "utf-8",
           "event_score": 36
         }
@@ -152,8 +152,8 @@
           "기스탁키퍼 [시작]",
           "코엔젠바이오 [시작]",
           "코HLB제약 [시작]",
-          "기네오사피엔스 [시작]",
-          "코엔젠바이오 [종료]"
+          "코KB제34호스팩 [시작]",
+          "코네오사피엔스 [시작]"
         ]
       }
     }
@@ -216,6 +216,13 @@
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000201"
     },
     {
+      "corp_name": "KB제34호스팩",
+      "rcpNo": "20260908000181",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000181"
+    },
+    {
       "corp_name": "네오사피엔스",
       "rcpNo": "20260909000307",
       "type": "unknown",
@@ -223,14 +230,7 @@
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000307"
     },
     {
-      "corp_name": "케이비제34호기업인수목적",
-      "rcpNo": "20260908000181",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000181"
-    },
-    {
-      "corp_name": "한국제17호기업인수목적",
+      "corp_name": "한국제17호스팩",
       "rcpNo": "20260909000276",
       "type": "unknown",
       "reason": "viewDoc params not found",
