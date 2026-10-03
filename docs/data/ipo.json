@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-10-01",
-    "end": "2026-11-15"
+    "start": "2026-10-03",
+    "end": "2026-11-17"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-10-01",
+  "last_updated_kst": "2026-10-03",
   "count": 0,
   "items": [],
   "_debug": [
@@ -110,20 +110,6 @@
     }
   ],
   "_classify_debug": [
-    {
-      "corp_name": "멜콘",
-      "rcpNo": "20260929000191",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260929000191"
-    },
-    {
-      "corp_name": "진코스텍",
-      "rcpNo": "20260928000402",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000402"
-    },
     {
       "corp_name": "엘리스그룹",
       "rcpNo": "20260929000656",
@@ -277,6 +263,20 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260918000439"
+    },
+    {
+      "corp_name": "멜콘",
+      "rcpNo": "20260929000191",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260929000191"
+    },
+    {
+      "corp_name": "진코스텍",
+      "rcpNo": "20261001000586",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000586"
     }
   ]
 }
