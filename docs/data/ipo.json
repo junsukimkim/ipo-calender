@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-10-03",
-    "end": "2026-11-17"
+    "start": "2026-10-06",
+    "end": "2026-11-20"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-10-03",
+  "last_updated_kst": "2026-10-06",
   "count": 0,
   "items": [],
   "_debug": [
@@ -203,10 +203,10 @@
     },
     {
       "corp_name": "한화플러스제6호기업인수목적",
-      "rcpNo": "20260917000365",
+      "rcpNo": "20261006000137",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000365"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261006000137"
     },
     {
       "corp_name": "스탁키퍼",
