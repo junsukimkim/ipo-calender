@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-10-06",
-    "end": "2026-11-20"
+    "start": "2026-10-08",
+    "end": "2026-11-22"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-10-06",
+  "last_updated_kst": "2026-10-08",
   "count": 0,
   "items": [],
   "_debug": [
@@ -111,25 +111,18 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "엘리스그룹",
-      "rcpNo": "20260929000656",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260929000656"
-    },
-    {
       "corp_name": "SK디앤디",
-      "rcpNo": "20260909000477",
+      "rcpNo": "20261007000009",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000477"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000009"
     },
     {
       "corp_name": "엠에스바이오",
-      "rcpNo": "20260929000496",
+      "rcpNo": "20261007000327",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260929000496"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000327"
     },
     {
       "corp_name": "디티에스",
@@ -203,17 +196,17 @@
     },
     {
       "corp_name": "한화플러스제6호기업인수목적",
-      "rcpNo": "20261006000137",
+      "rcpNo": "20261007000249",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261006000137"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000249"
     },
     {
       "corp_name": "스탁키퍼",
-      "rcpNo": "20260923000234",
+      "rcpNo": "20261007000370",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000234"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000370"
     },
     {
       "corp_name": "인텔리빅스",
@@ -224,10 +217,10 @@
     },
     {
       "corp_name": "래블업",
-      "rcpNo": "20260921000390",
+      "rcpNo": "20261006000421",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000390"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261006000421"
     },
     {
       "corp_name": "영광",
@@ -245,10 +238,10 @@
     },
     {
       "corp_name": "아이엠기업인수목적1호",
-      "rcpNo": "20260917000220",
+      "rcpNo": "20261008000225",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000220"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261008000225"
     },
     {
       "corp_name": "에이엘로봇",
@@ -277,6 +270,13 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000586"
+    },
+    {
+      "corp_name": "엘리스그룹",
+      "rcpNo": "20261006000447",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261006000447"
     }
   ]
 }
