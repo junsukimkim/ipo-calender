@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-10-08",
-    "end": "2026-11-22"
+    "start": "2026-10-10",
+    "end": "2026-11-24"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-10-08",
+  "last_updated_kst": "2026-10-10",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,11 +17,10 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 60951,
+        "bytes": 60161,
         "decoded_charset": "utf-8",
-        "event_score": 47,
+        "event_score": 45,
         "cookie_names": [
-          "WMONID",
           "JSESSIONID"
         ],
         "requested": {
@@ -30,16 +29,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 60951,
+          "bytes": 60161,
           "decoded_charset": "utf-8",
-          "event_score": 47
+          "event_score": 45
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 105,
-        "anchors_matched": 47,
-        "events": 47,
+        "anchors_total": 103,
+        "anchors_matched": 45,
+        "events": 45,
         "sample_matched_texts": [
           "기멜콘 [시작]",
           "기멜콘 [종료]",
@@ -66,11 +65,10 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 60951,
+        "bytes": 60161,
         "decoded_charset": "utf-8",
-        "event_score": 47,
+        "event_score": 45,
         "cookie_names": [
-          "WMONID",
           "JSESSIONID"
         ],
         "requested": {
@@ -79,16 +77,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 60951,
+          "bytes": 60161,
           "decoded_charset": "utf-8",
-          "event_score": 47
+          "event_score": 45
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 105,
-        "anchors_matched": 47,
-        "events": 47,
+        "anchors_total": 103,
+        "anchors_matched": 45,
+        "events": 45,
         "sample_matched_texts": [
           "기멜콘 [시작]",
           "기멜콘 [종료]",
@@ -160,13 +158,6 @@
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260902000182"
     },
     {
-      "corp_name": "다비오",
-      "rcpNo": "20260915000390",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000390"
-    },
-    {
       "corp_name": "유캐스트",
       "rcpNo": "20260909000378",
       "type": "unknown",
@@ -210,10 +201,10 @@
     },
     {
       "corp_name": "인텔리빅스",
-      "rcpNo": "20260916000544",
+      "rcpNo": "20261008000310",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000544"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261008000310"
     },
     {
       "corp_name": "래블업",
@@ -224,10 +215,10 @@
     },
     {
       "corp_name": "영광",
-      "rcpNo": "20260921000332",
+      "rcpNo": "20261008000623",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000332"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261008000623"
     },
     {
       "corp_name": "이에스티",
