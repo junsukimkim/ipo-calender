@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-10-10",
-    "end": "2026-11-24"
+    "start": "2026-10-13",
+    "end": "2026-11-27"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-10-10",
+  "last_updated_kst": "2026-10-13",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,10 +17,11 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 60161,
+        "bytes": 59347,
         "decoded_charset": "utf-8",
-        "event_score": 45,
+        "event_score": 43,
         "cookie_names": [
+          "WMONID",
           "JSESSIONID"
         ],
         "requested": {
@@ -29,16 +30,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 60161,
+          "bytes": 59347,
           "decoded_charset": "utf-8",
-          "event_score": 45
+          "event_score": 43
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 103,
-        "anchors_matched": 45,
-        "events": 45,
+        "anchors_total": 101,
+        "anchors_matched": 43,
+        "events": 43,
         "sample_matched_texts": [
           "기멜콘 [시작]",
           "기멜콘 [종료]",
@@ -65,10 +66,11 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 60161,
+        "bytes": 59347,
         "decoded_charset": "utf-8",
-        "event_score": 45,
+        "event_score": 43,
         "cookie_names": [
+          "WMONID",
           "JSESSIONID"
         ],
         "requested": {
@@ -77,16 +79,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 60161,
+          "bytes": 59347,
           "decoded_charset": "utf-8",
-          "event_score": 45
+          "event_score": 43
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 103,
-        "anchors_matched": 45,
-        "events": 45,
+        "anchors_total": 101,
+        "anchors_matched": 43,
+        "events": 43,
         "sample_matched_texts": [
           "기멜콘 [시작]",
           "기멜콘 [종료]",
@@ -109,32 +111,18 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "SK디앤디",
-      "rcpNo": "20261007000009",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000009"
-    },
-    {
-      "corp_name": "엠에스바이오",
-      "rcpNo": "20261007000327",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000327"
-    },
-    {
       "corp_name": "디티에스",
-      "rcpNo": "20261001000078",
+      "rcpNo": "20261012000308",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000078"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000308"
     },
     {
       "corp_name": "엘앤씨바이오",
-      "rcpNo": "20260902000144",
+      "rcpNo": "20261012000202",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260902000144"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000202"
     },
     {
       "corp_name": "투게더아트",
@@ -235,13 +223,6 @@
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261008000225"
     },
     {
-      "corp_name": "에이엘로봇",
-      "rcpNo": "20260921000209",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000209"
-    },
-    {
       "corp_name": "엠비디",
       "rcpNo": "20260918000439",
       "type": "unknown",
@@ -268,6 +249,20 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261006000447"
+    },
+    {
+      "corp_name": "SK디앤디",
+      "rcpNo": "20261007000009",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000009"
+    },
+    {
+      "corp_name": "엠에스바이오",
+      "rcpNo": "20261007000327",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000327"
     }
   ]
 }
