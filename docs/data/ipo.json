@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-10-13",
-    "end": "2026-11-27"
+    "start": "2026-10-15",
+    "end": "2026-11-29"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-10-13",
+  "last_updated_kst": "2026-10-15",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,7 +17,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 59347,
+        "bytes": 59359,
         "decoded_charset": "utf-8",
         "event_score": 43,
         "cookie_names": [
@@ -30,7 +30,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 59347,
+          "bytes": 59359,
           "decoded_charset": "utf-8",
           "event_score": 43
         }
@@ -41,10 +41,10 @@
         "anchors_matched": 43,
         "events": 43,
         "sample_matched_texts": [
-          "기멜콘 [시작]",
-          "기멜콘 [종료]",
-          "넥진코스텍 [시작]",
-          "넥진코스텍 [종료]",
+          "코멜콘 [시작]",
+          "코멜콘 [종료]",
+          "코진코스텍 [시작]",
+          "코진코스텍 [종료]",
           "기엘리스그룹 [시작]",
           "기엘리스그룹 [종료]",
           "유SK디앤디 [시작]",
@@ -66,7 +66,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 59347,
+        "bytes": 59359,
         "decoded_charset": "utf-8",
         "event_score": 43,
         "cookie_names": [
@@ -79,7 +79,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 59347,
+          "bytes": 59359,
           "decoded_charset": "utf-8",
           "event_score": 43
         }
@@ -90,10 +90,10 @@
         "anchors_matched": 43,
         "events": 43,
         "sample_matched_texts": [
-          "기멜콘 [시작]",
-          "기멜콘 [종료]",
-          "넥진코스텍 [시작]",
-          "넥진코스텍 [종료]",
+          "코멜콘 [시작]",
+          "코멜콘 [종료]",
+          "코진코스텍 [시작]",
+          "코진코스텍 [종료]",
           "기엘리스그룹 [시작]",
           "기엘리스그룹 [종료]",
           "유SK디앤디 [시작]",
@@ -111,39 +111,18 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "디티에스",
-      "rcpNo": "20261012000308",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000308"
-    },
-    {
-      "corp_name": "엘앤씨바이오",
-      "rcpNo": "20261012000202",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000202"
-    },
-    {
-      "corp_name": "투게더아트",
-      "rcpNo": "20260915000399",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000399"
-    },
-    {
       "corp_name": "에스케이증권제14호기업인수목적",
-      "rcpNo": "20260909000174",
+      "rcpNo": "20261014000196",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000174"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261014000196"
     },
     {
       "corp_name": "에코프로비엠",
-      "rcpNo": "20260902000182",
+      "rcpNo": "20261013000214",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260902000182"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000214"
     },
     {
       "corp_name": "유캐스트",
@@ -196,10 +175,10 @@
     },
     {
       "corp_name": "래블업",
-      "rcpNo": "20261006000421",
+      "rcpNo": "20261014000436",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261006000421"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261014000436"
     },
     {
       "corp_name": "영광",
@@ -210,10 +189,10 @@
     },
     {
       "corp_name": "이에스티",
-      "rcpNo": "20260921000211",
+      "rcpNo": "20261013000268",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000211"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000268"
     },
     {
       "corp_name": "아이엠기업인수목적1호",
@@ -263,6 +242,27 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000327"
+    },
+    {
+      "corp_name": "디티에스",
+      "rcpNo": "20261012000308",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000308"
+    },
+    {
+      "corp_name": "엘앤씨바이오",
+      "rcpNo": "20261012000202",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000202"
+    },
+    {
+      "corp_name": "투게더아트",
+      "rcpNo": "20260915000399",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000399"
     }
   ]
 }
