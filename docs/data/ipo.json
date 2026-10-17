@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-10-15",
-    "end": "2026-11-29"
+    "start": "2026-10-17",
+    "end": "2026-12-01"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-10-15",
+  "last_updated_kst": "2026-10-17",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,9 +17,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 59359,
+        "bytes": 58375,
         "decoded_charset": "utf-8",
-        "event_score": 43,
+        "event_score": 41,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -30,16 +30,16 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 59359,
+          "bytes": 58375,
           "decoded_charset": "utf-8",
-          "event_score": 43
+          "event_score": 41
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 101,
-        "anchors_matched": 43,
-        "events": 43,
+        "anchors_total": 99,
+        "anchors_matched": 41,
+        "events": 41,
         "sample_matched_texts": [
           "코멜콘 [시작]",
           "코멜콘 [종료]",
@@ -66,9 +66,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 59359,
+        "bytes": 58375,
         "decoded_charset": "utf-8",
-        "event_score": 43,
+        "event_score": 41,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -79,16 +79,65 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 59359,
+          "bytes": 58375,
           "decoded_charset": "utf-8",
-          "event_score": 43
+          "event_score": 41
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 101,
-        "anchors_matched": 43,
-        "events": 43,
+        "anchors_total": 99,
+        "anchors_matched": 41,
+        "events": 41,
+        "sample_matched_texts": [
+          "코멜콘 [시작]",
+          "코멜콘 [종료]",
+          "코진코스텍 [시작]",
+          "코진코스텍 [종료]",
+          "기엘리스그룹 [시작]",
+          "기엘리스그룹 [종료]",
+          "유SK디앤디 [시작]",
+          "기엠에스바이오 [시작]",
+          "유SK디앤디 [종료]",
+          "기디티에스 [시작]",
+          "기엠에스바이오 [종료]",
+          "기디티에스 [종료]",
+          "코엘앤씨바이오 [시작]",
+          "기투게더아트 [시작]",
+          "기에스케이증권제14호기업인수목적 [시작]"
+        ]
+      }
+    },
+    {
+      "y": 2026,
+      "m": 12,
+      "fetch": {
+        "method": "POST",
+        "status": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 58375,
+        "decoded_charset": "utf-8",
+        "event_score": 41,
+        "cookie_names": [
+          "WMONID",
+          "JSESSIONID"
+        ],
+        "requested": {
+          "y": 2026,
+          "m": 12
+        },
+        "bootstrap": {
+          "status": 200,
+          "bytes": 58375,
+          "decoded_charset": "utf-8",
+          "event_score": 41
+        }
+      },
+      "parse": {
+        "ok": true,
+        "anchors_total": 99,
+        "anchors_matched": 41,
+        "events": 41,
         "sample_matched_texts": [
           "코멜콘 [시작]",
           "코멜콘 [종료]",
@@ -110,20 +159,6 @@
     }
   ],
   "_classify_debug": [
-    {
-      "corp_name": "에스케이증권제14호기업인수목적",
-      "rcpNo": "20261014000196",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261014000196"
-    },
-    {
-      "corp_name": "에코프로비엠",
-      "rcpNo": "20261013000214",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000214"
-    },
     {
       "corp_name": "유캐스트",
       "rcpNo": "20260909000378",
@@ -147,10 +182,10 @@
     },
     {
       "corp_name": "티앤이코리아",
-      "rcpNo": "20260923000255",
+      "rcpNo": "20261016000158",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000255"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000158"
     },
     {
       "corp_name": "한화플러스제6호기업인수목적",
@@ -200,13 +235,6 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261008000225"
-    },
-    {
-      "corp_name": "엠비디",
-      "rcpNo": "20260918000439",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260918000439"
     },
     {
       "corp_name": "멜콘",
@@ -263,6 +291,20 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000399"
+    },
+    {
+      "corp_name": "에스케이증권제14호기업인수목적",
+      "rcpNo": "20261014000196",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261014000196"
+    },
+    {
+      "corp_name": "에코프로비엠",
+      "rcpNo": "20261013000214",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000214"
     }
   ]
 }
