@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-10-17",
-    "end": "2026-12-01"
+    "start": "2026-10-20",
+    "end": "2026-12-04"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-10-17",
+  "last_updated_kst": "2026-10-20",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,7 +17,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 58375,
+        "bytes": 58361,
         "decoded_charset": "utf-8",
         "event_score": 41,
         "cookie_names": [
@@ -30,7 +30,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 58375,
+          "bytes": 58361,
           "decoded_charset": "utf-8",
           "event_score": 41
         }
@@ -45,8 +45,8 @@
           "코멜콘 [종료]",
           "코진코스텍 [시작]",
           "코진코스텍 [종료]",
-          "기엘리스그룹 [시작]",
-          "기엘리스그룹 [종료]",
+          "코엘리스 [시작]",
+          "코엘리스 [종료]",
           "유SK디앤디 [시작]",
           "기엠에스바이오 [시작]",
           "유SK디앤디 [종료]",
@@ -66,7 +66,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 58375,
+        "bytes": 58361,
         "decoded_charset": "utf-8",
         "event_score": 41,
         "cookie_names": [
@@ -79,7 +79,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 58375,
+          "bytes": 58361,
           "decoded_charset": "utf-8",
           "event_score": 41
         }
@@ -94,8 +94,8 @@
           "코멜콘 [종료]",
           "코진코스텍 [시작]",
           "코진코스텍 [종료]",
-          "기엘리스그룹 [시작]",
-          "기엘리스그룹 [종료]",
+          "코엘리스 [시작]",
+          "코엘리스 [종료]",
           "유SK디앤디 [시작]",
           "기엠에스바이오 [시작]",
           "유SK디앤디 [종료]",
@@ -115,7 +115,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 58375,
+        "bytes": 58361,
         "decoded_charset": "utf-8",
         "event_score": 41,
         "cookie_names": [
@@ -128,7 +128,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 58375,
+          "bytes": 58361,
           "decoded_charset": "utf-8",
           "event_score": 41
         }
@@ -143,8 +143,8 @@
           "코멜콘 [종료]",
           "코진코스텍 [시작]",
           "코진코스텍 [종료]",
-          "기엘리스그룹 [시작]",
-          "기엘리스그룹 [종료]",
+          "코엘리스 [시작]",
+          "코엘리스 [종료]",
           "유SK디앤디 [시작]",
           "기엠에스바이오 [시작]",
           "유SK디앤디 [종료]",
@@ -160,25 +160,11 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "유캐스트",
-      "rcpNo": "20260909000378",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000378"
-    },
-    {
-      "corp_name": "휴림에이텍",
-      "rcpNo": "20260821000673",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000673"
-    },
-    {
       "corp_name": "크리에이츠",
-      "rcpNo": "20260928000196",
+      "rcpNo": "20261019000283",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000196"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000283"
     },
     {
       "corp_name": "티앤이코리아",
@@ -189,10 +175,10 @@
     },
     {
       "corp_name": "한화플러스제6호기업인수목적",
-      "rcpNo": "20261007000249",
+      "rcpNo": "20261019000182",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000249"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000182"
     },
     {
       "corp_name": "스탁키퍼",
@@ -251,7 +237,7 @@
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000586"
     },
     {
-      "corp_name": "엘리스그룹",
+      "corp_name": "엘리스",
       "rcpNo": "20261006000447",
       "type": "unknown",
       "reason": "viewDoc params not found",
@@ -305,6 +291,20 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000214"
+    },
+    {
+      "corp_name": "유캐스트",
+      "rcpNo": "20260909000378",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000378"
+    },
+    {
+      "corp_name": "휴림에이텍",
+      "rcpNo": "20260821000673",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000673"
     }
   ]
 }
