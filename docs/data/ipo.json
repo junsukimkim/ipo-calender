@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-10-22",
-    "end": "2026-12-06"
+    "start": "2026-10-24",
+    "end": "2026-12-08"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-10-22",
+  "last_updated_kst": "2026-10-24",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,7 +17,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 56648,
+        "bytes": 56658,
         "decoded_charset": "utf-8",
         "event_score": 37,
         "cookie_names": [
@@ -30,7 +30,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 56648,
+          "bytes": 56658,
           "decoded_charset": "utf-8",
           "event_score": 37
         }
@@ -50,9 +50,9 @@
           "유SK디앤디 [시작]",
           "코엠에스바이오 [시작]",
           "유SK디앤디 [종료]",
-          "기디티에스 [시작]",
+          "코디티에스 [시작]",
           "코엠에스바이오 [종료]",
-          "기디티에스 [종료]",
+          "코디티에스 [종료]",
           "코엘앤씨바이오 [시작]",
           "기투게더아트 [시작]",
           "기에스케이증권제14호기업인수목적 [시작]"
@@ -66,7 +66,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 56648,
+        "bytes": 56658,
         "decoded_charset": "utf-8",
         "event_score": 37,
         "cookie_names": [
@@ -79,7 +79,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 56648,
+          "bytes": 56658,
           "decoded_charset": "utf-8",
           "event_score": 37
         }
@@ -99,9 +99,9 @@
           "유SK디앤디 [시작]",
           "코엠에스바이오 [시작]",
           "유SK디앤디 [종료]",
-          "기디티에스 [시작]",
+          "코디티에스 [시작]",
           "코엠에스바이오 [종료]",
-          "기디티에스 [종료]",
+          "코디티에스 [종료]",
           "코엘앤씨바이오 [시작]",
           "기투게더아트 [시작]",
           "기에스케이증권제14호기업인수목적 [시작]"
@@ -115,7 +115,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 56648,
+        "bytes": 56658,
         "decoded_charset": "utf-8",
         "event_score": 37,
         "cookie_names": [
@@ -128,7 +128,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 56648,
+          "bytes": 56658,
           "decoded_charset": "utf-8",
           "event_score": 37
         }
@@ -148,9 +148,9 @@
           "유SK디앤디 [시작]",
           "코엠에스바이오 [시작]",
           "유SK디앤디 [종료]",
-          "기디티에스 [시작]",
+          "코디티에스 [시작]",
           "코엠에스바이오 [종료]",
-          "기디티에스 [종료]",
+          "코디티에스 [종료]",
           "코엘앤씨바이오 [시작]",
           "기투게더아트 [시작]",
           "기에스케이증권제14호기업인수목적 [시작]"
@@ -160,32 +160,11 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "래블업",
-      "rcpNo": "20261021000334",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000334"
-    },
-    {
-      "corp_name": "영광",
-      "rcpNo": "20261021000239",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000239"
-    },
-    {
-      "corp_name": "이에스티",
-      "rcpNo": "20261021000363",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000363"
-    },
-    {
       "corp_name": "아이엠기업인수목적1호",
-      "rcpNo": "20261008000225",
+      "rcpNo": "20261022000373",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261008000225"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000373"
     },
     {
       "corp_name": "멜콘",
@@ -291,6 +270,27 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261020000360"
+    },
+    {
+      "corp_name": "래블업",
+      "rcpNo": "20261021000334",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000334"
+    },
+    {
+      "corp_name": "영광",
+      "rcpNo": "20261021000239",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000239"
+    },
+    {
+      "corp_name": "이에스티",
+      "rcpNo": "20261021000363",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000363"
     }
   ]
 }
