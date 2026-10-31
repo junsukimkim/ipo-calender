@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-10-29",
-    "end": "2026-12-13"
+    "start": "2026-10-31",
+    "end": "2026-12-15"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-10-29",
+  "last_updated_kst": "2026-10-31",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,7 +17,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 56678,
+        "bytes": 56660,
         "decoded_charset": "utf-8",
         "event_score": 37,
         "cookie_names": [
@@ -30,7 +30,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 56678,
+          "bytes": 56660,
           "decoded_charset": "utf-8",
           "event_score": 37
         }
@@ -66,7 +66,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 56678,
+        "bytes": 56660,
         "decoded_charset": "utf-8",
         "event_score": 37,
         "cookie_names": [
@@ -79,7 +79,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 56678,
+          "bytes": 56660,
           "decoded_charset": "utf-8",
           "event_score": 37
         }
@@ -115,7 +115,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 56678,
+        "bytes": 56660,
         "decoded_charset": "utf-8",
         "event_score": 37,
         "cookie_names": [
@@ -128,7 +128,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 56678,
+          "bytes": 56660,
           "decoded_charset": "utf-8",
           "event_score": 37
         }
@@ -244,7 +244,7 @@
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000158"
     },
     {
-      "corp_name": "한화플러스제6호기업인수목적",
+      "corp_name": "한화플러스제6호스팩",
       "rcpNo": "20261019000182",
       "type": "unknown",
       "reason": "viewDoc params not found",
