@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-11-03",
-    "end": "2026-12-18"
+    "start": "2026-11-05",
+    "end": "2026-12-20"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-11-03",
+  "last_updated_kst": "2026-11-05",
   "count": 0,
   "items": [],
   "_debug": [
@@ -111,20 +111,6 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "넥스아이",
-      "rcpNo": "20261030000467",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000467"
-    },
-    {
-      "corp_name": "영광와이케이엠씨",
-      "rcpNo": "20261030000616",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000616"
-    },
-    {
       "corp_name": "옵토닉스",
       "rcpNo": "20261029000504",
       "type": "unknown",
@@ -133,10 +119,10 @@
     },
     {
       "corp_name": "에이엘로봇",
-      "rcpNo": "20261030000140",
+      "rcpNo": "20261104000314",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000140"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104000314"
     },
     {
       "corp_name": "삼성바이오로직스",
@@ -154,10 +140,10 @@
     },
     {
       "corp_name": "씨앤엠",
-      "rcpNo": "20261016000412",
+      "rcpNo": "20261103000363",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000412"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000363"
     },
     {
       "corp_name": "엠비디",
@@ -168,17 +154,17 @@
     },
     {
       "corp_name": "제이앤티지",
-      "rcpNo": "20261016000426",
+      "rcpNo": "20261104000145",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000426"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104000145"
     },
     {
       "corp_name": "에스에프씨",
-      "rcpNo": "20261019000368",
+      "rcpNo": "20261104000099",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000368"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104000099"
     },
     {
       "corp_name": "유캐스트",
@@ -258,11 +244,25 @@
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000422"
     },
     {
+      "corp_name": "넥스아이",
+      "rcpNo": "20261030000467",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000467"
+    },
+    {
       "corp_name": "스탁키퍼",
       "rcpNo": "20261007000370",
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000370"
+    },
+    {
+      "corp_name": "영광와이케이엠씨",
+      "rcpNo": "20261103000312",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000312"
     }
   ]
 }
