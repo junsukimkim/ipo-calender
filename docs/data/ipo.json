@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-11-07",
-    "end": "2026-12-22"
+    "start": "2026-11-10",
+    "end": "2026-12-25"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-11-07",
+  "last_updated_kst": "2026-11-10",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,7 +17,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 59430,
+        "bytes": 59440,
         "decoded_charset": "utf-8",
         "event_score": 44,
         "cookie_names": [
@@ -30,7 +30,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 59430,
+          "bytes": 59440,
           "decoded_charset": "utf-8",
           "event_score": 44
         }
@@ -41,11 +41,11 @@
         "anchors_matched": 44,
         "events": 44,
         "sample_matched_texts": [
-          "기동원파츠 [시작]",
+          "코동원파츠 [시작]",
           "기바로팜 [시작]",
           "코상지건설 [시작]",
           "기넥스아이 [시작]",
-          "기동원파츠 [종료]",
+          "코동원파츠 [종료]",
           "기바로팜 [종료]",
           "코상지건설 [종료]",
           "기넥스아이 [종료]",
@@ -66,7 +66,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 59430,
+        "bytes": 59440,
         "decoded_charset": "utf-8",
         "event_score": 44,
         "cookie_names": [
@@ -79,7 +79,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 59430,
+          "bytes": 59440,
           "decoded_charset": "utf-8",
           "event_score": 44
         }
@@ -90,11 +90,11 @@
         "anchors_matched": 44,
         "events": 44,
         "sample_matched_texts": [
-          "기동원파츠 [시작]",
+          "코동원파츠 [시작]",
           "기바로팜 [시작]",
           "코상지건설 [시작]",
           "기넥스아이 [시작]",
-          "기동원파츠 [종료]",
+          "코동원파츠 [종료]",
           "기바로팜 [종료]",
           "코상지건설 [종료]",
           "기넥스아이 [종료]",
@@ -111,18 +111,11 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "삼성바이오로직스",
-      "rcpNo": "20261105000415",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000415"
-    },
-    {
       "corp_name": "하나에어로다이내믹스",
-      "rcpNo": "20261016000159",
+      "rcpNo": "20261109000163",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000159"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109000163"
     },
     {
       "corp_name": "씨앤엠",
@@ -133,10 +126,10 @@
     },
     {
       "corp_name": "엠비디",
-      "rcpNo": "20261015000329",
+      "rcpNo": "20261110000253",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261015000329"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000253"
     },
     {
       "corp_name": "제이앤티지",
@@ -189,10 +182,10 @@
     },
     {
       "corp_name": "이렘",
-      "rcpNo": "20261008000305",
+      "rcpNo": "20261109000389",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261008000305"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109000389"
     },
     {
       "corp_name": "큐리언트",
@@ -263,6 +256,13 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104000314"
+    },
+    {
+      "corp_name": "삼성바이오로직스",
+      "rcpNo": "20261105000415",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000415"
     }
   ]
 }
