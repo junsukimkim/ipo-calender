@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-11-10",
-    "end": "2026-12-25"
+    "start": "2026-11-12",
+    "end": "2026-12-27"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-11-10",
+  "last_updated_kst": "2026-11-12",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,9 +17,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 59440,
+        "bytes": 57856,
         "decoded_charset": "utf-8",
-        "event_score": 44,
+        "event_score": 40,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -30,25 +30,25 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 59440,
+          "bytes": 57856,
           "decoded_charset": "utf-8",
-          "event_score": 44
+          "event_score": 40
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 102,
-        "anchors_matched": 44,
-        "events": 44,
+        "anchors_total": 98,
+        "anchors_matched": 40,
+        "events": 40,
         "sample_matched_texts": [
           "코동원파츠 [시작]",
-          "기바로팜 [시작]",
+          "코바로팜 [시작]",
           "코상지건설 [시작]",
-          "기넥스아이 [시작]",
+          "코넥스아이 [시작]",
           "코동원파츠 [종료]",
-          "기바로팜 [종료]",
+          "코바로팜 [종료]",
           "코상지건설 [종료]",
-          "기넥스아이 [종료]",
+          "코넥스아이 [종료]",
           "기스탁키퍼 [종료]",
           "기영광와이케이엠씨 [시작]",
           "기영광와이케이엠씨 [종료]",
@@ -66,9 +66,9 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 59440,
+        "bytes": 57856,
         "decoded_charset": "utf-8",
-        "event_score": 44,
+        "event_score": 40,
         "cookie_names": [
           "WMONID",
           "JSESSIONID"
@@ -79,25 +79,25 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 59440,
+          "bytes": 57856,
           "decoded_charset": "utf-8",
-          "event_score": 44
+          "event_score": 40
         }
       },
       "parse": {
         "ok": true,
-        "anchors_total": 102,
-        "anchors_matched": 44,
-        "events": 44,
+        "anchors_total": 98,
+        "anchors_matched": 40,
+        "events": 40,
         "sample_matched_texts": [
           "코동원파츠 [시작]",
-          "기바로팜 [시작]",
+          "코바로팜 [시작]",
           "코상지건설 [시작]",
-          "기넥스아이 [시작]",
+          "코넥스아이 [시작]",
           "코동원파츠 [종료]",
-          "기바로팜 [종료]",
+          "코바로팜 [종료]",
           "코상지건설 [종료]",
-          "기넥스아이 [종료]",
+          "코넥스아이 [종료]",
           "기스탁키퍼 [종료]",
           "기영광와이케이엠씨 [시작]",
           "기영광와이케이엠씨 [종료]",
@@ -111,32 +111,11 @@
   ],
   "_classify_debug": [
     {
-      "corp_name": "하나에어로다이내믹스",
-      "rcpNo": "20261109000163",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109000163"
-    },
-    {
-      "corp_name": "씨앤엠",
-      "rcpNo": "20261103000363",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000363"
-    },
-    {
       "corp_name": "엠비디",
       "rcpNo": "20261110000253",
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000253"
-    },
-    {
-      "corp_name": "제이앤티지",
-      "rcpNo": "20261104000145",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104000145"
     },
     {
       "corp_name": "에스에프씨",
@@ -154,17 +133,17 @@
     },
     {
       "corp_name": "아델",
-      "rcpNo": "20261027000312",
+      "rcpNo": "20261111000327",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000312"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111000327"
     },
     {
       "corp_name": "신영해피투모로우제12호기업인수목적",
-      "rcpNo": "20261028000471",
+      "rcpNo": "20261111000235",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000471"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111000235"
     },
     {
       "corp_name": "제논",
@@ -263,6 +242,13 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000415"
+    },
+    {
+      "corp_name": "하나에어로다이내믹스",
+      "rcpNo": "20261109000163",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109000163"
     }
   ]
 }
