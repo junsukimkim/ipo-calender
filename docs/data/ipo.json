@@ -2,11 +2,11 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-11-17",
-    "end": "2027-01-01"
+    "start": "2026-11-19",
+    "end": "2027-01-03"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-11-17",
+  "last_updated_kst": "2026-11-19",
   "count": 0,
   "items": [],
   "_debug": [
@@ -17,7 +17,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 56284,
+        "bytes": 56294,
         "decoded_charset": "utf-8",
         "event_score": 36,
         "cookie_names": [
@@ -30,7 +30,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 56284,
+          "bytes": 56294,
           "decoded_charset": "utf-8",
           "event_score": 36
         }
@@ -53,7 +53,7 @@
           "코영광와이케이엠씨 [시작]",
           "코영광와이케이엠씨 [종료]",
           "코옵토닉스 [시작]",
-          "기에이엘로봇 [시작]",
+          "코에이엘로봇 [시작]",
           "코옵토닉스 [종료]",
           "유삼성바이오로직스 [시작]"
         ]
@@ -66,7 +66,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 56284,
+        "bytes": 56294,
         "decoded_charset": "utf-8",
         "event_score": 36,
         "cookie_names": [
@@ -79,7 +79,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 56284,
+          "bytes": 56294,
           "decoded_charset": "utf-8",
           "event_score": 36
         }
@@ -102,7 +102,7 @@
           "코영광와이케이엠씨 [시작]",
           "코영광와이케이엠씨 [종료]",
           "코옵토닉스 [시작]",
-          "기에이엘로봇 [시작]",
+          "코에이엘로봇 [시작]",
           "코옵토닉스 [종료]",
           "유삼성바이오로직스 [시작]"
         ]
@@ -115,7 +115,7 @@
         "method": "POST",
         "status": 200,
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 56284,
+        "bytes": 56294,
         "decoded_charset": "utf-8",
         "event_score": 36,
         "cookie_names": [
@@ -128,7 +128,7 @@
         },
         "bootstrap": {
           "status": 200,
-          "bytes": 56284,
+          "bytes": 56294,
           "decoded_charset": "utf-8",
           "event_score": 36
         }
@@ -151,7 +151,7 @@
           "코영광와이케이엠씨 [시작]",
           "코영광와이케이엠씨 [종료]",
           "코옵토닉스 [시작]",
-          "기에이엘로봇 [시작]",
+          "코에이엘로봇 [시작]",
           "코옵토닉스 [종료]",
           "유삼성바이오로직스 [시작]"
         ]
@@ -159,13 +159,6 @@
     }
   ],
   "_classify_debug": [
-    {
-      "corp_name": "유캐스트",
-      "rcpNo": "20261117000109",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000109"
-    },
     {
       "corp_name": "아델",
       "rcpNo": "20261111000327",
@@ -189,10 +182,10 @@
     },
     {
       "corp_name": "이렘",
-      "rcpNo": "20261109000389",
+      "rcpNo": "20261118000242",
       "type": "unknown",
       "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109000389"
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000242"
     },
     {
       "corp_name": "큐리언트",
@@ -284,6 +277,13 @@
       "type": "unknown",
       "reason": "viewDoc params not found",
       "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000253"
+    },
+    {
+      "corp_name": "유캐스트",
+      "rcpNo": "20261117000109",
+      "type": "unknown",
+      "reason": "viewDoc params not found",
+      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000109"
     }
   ]
 }
