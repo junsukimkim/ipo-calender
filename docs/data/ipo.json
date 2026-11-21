@@ -2,288 +2,41 @@
   "ok": true,
   "source": "dart-dsac008(calendar) + classify-by-filing(viewer.do) + mode-filter",
   "range": {
-    "start": "2026-11-19",
-    "end": "2027-01-03"
+    "start": "2026-11-21",
+    "end": "2027-01-05"
   },
   "mode": "ipo",
-  "last_updated_kst": "2026-11-19",
+  "last_updated_kst": "2026-11-21",
   "count": 0,
   "items": [],
   "_debug": [
     {
       "y": 2026,
       "m": 11,
-      "fetch": {
-        "method": "POST",
-        "status": 200,
-        "content_type": "text/html; charset=UTF-8",
-        "bytes": 56294,
-        "decoded_charset": "utf-8",
-        "event_score": 36,
-        "cookie_names": [
-          "WMONID",
-          "JSESSIONID"
-        ],
-        "requested": {
-          "y": 2026,
-          "m": 11
-        },
-        "bootstrap": {
-          "status": 200,
-          "bytes": 56294,
-          "decoded_charset": "utf-8",
-          "event_score": 36
-        }
-      },
+      "fetch": null,
       "parse": {
-        "ok": true,
-        "anchors_total": 94,
-        "anchors_matched": 36,
-        "events": 36,
-        "sample_matched_texts": [
-          "코동원파츠 [시작]",
-          "코바로팜 [시작]",
-          "코상지건설 [시작]",
-          "코넥스아이 [시작]",
-          "코동원파츠 [종료]",
-          "코바로팜 [종료]",
-          "코상지건설 [종료]",
-          "코넥스아이 [종료]",
-          "기스탁키퍼 [종료]",
-          "코영광와이케이엠씨 [시작]",
-          "코영광와이케이엠씨 [종료]",
-          "코옵토닉스 [시작]",
-          "코에이엘로봇 [시작]",
-          "코옵토닉스 [종료]",
-          "유삼성바이오로직스 [시작]"
-        ]
+        "ok": false,
+        "reason": "fetch failed"
       }
     },
     {
       "y": 2026,
       "m": 12,
-      "fetch": {
-        "method": "POST",
-        "status": 200,
-        "content_type": "text/html; charset=UTF-8",
-        "bytes": 56294,
-        "decoded_charset": "utf-8",
-        "event_score": 36,
-        "cookie_names": [
-          "WMONID",
-          "JSESSIONID"
-        ],
-        "requested": {
-          "y": 2026,
-          "m": 12
-        },
-        "bootstrap": {
-          "status": 200,
-          "bytes": 56294,
-          "decoded_charset": "utf-8",
-          "event_score": 36
-        }
-      },
+      "fetch": null,
       "parse": {
-        "ok": true,
-        "anchors_total": 94,
-        "anchors_matched": 36,
-        "events": 36,
-        "sample_matched_texts": [
-          "코동원파츠 [시작]",
-          "코바로팜 [시작]",
-          "코상지건설 [시작]",
-          "코넥스아이 [시작]",
-          "코동원파츠 [종료]",
-          "코바로팜 [종료]",
-          "코상지건설 [종료]",
-          "코넥스아이 [종료]",
-          "기스탁키퍼 [종료]",
-          "코영광와이케이엠씨 [시작]",
-          "코영광와이케이엠씨 [종료]",
-          "코옵토닉스 [시작]",
-          "코에이엘로봇 [시작]",
-          "코옵토닉스 [종료]",
-          "유삼성바이오로직스 [시작]"
-        ]
+        "ok": false,
+        "reason": "fetch failed"
       }
     },
     {
       "y": 2027,
       "m": 1,
-      "fetch": {
-        "method": "POST",
-        "status": 200,
-        "content_type": "text/html; charset=UTF-8",
-        "bytes": 56294,
-        "decoded_charset": "utf-8",
-        "event_score": 36,
-        "cookie_names": [
-          "WMONID",
-          "JSESSIONID"
-        ],
-        "requested": {
-          "y": 2027,
-          "m": 1
-        },
-        "bootstrap": {
-          "status": 200,
-          "bytes": 56294,
-          "decoded_charset": "utf-8",
-          "event_score": 36
-        }
-      },
+      "fetch": null,
       "parse": {
-        "ok": true,
-        "anchors_total": 94,
-        "anchors_matched": 36,
-        "events": 36,
-        "sample_matched_texts": [
-          "코동원파츠 [시작]",
-          "코바로팜 [시작]",
-          "코상지건설 [시작]",
-          "코넥스아이 [시작]",
-          "코동원파츠 [종료]",
-          "코바로팜 [종료]",
-          "코상지건설 [종료]",
-          "코넥스아이 [종료]",
-          "기스탁키퍼 [종료]",
-          "코영광와이케이엠씨 [시작]",
-          "코영광와이케이엠씨 [종료]",
-          "코옵토닉스 [시작]",
-          "코에이엘로봇 [시작]",
-          "코옵토닉스 [종료]",
-          "유삼성바이오로직스 [시작]"
-        ]
+        "ok": false,
+        "reason": "fetch failed"
       }
     }
   ],
-  "_classify_debug": [
-    {
-      "corp_name": "아델",
-      "rcpNo": "20261111000327",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111000327"
-    },
-    {
-      "corp_name": "신영해피투모로우제12호기업인수목적",
-      "rcpNo": "20261111000235",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111000235"
-    },
-    {
-      "corp_name": "케이엠에프",
-      "rcpNo": "20261027000388",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000388"
-    },
-    {
-      "corp_name": "이렘",
-      "rcpNo": "20261118000242",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000242"
-    },
-    {
-      "corp_name": "큐리언트",
-      "rcpNo": "20261106000409",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000409"
-    },
-    {
-      "corp_name": "에이엔에이치스트럭쳐",
-      "rcpNo": "20261103000106",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000106"
-    },
-    {
-      "corp_name": "스탁키퍼",
-      "rcpNo": "20261106000418",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000418"
-    },
-    {
-      "corp_name": "동원파츠",
-      "rcpNo": "20261030000113",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000113"
-    },
-    {
-      "corp_name": "바로팜",
-      "rcpNo": "20261030000396",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000396"
-    },
-    {
-      "corp_name": "상지건설",
-      "rcpNo": "20261029000422",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000422"
-    },
-    {
-      "corp_name": "넥스아이",
-      "rcpNo": "20261030000467",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000467"
-    },
-    {
-      "corp_name": "영광와이케이엠씨",
-      "rcpNo": "20261103000312",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000312"
-    },
-    {
-      "corp_name": "옵토닉스",
-      "rcpNo": "20261029000504",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000504"
-    },
-    {
-      "corp_name": "에이엘로봇",
-      "rcpNo": "20261104000314",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104000314"
-    },
-    {
-      "corp_name": "삼성바이오로직스",
-      "rcpNo": "20261105000415",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000415"
-    },
-    {
-      "corp_name": "하나에어로다이내믹스",
-      "rcpNo": "20261109000163",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109000163"
-    },
-    {
-      "corp_name": "엠비디",
-      "rcpNo": "20261110000253",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000253"
-    },
-    {
-      "corp_name": "유캐스트",
-      "rcpNo": "20261117000109",
-      "type": "unknown",
-      "reason": "viewDoc params not found",
-      "dsaf_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000109"
-    }
-  ]
+  "_classify_debug": []
 }
